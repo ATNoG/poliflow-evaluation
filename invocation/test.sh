@@ -11,7 +11,7 @@ WAIT_PERIOD=1                                    # Seconds to wait between each 
 NAMESPACE="invocation"                       # Kubernetes namespace for helm chart deployment
 WAIT_REBOOT=280                                  # Seconds to wait after rebooting the cluster machines
 TESTS=("baseline" "enforcer-simple" "enforcer-complex")
-NUMBER_TESTS=5
+NUMBER_TESTS=350
 ENFORCER_QUEUE="ghcr.io/atnog/knative-flow-tagging/queue:latest"
 BASELINE_QUEUE="gcr.io/knative-releases/knative.dev/serving/cmd/queue:v1.19.5"
 
@@ -54,8 +54,8 @@ for test in ${TESTS[@]}; do
     ##########################
     # 1. REBOOT CLUSTER MACHINES AND WAIT FOR CLUSTER TO BE READY
     ##########################
-    # reboot_machines
-    # wait_for_cluster
+    reboot_machines
+    wait_for_cluster
 
     if [[ $test == "enforcer-simple" ]]; then
         kubectl patch configmap config-deployment \
