@@ -57,6 +57,16 @@ for test in ${TESTS[@]}; do
     reboot_machines
     wait_for_cluster
 
+    while true; do
+        kubectl create namespace $NAMESPACE
+        if [ "$?" -eq 0 ]; then
+            break
+        else
+            echo "Namespace not created with success; trying again..."
+            sleep 60
+        fi
+    done
+
     if [[ $test == "enforcer-simple" ]]; then
         kubectl patch configmap config-deployment \
             -n knative-serving \
@@ -85,7 +95,7 @@ for test in ${TESTS[@]}; do
 
         start_invocation=$(date +%s%3N)
         kubectl apply -f kubernetes.yaml
-        kubectl wait --for=condition=ready ksvc function -n $NAMESPACE
+        kubectl wait --for=condition=ready ksvc function -n $NAMESPACE --timeout=1200s
         end_invocation=$(date +%s%3N)
 
         sleep "$WAIT_PERIOD"
@@ -93,13 +103,19 @@ for test in ${TESTS[@]}; do
         start_termination=$(date +%s%3N)
         pod=$(kubectl get pods -l serving.knative.dev/service=function -n $NAMESPACE -o jsonpath='{.items[*].metadata.name}')
         kubectl delete -f kubernetes.yaml
-        kubectl wait --for=delete pod/$pod -n $NAMESPACE
+        kubectl wait --for=delete pod/$pod -n $NAMESPACE --timeout=1200s
         end_termination=$(date +%s%3N)
         cd ../
 
         echo "$test,$i,$start_invocation,$end_invocation,$start_termination,$end_termination" >> "$result_trace_file"
 
         sleep "$WAIT_PERIOD"
+
+        # REMOVE EVERYTHING BEFORE NEXT ITERATION
+        kubectl delete $NAMESPACE &
+        sleep 3
+        kubectl get namespace "$NAMESPACE" -o json | jq 'del(.spec.finalizers) | .spec.finalizers=[] | del(.status)' > /tmp/ns.json
+        kubectl replace --raw "/api/v1/namespaces/$NAMESPACE/finalize" -f /tmp/ns.json
     done
 
     git add .
