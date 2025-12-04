@@ -1,0 +1,949 @@
+id: long_sequence
+name: Long sequence
+version: '0.1.0'
+specVersion: '0.8'
+start: entry-event
+
+events:
+  - name: triggerEvent
+    type: http.request.received
+    source: entry-point
+    kind: consumed
+
+functions:
+  - name: process-event
+    type: expression
+    operation: |
+      {
+        transformed: (
+          (
+            .headers
+            | to_entries
+            | map(select(.key | ascii_downcase != "host"))
+            | map({("HEADER_" + .key): .value})
+            | add
+          ) + .data
+        )
+      }
+  - name: f1
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f1?method=POST
+  - name: f2
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f2?method=POST
+  - name: f3
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f3?method=POST
+  - name: f4
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f4?method=POST
+  - name: f5
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f5?method=POST
+  - name: f6
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f6?method=POST
+  - name: f7
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f7?method=POST
+  - name: f8
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f8?method=POST
+  - name: f9
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f9?method=POST
+  - name: f10
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f10?method=POST
+  - name: f11
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f11?method=POST
+  - name: f12
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f12?method=POST
+  - name: f13
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f13?method=POST
+  - name: f14
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f14?method=POST
+  - name: f15
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f15?method=POST
+  - name: f16
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f16?method=POST
+  - name: f17
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f17?method=POST
+  - name: f18
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f18?method=POST
+  - name: f19
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f19?method=POST
+  - name: f20
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f20?method=POST
+  - name: f21
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f21?method=POST
+  - name: f22
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f22?method=POST
+  - name: f23
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f23?method=POST
+  - name: f24
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f24?method=POST
+  - name: f25
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f25?method=POST
+  - name: f26
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f26?method=POST
+  - name: f27
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f27?method=POST
+  - name: f28
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f28?method=POST
+  - name: f29
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f29?method=POST
+  - name: f30
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f30?method=POST
+  - name: f31
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f31?method=POST
+  - name: f32
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f32?method=POST
+  - name: f33
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f33?method=POST
+  - name: f34
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f34?method=POST
+  - name: f35
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f35?method=POST
+  - name: f36
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f36?method=POST
+  - name: f37
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f37?method=POST
+  - name: f38
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f38?method=POST
+  - name: f39
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f39?method=POST
+  - name: f40
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f40?method=POST
+  - name: f41
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f41?method=POST
+  - name: f42
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f42?method=POST
+  - name: f43
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f43?method=POST
+  - name: f44
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f44?method=POST
+  - name: f45
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f45?method=POST
+  - name: f46
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f46?method=POST
+  - name: f47
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f47?method=POST
+  - name: f48
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f48?method=POST
+  - name: f49
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f49?method=POST
+  - name: f50
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f50?method=POST
+  - name: f51
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f51?method=POST
+  - name: f52
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f52?method=POST
+  - name: f53
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f53?method=POST
+  - name: f54
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f54?method=POST
+  - name: f55
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f55?method=POST
+  - name: f56
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f56?method=POST
+  - name: f57
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f57?method=POST
+  - name: f58
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f58?method=POST
+  - name: f59
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f59?method=POST
+  - name: f60
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f60?method=POST
+  - name: f61
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f61?method=POST
+  - name: f62
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f62?method=POST
+  - name: f63
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f63?method=POST
+  - name: f64
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f64?method=POST
+  - name: f65
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f65?method=POST
+  - name: f66
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f66?method=POST
+  - name: f67
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f67?method=POST
+  - name: f68
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f68?method=POST
+  - name: f69
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f69?method=POST
+  - name: f70
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f70?method=POST
+
+states:
+  - name: entry-event
+    type: event
+    onEvents:
+      - eventRefs:
+          - triggerEvent
+        actions:
+        - functionRef: process-event
+    stateDataFilter:
+      output: "${ .transformed }"
+    transition: f1
+
+  - name: f1
+    type: operation
+    actions: 
+      - functionRef: f1
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f2
+
+  - name: f2
+    type: operation
+    actions: 
+      - functionRef: f2
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f3
+
+  - name: f3
+    type: operation
+    actions: 
+      - functionRef: f3
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f4
+
+  - name: f4
+    type: operation
+    actions: 
+      - functionRef: f4
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f5
+
+  - name: f5
+    type: operation
+    actions: 
+      - functionRef: f5
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f6
+
+  - name: f6
+    type: operation
+    actions: 
+      - functionRef: f6
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f7
+
+  - name: f7
+    type: operation
+    actions: 
+      - functionRef: f7
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f8
+
+  - name: f8
+    type: operation
+    actions: 
+      - functionRef: f8
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f9
+
+  - name: f9
+    type: operation
+    actions: 
+      - functionRef: f9
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f10
+
+  - name: f10
+    type: operation
+    actions: 
+      - functionRef: f10
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f11
+
+  - name: f11
+    type: operation
+    actions: 
+      - functionRef: f11
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f12
+
+  - name: f12
+    type: operation
+    actions: 
+      - functionRef: f12
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f13
+
+  - name: f13
+    type: operation
+    actions: 
+      - functionRef: f13
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f14
+
+  - name: f14
+    type: operation
+    actions: 
+      - functionRef: f14
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f15
+
+  - name: f15
+    type: operation
+    actions: 
+      - functionRef: f15
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f16
+
+  - name: f16
+    type: operation
+    actions: 
+      - functionRef: f16
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f17
+
+  - name: f17
+    type: operation
+    actions: 
+      - functionRef: f17
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f18
+
+  - name: f18
+    type: operation
+    actions: 
+      - functionRef: f18
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f19
+
+  - name: f19
+    type: operation
+    actions: 
+      - functionRef: f19
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f20
+
+  - name: f20
+    type: operation
+    actions: 
+      - functionRef: f20
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f21
+
+  - name: f21
+    type: operation
+    actions: 
+      - functionRef: f21
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f22
+
+  - name: f22
+    type: operation
+    actions: 
+      - functionRef: f22
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f23
+
+  - name: f23
+    type: operation
+    actions: 
+      - functionRef: f23
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f24
+
+  - name: f24
+    type: operation
+    actions: 
+      - functionRef: f24
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f25
+
+  - name: f25
+    type: operation
+    actions: 
+      - functionRef: f25
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f26
+
+  - name: f26
+    type: operation
+    actions: 
+      - functionRef: f26
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f27
+
+  - name: f27
+    type: operation
+    actions: 
+      - functionRef: f27
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f28
+
+  - name: f28
+    type: operation
+    actions: 
+      - functionRef: f28
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f29
+
+  - name: f29
+    type: operation
+    actions: 
+      - functionRef: f29
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f30
+
+  - name: f30
+    type: operation
+    actions: 
+      - functionRef: f30
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f31
+
+  - name: f31
+    type: operation
+    actions: 
+      - functionRef: f31
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f32
+
+  - name: f32
+    type: operation
+    actions: 
+      - functionRef: f32
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f33
+
+  - name: f33
+    type: operation
+    actions: 
+      - functionRef: f33
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f34
+
+  - name: f34
+    type: operation
+    actions: 
+      - functionRef: f34
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f35
+
+  - name: f35
+    type: operation
+    actions: 
+      - functionRef: f35
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f36
+
+  - name: f36
+    type: operation
+    actions: 
+      - functionRef: f36
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f37
+
+  - name: f37
+    type: operation
+    actions: 
+      - functionRef: f37
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f38
+
+  - name: f38
+    type: operation
+    actions: 
+      - functionRef: f38
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f39
+
+  - name: f39
+    type: operation
+    actions: 
+      - functionRef: f39
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f40
+
+  - name: f40
+    type: operation
+    actions: 
+      - functionRef: f40
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f41
+
+  - name: f41
+    type: operation
+    actions: 
+      - functionRef: f41
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f42
+
+  - name: f42
+    type: operation
+    actions: 
+      - functionRef: f42
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f43
+
+  - name: f43
+    type: operation
+    actions: 
+      - functionRef: f43
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f44
+
+  - name: f44
+    type: operation
+    actions: 
+      - functionRef: f44
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f45
+
+  - name: f45
+    type: operation
+    actions: 
+      - functionRef: f45
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f46
+
+  - name: f46
+    type: operation
+    actions: 
+      - functionRef: f46
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f47
+
+  - name: f47
+    type: operation
+    actions: 
+      - functionRef: f47
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f48
+
+  - name: f48
+    type: operation
+    actions: 
+      - functionRef: f48
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f49
+
+  - name: f49
+    type: operation
+    actions: 
+      - functionRef: f49
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f50
+
+  - name: f50
+    type: operation
+    actions: 
+      - functionRef: f50
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f51
+
+  - name: f51
+    type: operation
+    actions: 
+      - functionRef: f51
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f52
+
+  - name: f52
+    type: operation
+    actions: 
+      - functionRef: f52
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f53
+
+  - name: f53
+    type: operation
+    actions: 
+      - functionRef: f53
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f54
+
+  - name: f54
+    type: operation
+    actions: 
+      - functionRef: f54
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f55
+
+  - name: f55
+    type: operation
+    actions: 
+      - functionRef: f55
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f56
+
+  - name: f56
+    type: operation
+    actions: 
+      - functionRef: f56
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f57
+
+  - name: f57
+    type: operation
+    actions: 
+      - functionRef: f57
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f58
+
+  - name: f58
+    type: operation
+    actions: 
+      - functionRef: f58
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f59
+
+  - name: f59
+    type: operation
+    actions: 
+      - functionRef: f59
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f60
+
+  - name: f60
+    type: operation
+    actions: 
+      - functionRef: f60
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f61
+
+  - name: f61
+    type: operation
+    actions: 
+      - functionRef: f61
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f62
+
+  - name: f62
+    type: operation
+    actions: 
+      - functionRef: f62
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f63
+
+  - name: f63
+    type: operation
+    actions: 
+      - functionRef: f63
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f64
+
+  - name: f64
+    type: operation
+    actions: 
+      - functionRef: f64
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f65
+
+  - name: f65
+    type: operation
+    actions: 
+      - functionRef: f65
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f66
+
+  - name: f66
+    type: operation
+    actions: 
+      - functionRef: f66
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f67
+
+  - name: f67
+    type: operation
+    actions: 
+      - functionRef: f67
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f68
+
+  - name: f68
+    type: operation
+    actions: 
+      - functionRef: f68
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f69
+
+  - name: f69
+    type: operation
+    actions: 
+      - functionRef: f69
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    transition: f70
+
+  - name: f70
+    type: operation
+    actions: 
+      - functionRef: f70
+        actionDataFilter:
+          toStateData: ._result
+    stateDataFilter:
+      output: ._result
+    end: true

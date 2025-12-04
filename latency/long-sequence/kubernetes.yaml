@@ -124,26 +124,6 @@ spec:
       containers:
         - image: ghcr.io/atnog/knative-workflow-apps-kit/long-sequence/entry-point
 ---
-apiVersion: serving.knative.dev/v1
-kind: Service
-metadata:
-  name: result
-  namespace: long-sequence
-  labels:
-    networking.knative.dev/visibility: cluster-local
-spec:
-  template:
-    metadata:
-      annotations:
-        autoscaling.knative.dev/min-scale: "1"
-        autoscaling.knative.dev/max-scale: "1"
-        qpoption.knative.dev/flow-config-allowed_json_flows: | 
-          [{"type": "sequence", "value": [{"type": "event", "value": {"name": "triggerEvent", "source": "entry-point", "type": "http.request.received", "kind": "consumed"}}, {"type": "function:expression", "value": null}, {"type": "function:knative", "value": {"operation": "f1"}}, {"type": "event", "value": {"trigger": {"name": "getOrder", "type": "order.database.get", "kind": "produced"}, "result": {"name": "resultOrder", "source": "database-dummy", "type": "order.database.result", "kind": "consumed"}}}, {"type": "function:knative", "value": {"operation": "f2"}}, {"type": "function:knative", "value": {"operation": "f3"}}, {"type": "event", "value": {"trigger": {"name": "emitlong-sequence", "type": "info.database.emitlong-sequence", "kind": "produced"}, "result": {"name": "resultlong-sequence", "source": "database-dummy", "type": "info.database.result", "kind": "consumed"}}}, {"type": "function:knative", "value": {"operation": "f4"}}]}]
-        qpoption.knative.dev/flow-activate: enable
-    spec:
-      containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/long-sequence/result
----
 apiVersion: sources.knative.dev/v1
 kind: SinkBinding
 metadata:
