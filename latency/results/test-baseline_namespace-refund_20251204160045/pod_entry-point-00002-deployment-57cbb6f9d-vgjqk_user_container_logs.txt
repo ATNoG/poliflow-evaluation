@@ -1,0 +1,1407 @@
+ * Serving Flask app 'main'
+ * Debug mode: off
+1764864054.493165 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.42.4.56:8080
+1764864054.493275 - INFO - [33mPress CTRL+C to quit[0m
+1764864441.933265 - DEBUG - Received request with id <11df20fe-8cd5-4d05-bdab-0d553de2c8c3>
+1764864442.008852 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864442.281888 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864442.285249 - INFO - 127.0.0.1 - - [04/Dec/2025 16:07:22] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864445.332336 - DEBUG - Received request with id <9ef58fe5-81a2-455d-abaf-9323ac9cda25>
+1764864445.335436 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864445.354630 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864445.356083 - INFO - 127.0.0.1 - - [04/Dec/2025 16:07:25] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864448.388703 - DEBUG - Received request with id <c7cbea6a-f287-47e0-9b1e-592a94d89f82>
+1764864448.391881 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864448.411445 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864448.412896 - INFO - 127.0.0.1 - - [04/Dec/2025 16:07:28] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864451.447117 - DEBUG - Received request with id <9b68eb48-bd63-4e54-9ad5-7e2b8d6313ad>
+1764864451.450568 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864451.469176 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864451.470641 - INFO - 127.0.0.1 - - [04/Dec/2025 16:07:31] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864454.501626 - DEBUG - Received request with id <d04b2792-e54e-445a-bbc3-702c6cea01df>
+1764864454.505162 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864454.528621 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864454.530433 - INFO - 127.0.0.1 - - [04/Dec/2025 16:07:34] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864457.561308 - DEBUG - Received request with id <377856ee-d01d-4d1b-90a2-1eaff4879d17>
+1764864457.564378 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864457.583949 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864457.585373 - INFO - 127.0.0.1 - - [04/Dec/2025 16:07:37] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864460.615352 - DEBUG - Received request with id <e94c7d4b-b65c-475a-bd78-1541c26996ca>
+1764864460.618565 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864460.634174 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864460.635915 - INFO - 127.0.0.1 - - [04/Dec/2025 16:07:40] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864463.667588 - DEBUG - Received request with id <c627a32f-12fb-48c6-bc0e-c9612eab601a>
+1764864463.670750 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864463.688214 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864463.689872 - INFO - 127.0.0.1 - - [04/Dec/2025 16:07:43] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864466.724091 - DEBUG - Received request with id <49c2a3d9-d7ff-415c-95f0-45a99a3ffe73>
+1764864466.727353 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864466.741260 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864466.742701 - INFO - 127.0.0.1 - - [04/Dec/2025 16:07:46] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864469.775252 - DEBUG - Received request with id <950d5f06-9fa2-4ce8-8fd5-d6950993cd0c>
+1764864469.779282 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864469.792317 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864469.794147 - INFO - 127.0.0.1 - - [04/Dec/2025 16:07:49] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864472.826245 - DEBUG - Received request with id <29c3e0a4-d22f-4586-9163-8c02d21b2a40>
+1764864472.829246 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864472.841689 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864472.843090 - INFO - 127.0.0.1 - - [04/Dec/2025 16:07:52] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864475.874725 - DEBUG - Received request with id <d8210463-6d2e-4628-9aba-5c89622233a5>
+1764864475.877897 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864475.890980 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864475.892399 - INFO - 127.0.0.1 - - [04/Dec/2025 16:07:55] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864478.926235 - DEBUG - Received request with id <ec8b7cbd-e5f3-4872-a956-15adcda456d8>
+1764864478.929239 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864478.940842 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864478.942229 - INFO - 127.0.0.1 - - [04/Dec/2025 16:07:58] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864481.973841 - DEBUG - Received request with id <5ea81b81-df0f-45a1-98f6-c39095f3b2bd>
+1764864481.977222 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864481.995819 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864481.997324 - INFO - 127.0.0.1 - - [04/Dec/2025 16:08:01] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864485.040577 - DEBUG - Received request with id <5c755383-db0c-4d31-adf1-bbdb5b474e88>
+1764864485.043679 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864485.060106 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864485.061502 - INFO - 127.0.0.1 - - [04/Dec/2025 16:08:05] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864488.104407 - DEBUG - Received request with id <8bc0ee96-2868-4a28-8254-e6cafe075266>
+1764864488.107457 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864488.118963 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864488.120423 - INFO - 127.0.0.1 - - [04/Dec/2025 16:08:08] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864491.151748 - DEBUG - Received request with id <230278d5-92e7-4537-89db-a9759ddbc954>
+1764864491.154799 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864491.171193 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864491.172569 - INFO - 127.0.0.1 - - [04/Dec/2025 16:08:11] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864494.203808 - DEBUG - Received request with id <ac53781e-002f-4ec5-9f22-7febfc927c01>
+1764864494.206766 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864494.219209 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864494.220589 - INFO - 127.0.0.1 - - [04/Dec/2025 16:08:14] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864497.254621 - DEBUG - Received request with id <dd7209f2-6089-437a-9d6a-5235b0fd9639>
+1764864497.257711 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864497.273881 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864497.275444 - INFO - 127.0.0.1 - - [04/Dec/2025 16:08:17] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864500.308092 - DEBUG - Received request with id <f87339f6-706d-477c-970e-10c74cbcedf2>
+1764864500.311225 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864500.326804 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864500.328517 - INFO - 127.0.0.1 - - [04/Dec/2025 16:08:20] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864503.359779 - DEBUG - Received request with id <cddeac1b-ffcb-4d53-a210-44521f01578f>
+1764864503.362762 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864503.379890 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864503.381282 - INFO - 127.0.0.1 - - [04/Dec/2025 16:08:23] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864506.415777 - DEBUG - Received request with id <67ef8816-223b-4d3d-bc10-d56b89c163b1>
+1764864506.419285 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864506.437689 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864506.439382 - INFO - 127.0.0.1 - - [04/Dec/2025 16:08:26] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864509.470801 - DEBUG - Received request with id <bb12c323-9ab0-469e-8884-7629dba4715c>
+1764864509.473849 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864509.489667 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864509.491115 - INFO - 127.0.0.1 - - [04/Dec/2025 16:08:29] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864512.522113 - DEBUG - Received request with id <81dedeb5-6757-4ae5-a008-4617463df26c>
+1764864512.525331 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864512.537917 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864512.539374 - INFO - 127.0.0.1 - - [04/Dec/2025 16:08:32] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864515.569776 - DEBUG - Received request with id <097f48ca-a654-42b1-a00d-b62dc3cd4576>
+1764864515.572918 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864515.585921 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864515.587844 - INFO - 127.0.0.1 - - [04/Dec/2025 16:08:35] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864518.618267 - DEBUG - Received request with id <a4412930-0bc4-4dc5-9c9c-84066941a7c3>
+1764864518.621255 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864518.632530 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864518.633985 - INFO - 127.0.0.1 - - [04/Dec/2025 16:08:38] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864521.664944 - DEBUG - Received request with id <fa84f4ad-d914-4f05-a5d1-e51e2ca8cd2c>
+1764864521.668214 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864521.680296 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864521.681772 - INFO - 127.0.0.1 - - [04/Dec/2025 16:08:41] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864524.711672 - DEBUG - Received request with id <da16ed3d-4f56-478b-bc6c-efc302bc847a>
+1764864524.714825 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864524.727902 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864524.729340 - INFO - 127.0.0.1 - - [04/Dec/2025 16:08:44] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864527.760733 - DEBUG - Received request with id <6d8e2c71-9ed9-474a-9cd0-7c8d0814ad73>
+1764864527.763695 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864527.782565 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864527.784325 - INFO - 127.0.0.1 - - [04/Dec/2025 16:08:47] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864530.817095 - DEBUG - Received request with id <5a459080-0b3e-4618-ba42-70e6834e47c5>
+1764864530.820382 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864530.832607 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864530.833951 - INFO - 127.0.0.1 - - [04/Dec/2025 16:08:50] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864533.865429 - DEBUG - Received request with id <49ebede9-4b1c-438c-8550-d1bc83e80a83>
+1764864533.868472 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864533.879491 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864533.880931 - INFO - 127.0.0.1 - - [04/Dec/2025 16:08:53] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864536.910287 - DEBUG - Received request with id <120b823e-a8bb-4817-9e6f-b17ec9d315fc>
+1764864536.912006 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864536.922308 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864536.923118 - INFO - 127.0.0.1 - - [04/Dec/2025 16:08:56] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864539.954018 - DEBUG - Received request with id <3fc0c166-2c8b-41c6-836b-96b8bd5368f4>
+1764864539.957076 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864539.968475 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864539.969857 - INFO - 127.0.0.1 - - [04/Dec/2025 16:08:59] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864543.001071 - DEBUG - Received request with id <b8bd4484-c7aa-4bd8-964f-8bc181afafdf>
+1764864543.004080 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864543.015978 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864543.017348 - INFO - 127.0.0.1 - - [04/Dec/2025 16:09:03] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864546.048496 - DEBUG - Received request with id <bfe7b00a-1f70-461d-94d9-33d761fe6906>
+1764864546.051822 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864546.063773 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864546.065175 - INFO - 127.0.0.1 - - [04/Dec/2025 16:09:06] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864549.095247 - DEBUG - Received request with id <4f7e73ae-4392-4133-b863-b56d12389c63>
+1764864549.098161 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864549.111624 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864549.112975 - INFO - 127.0.0.1 - - [04/Dec/2025 16:09:09] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864552.142881 - DEBUG - Received request with id <d15b631b-0df5-46e4-a9d3-2e5d6b0b12a3>
+1764864552.145814 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864552.157460 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864552.158840 - INFO - 127.0.0.1 - - [04/Dec/2025 16:09:12] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864555.188810 - DEBUG - Received request with id <13631e81-6243-4e66-bcfd-130b08ece282>
+1764864555.191904 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864555.203456 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864555.204882 - INFO - 127.0.0.1 - - [04/Dec/2025 16:09:15] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864558.236086 - DEBUG - Received request with id <070b69be-7ac5-4656-afb6-03a1b22c3642>
+1764864558.239013 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864558.250345 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864558.251709 - INFO - 127.0.0.1 - - [04/Dec/2025 16:09:18] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864561.281930 - DEBUG - Received request with id <d5053396-2928-459a-941f-26daa2883690>
+1764864561.285271 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864561.296122 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864561.297637 - INFO - 127.0.0.1 - - [04/Dec/2025 16:09:21] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864564.328517 - DEBUG - Received request with id <df247b63-bf8f-4837-bb90-6d45a84fea2b>
+1764864564.331847 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864564.345901 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864564.347665 - INFO - 127.0.0.1 - - [04/Dec/2025 16:09:24] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864567.378569 - DEBUG - Received request with id <501a3b09-7122-49b8-8751-0ce1f6d139ab>
+1764864567.381660 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864567.397724 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864567.399174 - INFO - 127.0.0.1 - - [04/Dec/2025 16:09:27] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864570.428528 - DEBUG - Received request with id <3107feed-2cd0-47a4-9029-10ae980633ab>
+1764864570.431637 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864570.444761 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864570.446476 - INFO - 127.0.0.1 - - [04/Dec/2025 16:09:30] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864573.477156 - DEBUG - Received request with id <5cfa8339-ea4e-4825-9b21-5859920b29df>
+1764864573.480572 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864573.493410 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864573.494962 - INFO - 127.0.0.1 - - [04/Dec/2025 16:09:33] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864576.525876 - DEBUG - Received request with id <5b84ab67-338d-4c0d-b28a-f201ef2d3f58>
+1764864576.528989 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864576.541184 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864576.542568 - INFO - 127.0.0.1 - - [04/Dec/2025 16:09:36] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864579.578794 - DEBUG - Received request with id <6a4ad069-f2db-4944-baed-7318daed5ab2>
+1764864579.584183 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864579.602884 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864579.605114 - INFO - 127.0.0.1 - - [04/Dec/2025 16:09:39] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864582.642071 - DEBUG - Received request with id <e33404b6-c77d-4bcf-afb2-5c2ecc21fe20>
+1764864582.647439 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864582.663391 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864582.665325 - INFO - 127.0.0.1 - - [04/Dec/2025 16:09:42] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864585.697570 - DEBUG - Received request with id <06728287-8b19-4fc4-9ce7-6252d1028508>
+1764864585.700765 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864585.712767 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864585.714260 - INFO - 127.0.0.1 - - [04/Dec/2025 16:09:45] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864588.745667 - DEBUG - Received request with id <dbec7071-8550-436a-b87c-66d33c2994ab>
+1764864588.748938 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864588.761516 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864588.762988 - INFO - 127.0.0.1 - - [04/Dec/2025 16:09:48] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864591.793286 - DEBUG - Received request with id <1012ab4a-845c-464d-8b13-a9b292331fb3>
+1764864591.796268 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864591.809431 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864591.810807 - INFO - 127.0.0.1 - - [04/Dec/2025 16:09:51] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864594.841218 - DEBUG - Received request with id <11d224f4-d78d-4493-b822-b237b4a60735>
+1764864594.844189 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864594.856287 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864594.857838 - INFO - 127.0.0.1 - - [04/Dec/2025 16:09:54] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864597.889010 - DEBUG - Received request with id <87cc2c52-c3cb-4fb4-a754-3b18a5d13eae>
+1764864597.892231 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864597.903880 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864597.905399 - INFO - 127.0.0.1 - - [04/Dec/2025 16:09:57] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864600.935898 - DEBUG - Received request with id <dc630587-b283-45ef-b0d1-4f63f03f16ac>
+1764864600.939298 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864600.951996 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864600.953464 - INFO - 127.0.0.1 - - [04/Dec/2025 16:10:00] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864603.987238 - DEBUG - Received request with id <ae220840-de69-460a-abed-5d6a018f6cb2>
+1764864603.990183 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864604.002516 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864604.003902 - INFO - 127.0.0.1 - - [04/Dec/2025 16:10:04] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864607.035096 - DEBUG - Received request with id <aff5f6c8-dec6-4ee3-b27a-cb379e321ffc>
+1764864607.038113 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864607.050164 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864607.051532 - INFO - 127.0.0.1 - - [04/Dec/2025 16:10:07] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864610.081517 - DEBUG - Received request with id <4f157944-ac3a-420d-9d6c-c398b2e5dcbd>
+1764864610.084526 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864610.095543 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864610.096875 - INFO - 127.0.0.1 - - [04/Dec/2025 16:10:10] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864613.127582 - DEBUG - Received request with id <394973a1-483b-43c2-b220-4cfdc41544ee>
+1764864613.130568 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864613.142189 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864613.143560 - INFO - 127.0.0.1 - - [04/Dec/2025 16:10:13] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864616.175492 - DEBUG - Received request with id <ec87e0a1-f8e2-4530-8b62-db389b2cf6f3>
+1764864616.178869 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864616.188973 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864616.190453 - INFO - 127.0.0.1 - - [04/Dec/2025 16:10:16] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864619.220757 - DEBUG - Received request with id <aeaa2e6b-907b-494b-a2c3-523a391fdf14>
+1764864619.223894 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864619.235616 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864619.237116 - INFO - 127.0.0.1 - - [04/Dec/2025 16:10:19] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864622.268283 - DEBUG - Received request with id <428ea876-187e-4ba3-aaa5-1a7e4ea7464e>
+1764864622.271384 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864622.284086 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864622.285624 - INFO - 127.0.0.1 - - [04/Dec/2025 16:10:22] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864625.320104 - DEBUG - Received request with id <d0d1fdea-0313-4531-86ea-08357dc89bec>
+1764864625.323140 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864625.333951 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864625.335484 - INFO - 127.0.0.1 - - [04/Dec/2025 16:10:25] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864628.366305 - DEBUG - Received request with id <93380d52-0750-4bb1-8247-5f18098ad43d>
+1764864628.369406 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864628.380735 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864628.382188 - INFO - 127.0.0.1 - - [04/Dec/2025 16:10:28] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864631.413425 - DEBUG - Received request with id <73378355-3ed7-4a6b-ab1e-67e3003a49e4>
+1764864631.416712 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864631.429293 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864631.430726 - INFO - 127.0.0.1 - - [04/Dec/2025 16:10:31] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864634.461305 - DEBUG - Received request with id <40620a28-b539-4a11-9b0f-f50fb47af5a1>
+1764864634.464285 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864634.476685 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864634.478479 - INFO - 127.0.0.1 - - [04/Dec/2025 16:10:34] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864637.510455 - DEBUG - Received request with id <9844f3dd-fe93-4dd7-87f6-2834e888ab4b>
+1764864637.513710 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864637.528200 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864637.529596 - INFO - 127.0.0.1 - - [04/Dec/2025 16:10:37] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864640.560287 - DEBUG - Received request with id <71315554-d491-462e-997d-e523be0a3af1>
+1764864640.563345 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864640.574631 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864640.576659 - INFO - 127.0.0.1 - - [04/Dec/2025 16:10:40] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864643.606894 - DEBUG - Received request with id <06bc6f8f-9954-426b-9371-624e4f18ec76>
+1764864643.608997 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864643.620685 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864643.621696 - INFO - 127.0.0.1 - - [04/Dec/2025 16:10:43] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864646.652940 - DEBUG - Received request with id <affd211f-237e-4d96-90b9-263a97f90ebd>
+1764864646.655912 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864646.667293 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864646.668679 - INFO - 127.0.0.1 - - [04/Dec/2025 16:10:46] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864649.699635 - DEBUG - Received request with id <0e9fa78e-c8ed-483b-ad92-5d47b1ce64bf>
+1764864649.703073 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864649.714912 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864649.716418 - INFO - 127.0.0.1 - - [04/Dec/2025 16:10:49] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864652.747401 - DEBUG - Received request with id <f2932bd0-1a19-42f8-95f8-922a07f4d051>
+1764864652.750509 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864652.761938 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864652.763469 - INFO - 127.0.0.1 - - [04/Dec/2025 16:10:52] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864655.793614 - DEBUG - Received request with id <eba75651-af2c-4d32-9ebd-2ff2aaece46c>
+1764864655.796748 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864655.808094 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864655.809566 - INFO - 127.0.0.1 - - [04/Dec/2025 16:10:55] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864658.839872 - DEBUG - Received request with id <d755ac8d-2413-4d64-bf4b-e55f3bae3aa1>
+1764864658.843017 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864658.853150 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864658.854575 - INFO - 127.0.0.1 - - [04/Dec/2025 16:10:58] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864661.885246 - DEBUG - Received request with id <78ca25c3-58e1-4c57-a0d4-17645b78cf41>
+1764864661.888533 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864661.898947 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864661.900393 - INFO - 127.0.0.1 - - [04/Dec/2025 16:11:01] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864664.930982 - DEBUG - Received request with id <1084dcf1-25b8-46d9-8df8-33248ca50d1c>
+1764864664.934271 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864664.944608 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864664.945990 - INFO - 127.0.0.1 - - [04/Dec/2025 16:11:04] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864667.976430 - DEBUG - Received request with id <89b58b51-bf33-4a00-8db9-417e5b8cab43>
+1764864667.979476 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864667.991523 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864667.992898 - INFO - 127.0.0.1 - - [04/Dec/2025 16:11:07] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864671.027673 - DEBUG - Received request with id <d8830a39-b33d-4e34-a781-b61763bb6a1d>
+1764864671.030849 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864671.041516 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864671.043114 - INFO - 127.0.0.1 - - [04/Dec/2025 16:11:11] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864674.073487 - DEBUG - Received request with id <d4b83b2b-46e0-4be7-a19f-0ad544b01417>
+1764864674.076578 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864674.088071 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864674.089409 - INFO - 127.0.0.1 - - [04/Dec/2025 16:11:14] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864677.120145 - DEBUG - Received request with id <ce5330d4-b554-4f1b-a40c-857d26799b4a>
+1764864677.123203 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864677.134264 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864677.135643 - INFO - 127.0.0.1 - - [04/Dec/2025 16:11:17] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864680.165498 - DEBUG - Received request with id <8ae690a2-1738-4773-9db1-15a8b8c3b7a1>
+1764864680.168505 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864680.180113 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864680.181473 - INFO - 127.0.0.1 - - [04/Dec/2025 16:11:20] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864683.211486 - DEBUG - Received request with id <8b063618-94b5-4800-8109-23d295d718d9>
+1764864683.214417 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864683.225254 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864683.226616 - INFO - 127.0.0.1 - - [04/Dec/2025 16:11:23] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864686.256882 - DEBUG - Received request with id <3cadc03c-09d2-49fa-add0-8347cd16b3e3>
+1764864686.259858 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864686.271687 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864686.273094 - INFO - 127.0.0.1 - - [04/Dec/2025 16:11:26] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864689.303376 - DEBUG - Received request with id <12f3fc66-30f1-4509-9e36-8dfb64a72a51>
+1764864689.306320 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864689.317386 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864689.318759 - INFO - 127.0.0.1 - - [04/Dec/2025 16:11:29] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864692.341863 - DEBUG - Received request with id <1003fc44-8556-4c7b-bfff-e478a746955b>
+1764864692.343822 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864692.354054 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864692.355450 - INFO - 127.0.0.1 - - [04/Dec/2025 16:11:32] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864695.384476 - DEBUG - Received request with id <40535411-f5c7-4894-8955-7fe9cee728bf>
+1764864695.387565 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864695.398335 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864695.399843 - INFO - 127.0.0.1 - - [04/Dec/2025 16:11:35] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864698.431741 - DEBUG - Received request with id <484bcee2-c4bb-4393-b26c-eb834ac61f40>
+1764864698.434723 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864698.447075 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864698.448516 - INFO - 127.0.0.1 - - [04/Dec/2025 16:11:38] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864701.478743 - DEBUG - Received request with id <09f04f48-ee13-4f94-8432-3b1fe768a8cf>
+1764864701.481914 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864701.494659 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864701.496226 - INFO - 127.0.0.1 - - [04/Dec/2025 16:11:41] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864704.526811 - DEBUG - Received request with id <0b75613b-09ac-4b41-929e-3c8fa863ca44>
+1764864704.529808 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864704.543298 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864704.544644 - INFO - 127.0.0.1 - - [04/Dec/2025 16:11:44] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864707.575423 - DEBUG - Received request with id <c7bc5809-bd2e-4304-aba8-445998ee8cf7>
+1764864707.578457 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864707.589446 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864707.590837 - INFO - 127.0.0.1 - - [04/Dec/2025 16:11:47] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864710.621098 - DEBUG - Received request with id <63415c88-f582-42ce-9d55-c9ee74c642f5>
+1764864710.624266 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864710.635907 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864710.637359 - INFO - 127.0.0.1 - - [04/Dec/2025 16:11:50] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864713.668207 - DEBUG - Received request with id <70519497-273b-45ed-8b9c-3afd5b74ef27>
+1764864713.671219 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864713.687087 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864713.688488 - INFO - 127.0.0.1 - - [04/Dec/2025 16:11:53] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864716.718795 - DEBUG - Received request with id <38a6fa0b-242f-4c86-9767-46955acd899e>
+1764864716.720631 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864716.733813 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864716.734839 - INFO - 127.0.0.1 - - [04/Dec/2025 16:11:56] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864719.765926 - DEBUG - Received request with id <c0a6cc71-a22c-499c-8435-c15aa66d4811>
+1764864719.768903 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864719.779948 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864719.781327 - INFO - 127.0.0.1 - - [04/Dec/2025 16:11:59] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864722.815150 - DEBUG - Received request with id <123866ca-e5e8-4ffc-b2ab-f4bae5b1cdaa>
+1764864722.818870 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864722.833994 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864722.835550 - INFO - 127.0.0.1 - - [04/Dec/2025 16:12:02] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864725.872007 - DEBUG - Received request with id <66cdfd9b-00f0-4e6e-9129-06b2054b228d>
+1764864725.877646 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864725.889800 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864725.891704 - INFO - 127.0.0.1 - - [04/Dec/2025 16:12:05] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864728.922292 - DEBUG - Received request with id <dc47e779-dbdb-42a9-aa0f-2da1dce6c52a>
+1764864728.925341 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864728.936656 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864728.938093 - INFO - 127.0.0.1 - - [04/Dec/2025 16:12:08] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864731.968687 - DEBUG - Received request with id <8d7b327c-146c-4d4e-bd05-d5002f7dd740>
+1764864731.971632 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864731.983174 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864731.984608 - INFO - 127.0.0.1 - - [04/Dec/2025 16:12:11] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864735.015697 - DEBUG - Received request with id <1c870ce4-6086-4c0b-a478-3818a1483ff0>
+1764864735.018730 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864735.031577 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864735.032962 - INFO - 127.0.0.1 - - [04/Dec/2025 16:12:15] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864738.063331 - DEBUG - Received request with id <3bd657aa-af8c-4d86-bc2e-80f92552a42f>
+1764864738.066301 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864738.076874 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864738.078276 - INFO - 127.0.0.1 - - [04/Dec/2025 16:12:18] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864741.108479 - DEBUG - Received request with id <67de6a24-1290-47b2-a00e-41f3dda3486f>
+1764864741.111542 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864741.123205 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864741.124593 - INFO - 127.0.0.1 - - [04/Dec/2025 16:12:21] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864744.155932 - DEBUG - Received request with id <38b3c755-310b-4cdb-84a1-e69cb1185e9e>
+1764864744.158995 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864744.170780 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864744.172253 - INFO - 127.0.0.1 - - [04/Dec/2025 16:12:24] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864747.202721 - DEBUG - Received request with id <be935201-8d33-48ff-b5cd-9e230ace5565>
+1764864747.205823 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864747.217734 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864747.219119 - INFO - 127.0.0.1 - - [04/Dec/2025 16:12:27] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864750.255106 - DEBUG - Received request with id <c061daca-a67c-47a4-9b0b-5c5983326991>
+1764864750.258161 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864750.269658 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864750.271330 - INFO - 127.0.0.1 - - [04/Dec/2025 16:12:30] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864753.303780 - DEBUG - Received request with id <0554053a-df69-4e41-818f-279a442a869a>
+1764864753.306704 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864753.317811 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864753.319204 - INFO - 127.0.0.1 - - [04/Dec/2025 16:12:33] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864756.348925 - DEBUG - Received request with id <0618927a-efa5-42fd-99f9-127ada2bfbbf>
+1764864756.350630 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864756.360138 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864756.360914 - INFO - 127.0.0.1 - - [04/Dec/2025 16:12:36] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864759.391842 - DEBUG - Received request with id <a7ced223-03ad-49ee-82d9-09ac6bd364b3>
+1764864759.394939 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864759.408157 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864759.409866 - INFO - 127.0.0.1 - - [04/Dec/2025 16:12:39] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864762.440708 - DEBUG - Received request with id <1cc79916-30c9-4533-a419-e38af9fea5a9>
+1764864762.443735 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864762.454901 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864762.457175 - INFO - 127.0.0.1 - - [04/Dec/2025 16:12:42] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864765.491376 - DEBUG - Received request with id <a4ca2bab-2a62-4686-8bb3-6f8012c785d0>
+1764864765.494602 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864765.506738 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864765.509282 - INFO - 127.0.0.1 - - [04/Dec/2025 16:12:45] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864768.541451 - DEBUG - Received request with id <a1d4411d-3c54-4a97-8b10-1a9fb17f442d>
+1764864768.544667 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864768.555480 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864768.556996 - INFO - 127.0.0.1 - - [04/Dec/2025 16:12:48] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864771.588816 - DEBUG - Received request with id <a27a5ff1-a7c4-482c-87ff-9bc577e58508>
+1764864771.592232 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864771.603556 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864771.604976 - INFO - 127.0.0.1 - - [04/Dec/2025 16:12:51] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864774.635782 - DEBUG - Received request with id <300f90f2-6519-4fec-a5b4-30a01b2c39fa>
+1764864774.639292 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864774.649536 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864774.650936 - INFO - 127.0.0.1 - - [04/Dec/2025 16:12:54] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864777.682181 - DEBUG - Received request with id <fe26c4fd-e4d2-46a0-87c9-e14409501a71>
+1764864777.685390 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864777.696464 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864777.697939 - INFO - 127.0.0.1 - - [04/Dec/2025 16:12:57] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864780.730744 - DEBUG - Received request with id <343edc4f-2e32-4824-96a3-135baa2562bc>
+1764864780.733678 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864780.743768 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864780.745146 - INFO - 127.0.0.1 - - [04/Dec/2025 16:13:00] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864783.776507 - DEBUG - Received request with id <5e5fe7ff-dec0-4bb4-908d-94476f4be69c>
+1764864783.779645 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864783.790020 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864783.791464 - INFO - 127.0.0.1 - - [04/Dec/2025 16:13:03] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864786.822477 - DEBUG - Received request with id <6a892d0d-cf8d-43bf-a19e-450ad4cfc9ca>
+1764864786.825652 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864786.836174 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864786.837558 - INFO - 127.0.0.1 - - [04/Dec/2025 16:13:06] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864789.868127 - DEBUG - Received request with id <b2a648ee-ceb7-4ebd-80f8-5c1ac7257d56>
+1764864789.871064 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864789.881754 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864789.883184 - INFO - 127.0.0.1 - - [04/Dec/2025 16:13:09] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864792.914197 - DEBUG - Received request with id <0619ed55-5f22-4db9-8090-bd676b61bf27>
+1764864792.917189 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864792.926702 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864792.928191 - INFO - 127.0.0.1 - - [04/Dec/2025 16:13:12] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864795.958271 - DEBUG - Received request with id <6983d786-1207-46a6-b80b-75ac432daa10>
+1764864795.961418 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864795.972990 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864795.974566 - INFO - 127.0.0.1 - - [04/Dec/2025 16:13:15] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864799.000570 - DEBUG - Received request with id <3d659b65-3548-431c-9447-f0395b1adf84>
+1764864799.003632 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864799.014180 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864799.015632 - INFO - 127.0.0.1 - - [04/Dec/2025 16:13:19] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864802.046996 - DEBUG - Received request with id <9092759d-678e-44ac-aa26-f50bbf703b76>
+1764864802.050072 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864802.060310 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864802.061774 - INFO - 127.0.0.1 - - [04/Dec/2025 16:13:22] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864805.092570 - DEBUG - Received request with id <d40ef6d0-9d50-4966-bf4a-5516984d8ba3>
+1764864805.095514 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864805.105832 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864805.107550 - INFO - 127.0.0.1 - - [04/Dec/2025 16:13:25] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864808.141805 - DEBUG - Received request with id <464ea43d-d279-4d42-9e19-0e85f3873666>
+1764864808.145180 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864808.156497 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864808.157981 - INFO - 127.0.0.1 - - [04/Dec/2025 16:13:28] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864811.188328 - DEBUG - Received request with id <6e065055-2984-4c6c-8b9b-ca93177ffad3>
+1764864811.191497 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864811.201403 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864811.202799 - INFO - 127.0.0.1 - - [04/Dec/2025 16:13:31] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864814.233880 - DEBUG - Received request with id <9db0659d-be32-4268-96a6-401faec30dc3>
+1764864814.236990 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864814.248502 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864814.249883 - INFO - 127.0.0.1 - - [04/Dec/2025 16:13:34] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864817.279823 - DEBUG - Received request with id <899d54fc-a5b2-459f-9a4f-ce16df135a74>
+1764864817.282919 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864817.292543 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864817.293918 - INFO - 127.0.0.1 - - [04/Dec/2025 16:13:37] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864820.326716 - DEBUG - Received request with id <da273b65-a2d8-4bc4-ac2a-dcc7a347ea61>
+1764864820.329727 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864820.340430 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864820.341762 - INFO - 127.0.0.1 - - [04/Dec/2025 16:13:40] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864823.373478 - DEBUG - Received request with id <e85b49ad-aeef-4efc-8e41-c88ee6376b7a>
+1764864823.375458 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864823.386007 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864823.386861 - INFO - 127.0.0.1 - - [04/Dec/2025 16:13:43] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864826.416914 - DEBUG - Received request with id <c1819913-e647-4bd4-9852-825deaa4de5e>
+1764864826.418917 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864826.429023 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864826.429970 - INFO - 127.0.0.1 - - [04/Dec/2025 16:13:46] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864829.459768 - DEBUG - Received request with id <20bab65a-09fc-47aa-bc1d-c282bb6b852a>
+1764864829.462781 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864829.472282 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864829.473627 - INFO - 127.0.0.1 - - [04/Dec/2025 16:13:49] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864832.501409 - DEBUG - Received request with id <bad4c22a-5346-4714-9a05-7758c2d0234f>
+1764864832.504588 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864832.516615 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864832.517959 - INFO - 127.0.0.1 - - [04/Dec/2025 16:13:52] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864835.548864 - DEBUG - Received request with id <0bd40d51-94e7-4401-add4-e4ad85a39de5>
+1764864835.551992 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864835.563296 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864835.564773 - INFO - 127.0.0.1 - - [04/Dec/2025 16:13:55] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864838.594787 - DEBUG - Received request with id <160e8d5a-0760-4734-878c-a3db014522d7>
+1764864838.597854 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864838.609368 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864838.610726 - INFO - 127.0.0.1 - - [04/Dec/2025 16:13:58] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864841.640991 - DEBUG - Received request with id <c923f4e1-f12d-4603-9388-82ef0c9bf9f4>
+1764864841.644071 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864841.655056 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864841.656569 - INFO - 127.0.0.1 - - [04/Dec/2025 16:14:01] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864844.687479 - DEBUG - Received request with id <a0b2a048-d8cc-45a3-be73-0ca16c3e9dce>
+1764864844.690468 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864844.702510 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864844.704664 - INFO - 127.0.0.1 - - [04/Dec/2025 16:14:04] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864847.738300 - DEBUG - Received request with id <40a44d2c-1132-452e-be5f-ea81bf4ef2ab>
+1764864847.741312 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864847.752299 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864847.753639 - INFO - 127.0.0.1 - - [04/Dec/2025 16:14:07] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864850.784163 - DEBUG - Received request with id <a6d40ebb-bbcb-407c-9861-a2d056d3960c>
+1764864850.787112 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864850.797829 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864850.799206 - INFO - 127.0.0.1 - - [04/Dec/2025 16:14:10] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864853.830170 - DEBUG - Received request with id <a8109b12-a6b8-44e7-b1ec-b4a0150d944a>
+1764864853.833091 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864853.842919 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864853.844318 - INFO - 127.0.0.1 - - [04/Dec/2025 16:14:13] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864856.875716 - DEBUG - Received request with id <8e1805e1-32ba-4ed2-9d4e-15bf7fe34479>
+1764864856.878866 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864856.889748 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864856.891180 - INFO - 127.0.0.1 - - [04/Dec/2025 16:14:16] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864859.921427 - DEBUG - Received request with id <43975d6e-a17f-4c72-91ff-8682d938a787>
+1764864859.924488 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864859.935453 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864859.936939 - INFO - 127.0.0.1 - - [04/Dec/2025 16:14:19] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864862.967463 - DEBUG - Received request with id <8a55787e-5937-4fb1-8761-8970ded6d9d1>
+1764864862.970441 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864862.982103 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864862.983445 - INFO - 127.0.0.1 - - [04/Dec/2025 16:14:22] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864866.014211 - DEBUG - Received request with id <e87f9710-c366-4d1e-8d13-47bff28838b2>
+1764864866.017148 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864866.027992 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864866.029425 - INFO - 127.0.0.1 - - [04/Dec/2025 16:14:26] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864869.061685 - DEBUG - Received request with id <5c433feb-5c30-4299-bae5-4ab658d99988>
+1764864869.064613 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864869.076006 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864869.077407 - INFO - 127.0.0.1 - - [04/Dec/2025 16:14:29] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864872.108450 - DEBUG - Received request with id <483ec4d3-c155-4082-a958-f1bc5c3b837e>
+1764864872.111387 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864872.121544 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864872.122897 - INFO - 127.0.0.1 - - [04/Dec/2025 16:14:32] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864875.153502 - DEBUG - Received request with id <ba9efeab-837d-439c-bda2-7bf610a7bfb8>
+1764864875.156447 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864875.167404 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864875.168787 - INFO - 127.0.0.1 - - [04/Dec/2025 16:14:35] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864878.199394 - DEBUG - Received request with id <9562c0be-8269-4ef3-9a29-64ae2efc075a>
+1764864878.202639 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864878.213371 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864878.215135 - INFO - 127.0.0.1 - - [04/Dec/2025 16:14:38] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864881.240201 - DEBUG - Received request with id <2d2d20bc-8c00-4fe9-b5ea-912aa2c9c130>
+1764864881.243366 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864881.254143 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864881.255560 - INFO - 127.0.0.1 - - [04/Dec/2025 16:14:41] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864884.279696 - DEBUG - Received request with id <4f5f9d4b-7fd3-4aed-9bcf-213c29dc508c>
+1764864884.282791 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864884.293332 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864884.294694 - INFO - 127.0.0.1 - - [04/Dec/2025 16:14:44] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864887.325557 - DEBUG - Received request with id <b35e637c-1c9c-4501-a5f2-713709d51762>
+1764864887.329018 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864887.342022 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864887.343745 - INFO - 127.0.0.1 - - [04/Dec/2025 16:14:47] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864890.376684 - DEBUG - Received request with id <3828dce5-46c2-473e-949e-95cc34f2e697>
+1764864890.379643 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864890.391664 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864890.393113 - INFO - 127.0.0.1 - - [04/Dec/2025 16:14:50] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864893.424104 - DEBUG - Received request with id <eae93bde-094c-4a3f-a31b-05575ea50541>
+1764864893.427151 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864893.437851 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864893.439222 - INFO - 127.0.0.1 - - [04/Dec/2025 16:14:53] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864896.471460 - DEBUG - Received request with id <e651c761-aca2-4437-b101-9472c81cdd27>
+1764864896.474749 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864896.487606 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864896.489176 - INFO - 127.0.0.1 - - [04/Dec/2025 16:14:56] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864899.519953 - DEBUG - Received request with id <83bd00ed-cff7-4c7c-93a0-c1a45cfea301>
+1764864899.522961 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864899.534495 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864899.535820 - INFO - 127.0.0.1 - - [04/Dec/2025 16:14:59] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864902.566228 - DEBUG - Received request with id <3eb5b75c-16f3-40e9-bd1f-5ec21fd493ac>
+1764864902.569247 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864902.580676 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864902.582145 - INFO - 127.0.0.1 - - [04/Dec/2025 16:15:02] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864905.614343 - DEBUG - Received request with id <9da9d1b2-a31e-498d-a570-602e7ceca445>
+1764864905.618607 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864905.631839 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864905.633543 - INFO - 127.0.0.1 - - [04/Dec/2025 16:15:05] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864908.664829 - DEBUG - Received request with id <4113ff3d-0a3e-43c6-b1ff-b86dff413d73>
+1764864908.667790 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864908.678513 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864908.679925 - INFO - 127.0.0.1 - - [04/Dec/2025 16:15:08] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864911.710160 - DEBUG - Received request with id <8af503a1-d037-47df-b49b-d82dac31548e>
+1764864911.713154 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864911.724799 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864911.726122 - INFO - 127.0.0.1 - - [04/Dec/2025 16:15:11] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864914.758017 - DEBUG - Received request with id <4e00ab4a-8cd5-4ab6-a77d-58658084f5d0>
+1764864914.761126 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864914.770693 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864914.771976 - INFO - 127.0.0.1 - - [04/Dec/2025 16:15:14] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864917.810339 - DEBUG - Received request with id <271c245d-dd66-4100-9473-12750398a4fc>
+1764864917.817291 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864917.831432 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864917.833626 - INFO - 127.0.0.1 - - [04/Dec/2025 16:15:17] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864920.865770 - DEBUG - Received request with id <5c7cb9ca-0e79-482b-8e8e-942a88251227>
+1764864920.868833 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864920.878658 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864920.880307 - INFO - 127.0.0.1 - - [04/Dec/2025 16:15:20] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864923.910587 - DEBUG - Received request with id <c796175f-4ec2-4ce0-9e31-6ba59efa9d83>
+1764864923.913613 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864923.924365 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864923.925797 - INFO - 127.0.0.1 - - [04/Dec/2025 16:15:23] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864926.956861 - DEBUG - Received request with id <27653e47-468e-4c96-9b2d-0385b31725b4>
+1764864926.961591 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864926.972911 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864926.975130 - INFO - 127.0.0.1 - - [04/Dec/2025 16:15:26] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864930.006902 - DEBUG - Received request with id <6e2c6cd8-0a32-4b6e-b02d-f54f883df368>
+1764864930.009851 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864930.019887 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864930.021251 - INFO - 127.0.0.1 - - [04/Dec/2025 16:15:30] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864933.052623 - DEBUG - Received request with id <20c12ff7-4890-4cb9-a73b-cb8445caf94d>
+1764864933.055500 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864933.065866 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864933.067200 - INFO - 127.0.0.1 - - [04/Dec/2025 16:15:33] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864936.100405 - DEBUG - Received request with id <abadb6c1-de6e-4548-ac94-29ed17209f62>
+1764864936.103620 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864936.115333 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864936.117162 - INFO - 127.0.0.1 - - [04/Dec/2025 16:15:36] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864939.148436 - DEBUG - Received request with id <5e3abf4d-bf45-476f-9105-aa66ffa34692>
+1764864939.150290 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864939.159514 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864939.160338 - INFO - 127.0.0.1 - - [04/Dec/2025 16:15:39] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864942.190519 - DEBUG - Received request with id <03a986a2-9949-443f-8fc0-3bade6297f14>
+1764864942.193604 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864942.204364 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864942.205747 - INFO - 127.0.0.1 - - [04/Dec/2025 16:15:42] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864945.237281 - DEBUG - Received request with id <d0916c89-920d-4037-bc5f-b815387c80fd>
+1764864945.240272 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864945.250326 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864945.251956 - INFO - 127.0.0.1 - - [04/Dec/2025 16:15:45] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864948.284485 - DEBUG - Received request with id <774fd2d4-7428-4904-ae21-2f69a1641abe>
+1764864948.287728 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864948.298411 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864948.299832 - INFO - 127.0.0.1 - - [04/Dec/2025 16:15:48] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864951.331309 - DEBUG - Received request with id <1af92438-eeda-4d4c-b71d-f5c18d191fcb>
+1764864951.334329 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864951.344270 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864951.345637 - INFO - 127.0.0.1 - - [04/Dec/2025 16:15:51] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864954.375846 - DEBUG - Received request with id <813e23af-9d67-4dc0-929c-baf9f3062ef6>
+1764864954.378753 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864954.388281 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864954.389572 - INFO - 127.0.0.1 - - [04/Dec/2025 16:15:54] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864957.419875 - DEBUG - Received request with id <c4951ada-505d-4872-8df2-42776d5113c2>
+1764864957.422950 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864957.432524 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864957.433892 - INFO - 127.0.0.1 - - [04/Dec/2025 16:15:57] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864960.466245 - DEBUG - Received request with id <96c8da11-775f-4f51-ab3d-6ace94f863d2>
+1764864960.469117 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864960.479459 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864960.480780 - INFO - 127.0.0.1 - - [04/Dec/2025 16:16:00] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864963.510800 - DEBUG - Received request with id <c8ddd2ef-94c2-418b-9fdf-f28ad12d6acf>
+1764864963.513842 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864963.523717 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864963.525085 - INFO - 127.0.0.1 - - [04/Dec/2025 16:16:03] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864966.555700 - DEBUG - Received request with id <e7b1eb2a-5853-4c38-9f17-6a855888fe26>
+1764864966.558659 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864966.569142 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864966.570548 - INFO - 127.0.0.1 - - [04/Dec/2025 16:16:06] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864969.601367 - DEBUG - Received request with id <a02a143e-bb94-4039-bd3d-9c16c18db3b0>
+1764864969.604537 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864969.614616 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864969.615950 - INFO - 127.0.0.1 - - [04/Dec/2025 16:16:09] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864972.646795 - DEBUG - Received request with id <045d1be5-af15-45a6-8cd3-f1b7e8472a77>
+1764864972.649920 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864972.660113 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864972.661514 - INFO - 127.0.0.1 - - [04/Dec/2025 16:16:12] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864975.697212 - DEBUG - Received request with id <5ce55522-77c4-4da7-ab1b-62979bc369ef>
+1764864975.700146 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864975.709688 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864975.711088 - INFO - 127.0.0.1 - - [04/Dec/2025 16:16:15] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864978.741478 - DEBUG - Received request with id <4202a715-8b5b-4dee-baf4-eb83ea67c4d5>
+1764864978.744277 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864978.753911 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864978.755211 - INFO - 127.0.0.1 - - [04/Dec/2025 16:16:18] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864981.785665 - DEBUG - Received request with id <5e7839b5-7e33-4587-9265-5f945e71e996>
+1764864981.788680 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864981.798367 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864981.799747 - INFO - 127.0.0.1 - - [04/Dec/2025 16:16:21] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864984.831023 - DEBUG - Received request with id <e42224a3-aed8-4b5a-9c38-309ace7099dd>
+1764864984.834441 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864984.846184 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864984.847576 - INFO - 127.0.0.1 - - [04/Dec/2025 16:16:24] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864987.879853 - DEBUG - Received request with id <e49f6b95-0fd5-4785-944b-4bcf2178089b>
+1764864987.883498 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864987.898354 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864987.900287 - INFO - 127.0.0.1 - - [04/Dec/2025 16:16:27] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864990.937831 - DEBUG - Received request with id <01be729f-6d28-4b51-8b41-064f9e6388c2>
+1764864990.940717 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864990.950995 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864990.952312 - INFO - 127.0.0.1 - - [04/Dec/2025 16:16:30] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864993.983995 - DEBUG - Received request with id <33937adc-7dae-4e8e-8e26-b54ebcf3a517>
+1764864993.986993 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864993.996674 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864993.998136 - INFO - 127.0.0.1 - - [04/Dec/2025 16:16:33] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764864997.029752 - DEBUG - Received request with id <8110033c-65a4-4656-8e9f-1286a811a198>
+1764864997.033164 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764864997.043707 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764864997.045405 - INFO - 127.0.0.1 - - [04/Dec/2025 16:16:37] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865000.076672 - DEBUG - Received request with id <426f7289-6f58-4130-a6ad-ddcdcc6bab31>
+1764865000.079953 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865000.090617 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865000.092112 - INFO - 127.0.0.1 - - [04/Dec/2025 16:16:40] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865003.124570 - DEBUG - Received request with id <e2fc61f7-f41d-411c-8514-07dccd5f11d6>
+1764865003.127819 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865003.138853 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865003.140504 - INFO - 127.0.0.1 - - [04/Dec/2025 16:16:43] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865006.171396 - DEBUG - Received request with id <0e1e4fa0-ecdf-41a1-a963-3cde6e2fdde2>
+1764865006.180626 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865006.192217 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865006.193812 - INFO - 127.0.0.1 - - [04/Dec/2025 16:16:46] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865009.225842 - DEBUG - Received request with id <ce5a1de3-3605-4c4e-ac8f-aef58d3a465b>
+1764865009.228965 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865009.239308 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865009.240909 - INFO - 127.0.0.1 - - [04/Dec/2025 16:16:49] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865012.274237 - DEBUG - Received request with id <e8687403-0c1f-4413-805d-99bd0929228e>
+1764865012.276971 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865012.287328 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865012.289146 - INFO - 127.0.0.1 - - [04/Dec/2025 16:16:52] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865015.319760 - DEBUG - Received request with id <eab892af-beff-47f3-8862-e5937dc149ad>
+1764865015.322649 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865015.332875 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865015.334272 - INFO - 127.0.0.1 - - [04/Dec/2025 16:16:55] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865018.364426 - DEBUG - Received request with id <731ffddf-cac2-44a5-8415-9af4f0e5c9fa>
+1764865018.367249 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865018.377082 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865018.378377 - INFO - 127.0.0.1 - - [04/Dec/2025 16:16:58] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865021.409492 - DEBUG - Received request with id <3e6bc2b6-61fa-4ebe-8e7b-570baf9fbc54>
+1764865021.412495 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865021.422973 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865021.424337 - INFO - 127.0.0.1 - - [04/Dec/2025 16:17:01] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865024.454760 - DEBUG - Received request with id <51f5a91c-9ed2-4402-adf3-1d9258c4807c>
+1764865024.457553 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865024.467269 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865024.468539 - INFO - 127.0.0.1 - - [04/Dec/2025 16:17:04] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865027.500555 - DEBUG - Received request with id <eebf0ff2-04c8-43e1-8cde-56c65642fb20>
+1764865027.503648 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865027.514420 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865027.515956 - INFO - 127.0.0.1 - - [04/Dec/2025 16:17:07] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865030.546447 - DEBUG - Received request with id <687893e8-3c24-4979-8eb3-8abd57ce975e>
+1764865030.549226 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865030.558682 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865030.560107 - INFO - 127.0.0.1 - - [04/Dec/2025 16:17:10] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865033.590082 - DEBUG - Received request with id <eb393075-37ad-455a-929d-da9fc2a1ff86>
+1764865033.592788 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865033.603549 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865033.604865 - INFO - 127.0.0.1 - - [04/Dec/2025 16:17:13] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865036.634802 - DEBUG - Received request with id <c035b8b2-705b-4098-ac10-797a10153982>
+1764865036.637734 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865036.647447 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865036.648829 - INFO - 127.0.0.1 - - [04/Dec/2025 16:17:16] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865039.679143 - DEBUG - Received request with id <0e1fc97d-3717-46d3-9add-974c3205d088>
+1764865039.682014 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865039.691910 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865039.693252 - INFO - 127.0.0.1 - - [04/Dec/2025 16:17:19] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865042.723450 - DEBUG - Received request with id <0f3286de-c555-4526-85d6-bb0155c1f305>
+1764865042.726494 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865042.736363 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865042.737754 - INFO - 127.0.0.1 - - [04/Dec/2025 16:17:22] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865045.767986 - DEBUG - Received request with id <05acecf2-9025-47cf-97d8-ed7b94ab0f3c>
+1764865045.770944 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865045.781861 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865045.783481 - INFO - 127.0.0.1 - - [04/Dec/2025 16:17:25] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865048.813269 - DEBUG - Received request with id <40ba14fe-f0cc-4ced-a560-702cb2d7bba8>
+1764865048.814927 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865048.824518 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865048.825366 - INFO - 127.0.0.1 - - [04/Dec/2025 16:17:28] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865051.857331 - DEBUG - Received request with id <f96f4b01-c980-4f3d-8609-41a4ba8b276e>
+1764865051.860086 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865051.870477 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865051.871956 - INFO - 127.0.0.1 - - [04/Dec/2025 16:17:31] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865054.902269 - DEBUG - Received request with id <d123cdcc-b0e2-42d6-acac-37f2b3631b33>
+1764865054.905337 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865054.914648 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865054.916300 - INFO - 127.0.0.1 - - [04/Dec/2025 16:17:34] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865057.939868 - DEBUG - Received request with id <0a12b005-017a-4418-ba4a-95ee50faa4ba>
+1764865057.942925 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865057.954439 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865057.955841 - INFO - 127.0.0.1 - - [04/Dec/2025 16:17:37] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865060.985939 - DEBUG - Received request with id <1b24537c-8cb1-4cda-9e20-2274baa4a9bc>
+1764865060.988793 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865060.998546 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865060.999887 - INFO - 127.0.0.1 - - [04/Dec/2025 16:17:40] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865064.030841 - DEBUG - Received request with id <f4fdd6ca-528a-4d8e-bcb3-58109d4dcf6c>
+1764865064.034400 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865064.044318 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865064.046300 - INFO - 127.0.0.1 - - [04/Dec/2025 16:17:44] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865067.076106 - DEBUG - Received request with id <95c27b34-9fd6-42a8-ba30-d4f98a57ca62>
+1764865067.078011 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865067.086869 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865067.087770 - INFO - 127.0.0.1 - - [04/Dec/2025 16:17:47] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865070.117349 - DEBUG - Received request with id <72b7c949-0114-4964-99ad-de99c2dab87c>
+1764865070.120652 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865070.132293 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865070.133886 - INFO - 127.0.0.1 - - [04/Dec/2025 16:17:50] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865073.164235 - DEBUG - Received request with id <b55f2d70-b6d7-42fe-90ef-7aa77bfd9e7b>
+1764865073.167198 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865073.180563 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865073.181960 - INFO - 127.0.0.1 - - [04/Dec/2025 16:17:53] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865076.212473 - DEBUG - Received request with id <cb61ff4d-5121-4748-89b0-c21f3d1f5c13>
+1764865076.215287 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865076.224746 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865076.226108 - INFO - 127.0.0.1 - - [04/Dec/2025 16:17:56] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865079.257812 - DEBUG - Received request with id <6f92fad8-e5d9-4904-902a-515a8e128a1f>
+1764865079.260921 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865079.273643 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865079.275155 - INFO - 127.0.0.1 - - [04/Dec/2025 16:17:59] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865082.305630 - DEBUG - Received request with id <764a9207-57be-4467-9ebb-4631b318298f>
+1764865082.308368 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865082.318983 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865082.320318 - INFO - 127.0.0.1 - - [04/Dec/2025 16:18:02] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865085.350854 - DEBUG - Received request with id <c1eb1325-a553-44f8-92af-949f8e13ded1>
+1764865085.353955 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865085.363672 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865085.365127 - INFO - 127.0.0.1 - - [04/Dec/2025 16:18:05] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865088.403454 - DEBUG - Received request with id <be374980-e123-4814-a00c-5571f0eacd95>
+1764865088.408456 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865088.422362 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865088.424127 - INFO - 127.0.0.1 - - [04/Dec/2025 16:18:08] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865091.457473 - DEBUG - Received request with id <69dfd099-6f5a-4776-8d6e-527841f3b13d>
+1764865091.460296 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865091.473248 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865091.474644 - INFO - 127.0.0.1 - - [04/Dec/2025 16:18:11] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865094.506586 - DEBUG - Received request with id <9d269584-3164-45b8-8f40-4ffaf92f4eb8>
+1764865094.510261 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865094.520332 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865094.521694 - INFO - 127.0.0.1 - - [04/Dec/2025 16:18:14] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865097.552730 - DEBUG - Received request with id <060e81a7-8ff9-4a3d-9115-6357e51b7f1d>
+1764865097.555810 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865097.565766 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865097.567206 - INFO - 127.0.0.1 - - [04/Dec/2025 16:18:17] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865100.598076 - DEBUG - Received request with id <de43294f-99d7-481f-b1cb-960d3f880707>
+1764865100.601013 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865100.610897 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865100.612261 - INFO - 127.0.0.1 - - [04/Dec/2025 16:18:20] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865103.643112 - DEBUG - Received request with id <3473ae52-1ad1-4e82-8262-c7a6c8d0db83>
+1764865103.645947 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865103.655969 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865103.657374 - INFO - 127.0.0.1 - - [04/Dec/2025 16:18:23] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865106.687652 - DEBUG - Received request with id <48998168-4cb9-49ec-b2ac-cc1353b859fe>
+1764865106.690787 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865106.700634 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865106.702012 - INFO - 127.0.0.1 - - [04/Dec/2025 16:18:26] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865109.733105 - DEBUG - Received request with id <67e1c7ce-1b52-4c77-a7d7-9b188341064f>
+1764865109.735910 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865109.745693 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865109.747360 - INFO - 127.0.0.1 - - [04/Dec/2025 16:18:29] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865112.778094 - DEBUG - Received request with id <86f50dfd-a8ad-4c5a-9cc0-6aa03e7a582f>
+1764865112.780951 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865112.790547 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865112.791878 - INFO - 127.0.0.1 - - [04/Dec/2025 16:18:32] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865115.824349 - DEBUG - Received request with id <ce60e3ef-bb03-4b4a-b28e-5451ebdc4c52>
+1764865115.827243 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865115.836715 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865115.838336 - INFO - 127.0.0.1 - - [04/Dec/2025 16:18:35] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865118.869204 - DEBUG - Received request with id <c9319019-c86b-4f68-89d5-0cb75ee48a8a>
+1764865118.872002 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865118.881470 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865118.882696 - INFO - 127.0.0.1 - - [04/Dec/2025 16:18:38] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865121.913096 - DEBUG - Received request with id <a97796d4-96fb-483d-9996-90752101497b>
+1764865121.915967 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865121.925715 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865121.927134 - INFO - 127.0.0.1 - - [04/Dec/2025 16:18:41] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865124.957734 - DEBUG - Received request with id <88e64ef7-03e4-41ae-9676-f57b705ab128>
+1764865124.961466 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865124.971251 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865124.972565 - INFO - 127.0.0.1 - - [04/Dec/2025 16:18:44] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865128.002925 - DEBUG - Received request with id <c5e69582-c742-45a0-bd35-e964476feae3>
+1764865128.004864 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865128.015863 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865128.016877 - INFO - 127.0.0.1 - - [04/Dec/2025 16:18:48] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865131.048278 - DEBUG - Received request with id <b7913909-5fe6-4f27-8c9d-afa0c68d3dfd>
+1764865131.051083 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865131.061402 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865131.062835 - INFO - 127.0.0.1 - - [04/Dec/2025 16:18:51] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865134.094532 - DEBUG - Received request with id <f1abc42c-e046-47a4-979b-35fed0afa1ad>
+1764865134.097498 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865134.107254 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865134.108536 - INFO - 127.0.0.1 - - [04/Dec/2025 16:18:54] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865137.138887 - DEBUG - Received request with id <9e475b88-f583-4bc8-bc3b-5b70a4331530>
+1764865137.141617 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865137.151875 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865137.153196 - INFO - 127.0.0.1 - - [04/Dec/2025 16:18:57] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865140.185206 - DEBUG - Received request with id <89b283e5-cecd-421a-9a60-c814a97bdad6>
+1764865140.188195 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865140.198164 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865140.199554 - INFO - 127.0.0.1 - - [04/Dec/2025 16:19:00] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865143.231791 - DEBUG - Received request with id <2255a28c-9296-4cf5-8d7c-c4675ffdbcfe>
+1764865143.234790 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865143.249105 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865143.250541 - INFO - 127.0.0.1 - - [04/Dec/2025 16:19:03] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865146.281816 - DEBUG - Received request with id <9d6f3390-2e41-4447-9aea-f4fdf7601a0d>
+1764865146.284749 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865146.294605 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865146.296015 - INFO - 127.0.0.1 - - [04/Dec/2025 16:19:06] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865149.326226 - DEBUG - Received request with id <75d11029-2f35-4e4c-9a5f-52dc5839a8c5>
+1764865149.329102 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865149.339495 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865149.340894 - INFO - 127.0.0.1 - - [04/Dec/2025 16:19:09] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865152.370994 - DEBUG - Received request with id <74138e9f-dd69-4018-b97a-3a01778ef882>
+1764865152.373984 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865152.383905 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865152.385305 - INFO - 127.0.0.1 - - [04/Dec/2025 16:19:12] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865155.415585 - DEBUG - Received request with id <3565d5be-7619-444e-a7a0-e420a582c4e4>
+1764865155.418391 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865155.428116 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865155.429391 - INFO - 127.0.0.1 - - [04/Dec/2025 16:19:15] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865158.459424 - DEBUG - Received request with id <ff748625-8643-4504-b001-1527aa5a2d7a>
+1764865158.462425 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865158.472398 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865158.473715 - INFO - 127.0.0.1 - - [04/Dec/2025 16:19:18] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865161.503600 - DEBUG - Received request with id <693daca2-dc9f-409d-8df2-9dc9a1fed73f>
+1764865161.506483 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865161.517214 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865161.518581 - INFO - 127.0.0.1 - - [04/Dec/2025 16:19:21] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865164.548582 - DEBUG - Received request with id <92903bd7-fdfc-4106-a4f1-4943f944d60e>
+1764865164.551584 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865164.561203 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865164.562570 - INFO - 127.0.0.1 - - [04/Dec/2025 16:19:24] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865167.593527 - DEBUG - Received request with id <a1a3cfec-65ce-4036-8f58-16b660a9e524>
+1764865167.596434 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865167.607202 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865167.608527 - INFO - 127.0.0.1 - - [04/Dec/2025 16:19:27] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865170.638676 - DEBUG - Received request with id <eaf6ee91-079c-4dc0-afea-535bec5c1f25>
+1764865170.641618 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865170.651431 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865170.653064 - INFO - 127.0.0.1 - - [04/Dec/2025 16:19:30] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865173.688415 - DEBUG - Received request with id <9bed2315-66e3-4a40-a4ab-556a30055794>
+1764865173.691255 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865173.700910 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865173.702235 - INFO - 127.0.0.1 - - [04/Dec/2025 16:19:33] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865176.734508 - DEBUG - Received request with id <e4c23bb5-410a-4e51-b1dc-926d0169f057>
+1764865176.737283 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865176.748244 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865176.749551 - INFO - 127.0.0.1 - - [04/Dec/2025 16:19:36] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865179.779754 - DEBUG - Received request with id <736178f2-3723-44c0-9bc1-e453d9b31c29>
+1764865179.782701 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865179.792864 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865179.794267 - INFO - 127.0.0.1 - - [04/Dec/2025 16:19:39] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865182.824486 - DEBUG - Received request with id <97c17097-9345-4734-88ac-448a20e0f69d>
+1764865182.827584 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865182.838477 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865182.839766 - INFO - 127.0.0.1 - - [04/Dec/2025 16:19:42] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865185.870498 - DEBUG - Received request with id <de0860b8-5de1-46cd-bb51-43fb22b1d566>
+1764865185.873342 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865185.883438 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865185.884717 - INFO - 127.0.0.1 - - [04/Dec/2025 16:19:45] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865188.914201 - DEBUG - Received request with id <0219f282-5549-4422-a662-a45a29b8a810>
+1764865188.917137 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865188.926975 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865188.927838 - INFO - 127.0.0.1 - - [04/Dec/2025 16:19:48] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865191.952754 - DEBUG - Received request with id <26c51caf-e582-4cb2-9ae0-d23182dd1a26>
+1764865191.955873 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865191.966596 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865191.968384 - INFO - 127.0.0.1 - - [04/Dec/2025 16:19:51] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865194.997941 - DEBUG - Received request with id <a7c0e569-d6fb-46e1-bbe6-7e82cdec14a2>
+1764865195.000709 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865195.010602 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865195.012252 - INFO - 127.0.0.1 - - [04/Dec/2025 16:19:55] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865198.043222 - DEBUG - Received request with id <29f98987-9ea1-4287-9e1f-539bf493daa4>
+1764865198.045952 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865198.056146 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865198.057417 - INFO - 127.0.0.1 - - [04/Dec/2025 16:19:58] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865201.087589 - DEBUG - Received request with id <b63c2eb6-a5ae-4027-bfe1-f9ba7db5a0be>
+1764865201.090501 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865201.099615 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865201.101014 - INFO - 127.0.0.1 - - [04/Dec/2025 16:20:01] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865204.131799 - DEBUG - Received request with id <40087365-c065-413b-9bce-52fd5369c4b9>
+1764865204.134610 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865204.144531 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865204.145822 - INFO - 127.0.0.1 - - [04/Dec/2025 16:20:04] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865207.179963 - DEBUG - Received request with id <ceada3da-132a-443e-9c8e-6ad0c860ef20>
+1764865207.183098 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865207.193551 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865207.195203 - INFO - 127.0.0.1 - - [04/Dec/2025 16:20:07] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865210.224533 - DEBUG - Received request with id <5a20e94c-a22a-4aab-b3f8-28a4530410bd>
+1764865210.227565 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865210.237780 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865210.239206 - INFO - 127.0.0.1 - - [04/Dec/2025 16:20:10] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865213.269142 - DEBUG - Received request with id <0d2c8cf0-126a-4853-883b-912bfe18d301>
+1764865213.272128 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865213.282310 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865213.283659 - INFO - 127.0.0.1 - - [04/Dec/2025 16:20:13] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865216.320966 - DEBUG - Received request with id <7bd661fa-3614-46fb-8ec3-59532a7f100d>
+1764865216.323837 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865216.333429 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865216.334733 - INFO - 127.0.0.1 - - [04/Dec/2025 16:20:16] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865219.366136 - DEBUG - Received request with id <a82b4c71-3742-4413-ba5d-359fe15fe411>
+1764865219.369308 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865219.379333 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865219.380773 - INFO - 127.0.0.1 - - [04/Dec/2025 16:20:19] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865222.410648 - DEBUG - Received request with id <9478d2d3-89a3-404f-908f-8d0932921f45>
+1764865222.413499 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865222.424158 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865222.425504 - INFO - 127.0.0.1 - - [04/Dec/2025 16:20:22] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865225.451944 - DEBUG - Received request with id <e212b0ee-1983-4ff2-b08c-2526f1f768ae>
+1764865225.454878 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865225.464755 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865225.466097 - INFO - 127.0.0.1 - - [04/Dec/2025 16:20:25] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865228.496472 - DEBUG - Received request with id <72a02ba7-6243-41d4-b5b3-a7dc8bbd87ce>
+1764865228.499329 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865228.509706 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865228.511238 - INFO - 127.0.0.1 - - [04/Dec/2025 16:20:28] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865231.540819 - DEBUG - Received request with id <136c43aa-e859-4dfb-ad5b-6fdd758aa555>
+1764865231.543811 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865231.553460 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865231.554868 - INFO - 127.0.0.1 - - [04/Dec/2025 16:20:31] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865234.585627 - DEBUG - Received request with id <35de3c09-f031-42bf-8b48-b30ad4f4a06d>
+1764865234.588525 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865234.600168 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865234.601906 - INFO - 127.0.0.1 - - [04/Dec/2025 16:20:34] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865237.632413 - DEBUG - Received request with id <a961678a-59b8-4de3-bde1-7d31eeb0faf1>
+1764865237.635491 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865237.645374 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865237.646899 - INFO - 127.0.0.1 - - [04/Dec/2025 16:20:37] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865240.677396 - DEBUG - Received request with id <db0a563f-038d-4ed3-aae7-03606d534ba4>
+1764865240.680475 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865240.691814 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865240.693281 - INFO - 127.0.0.1 - - [04/Dec/2025 16:20:40] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865243.723001 - DEBUG - Received request with id <44e79402-f5ce-462f-8728-289206ace8d8>
+1764865243.725775 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865243.739743 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865243.741258 - INFO - 127.0.0.1 - - [04/Dec/2025 16:20:43] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865246.771025 - DEBUG - Received request with id <886058f1-61b9-4543-8b04-4ce2b40d3e30>
+1764865246.773781 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865246.783394 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865246.784849 - INFO - 127.0.0.1 - - [04/Dec/2025 16:20:46] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865249.814626 - DEBUG - Received request with id <6e770c6c-3cd3-4956-9fac-195e63298e36>
+1764865249.817631 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865249.827276 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865249.828599 - INFO - 127.0.0.1 - - [04/Dec/2025 16:20:49] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865252.854070 - DEBUG - Received request with id <55714ff9-1432-4427-8db1-1bf2808fe8d4>
+1764865252.856905 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865252.867670 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865252.869078 - INFO - 127.0.0.1 - - [04/Dec/2025 16:20:52] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865255.898320 - DEBUG - Received request with id <aeefc020-b56c-4a90-aee3-3039ef6d7b74>
+1764865255.908368 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865255.931404 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865255.933096 - INFO - 127.0.0.1 - - [04/Dec/2025 16:20:55] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865258.974985 - DEBUG - Received request with id <a30558f9-3b3f-4ef3-bde0-c3babcdd196d>
+1764865258.980492 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865258.994458 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865258.996498 - INFO - 127.0.0.1 - - [04/Dec/2025 16:20:58] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865262.030207 - DEBUG - Received request with id <3ee36ea9-af73-43db-a976-e43bf1919f53>
+1764865262.033075 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865262.044114 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865262.045459 - INFO - 127.0.0.1 - - [04/Dec/2025 16:21:02] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865265.076652 - DEBUG - Received request with id <ed73ad9c-d87b-4ad8-a3bb-69dc376bbab8>
+1764865265.079637 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865265.090406 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865265.091805 - INFO - 127.0.0.1 - - [04/Dec/2025 16:21:05] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865268.122289 - DEBUG - Received request with id <37d8b913-c221-42b3-914a-b224a5d4ce55>
+1764865268.125319 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865268.134958 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865268.136487 - INFO - 127.0.0.1 - - [04/Dec/2025 16:21:08] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865271.166653 - DEBUG - Received request with id <e3a58187-79ac-4a22-9346-2aa4082320b2>
+1764865271.169566 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865271.180591 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865271.181886 - INFO - 127.0.0.1 - - [04/Dec/2025 16:21:11] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865274.211358 - DEBUG - Received request with id <c464f2cb-a79d-4d8c-bb96-dfddc88e7cea>
+1764865274.214391 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865274.224541 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865274.226017 - INFO - 127.0.0.1 - - [04/Dec/2025 16:21:14] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865277.256090 - DEBUG - Received request with id <859b21c9-85e0-4bf7-8f3b-fc107e676437>
+1764865277.259011 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865277.269693 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865277.271108 - INFO - 127.0.0.1 - - [04/Dec/2025 16:21:17] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865280.302947 - DEBUG - Received request with id <4db7965b-9a68-4a1d-98c4-157e332c7837>
+1764865280.305797 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865280.315655 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865280.317403 - INFO - 127.0.0.1 - - [04/Dec/2025 16:21:20] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865283.347749 - DEBUG - Received request with id <d1f1f574-b473-4597-b8d9-f7ed760d29ad>
+1764865283.350670 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865283.361508 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865283.363086 - INFO - 127.0.0.1 - - [04/Dec/2025 16:21:23] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865286.393279 - DEBUG - Received request with id <20e25be6-9b4f-4805-9d58-8835232b64e7>
+1764865286.396130 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865286.407570 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865286.408913 - INFO - 127.0.0.1 - - [04/Dec/2025 16:21:26] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865289.440396 - DEBUG - Received request with id <b1b8e57f-46e3-41e0-ac06-a8eb4d151799>
+1764865289.443482 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865289.454673 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865289.456020 - INFO - 127.0.0.1 - - [04/Dec/2025 16:21:29] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865292.486542 - DEBUG - Received request with id <a47edb45-3d84-4f94-9ac8-69a4acb565e1>
+1764865292.489475 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865292.499752 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865292.501180 - INFO - 127.0.0.1 - - [04/Dec/2025 16:21:32] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865295.532872 - DEBUG - Received request with id <a9076c7f-777b-419f-b4c5-74b3f9a990b6>
+1764865295.535675 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865295.546346 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865295.547677 - INFO - 127.0.0.1 - - [04/Dec/2025 16:21:35] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865298.577725 - DEBUG - Received request with id <7cf40e24-8250-414c-be3f-2f3535de3138>
+1764865298.580531 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865298.590494 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865298.592172 - INFO - 127.0.0.1 - - [04/Dec/2025 16:21:38] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865301.622958 - DEBUG - Received request with id <a2d83506-0718-4b75-aade-0d727c640bd8>
+1764865301.625849 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865301.636974 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865301.638351 - INFO - 127.0.0.1 - - [04/Dec/2025 16:21:41] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865304.669241 - DEBUG - Received request with id <5d5b48a3-8d74-4880-b0fc-152215267ddc>
+1764865304.672217 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865304.681800 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865304.683205 - INFO - 127.0.0.1 - - [04/Dec/2025 16:21:44] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865307.713785 - DEBUG - Received request with id <e838f127-b6e4-4ad0-90d1-59cdd0f08c42>
+1764865307.716765 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865307.727720 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865307.729186 - INFO - 127.0.0.1 - - [04/Dec/2025 16:21:47] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865310.758799 - DEBUG - Received request with id <d2e716b8-1e73-49f9-9de5-3beb4ceb0b2b>
+1764865310.761818 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865310.771092 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865310.772431 - INFO - 127.0.0.1 - - [04/Dec/2025 16:21:50] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865313.797626 - DEBUG - Received request with id <ea7f3f7c-4994-44d9-938a-c78892c3dae5>
+1764865313.800988 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865313.811669 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865313.813161 - INFO - 127.0.0.1 - - [04/Dec/2025 16:21:53] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865316.843711 - DEBUG - Received request with id <a6b0bde2-c5bf-4623-9d35-7fb9e9d7586a>
+1764865316.846745 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865316.855900 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865316.857234 - INFO - 127.0.0.1 - - [04/Dec/2025 16:21:56] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865319.887311 - DEBUG - Received request with id <83fdb117-c5ea-4c83-830c-8f5bb2cb88c3>
+1764865319.890524 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865319.900658 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865319.901973 - INFO - 127.0.0.1 - - [04/Dec/2025 16:21:59] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865322.932806 - DEBUG - Received request with id <b3c50f02-fde0-42f0-a544-c00b65bb20e1>
+1764865322.935677 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865322.945338 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865322.946160 - INFO - 127.0.0.1 - - [04/Dec/2025 16:22:02] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865325.977502 - DEBUG - Received request with id <e5673f1f-e109-4291-a40c-97c64ae0e107>
+1764865325.980369 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865325.991320 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865325.992603 - INFO - 127.0.0.1 - - [04/Dec/2025 16:22:05] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865329.024361 - DEBUG - Received request with id <fba5204e-c4a0-4347-b6a7-eb3171fd13a7>
+1764865329.027511 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865329.037139 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865329.038420 - INFO - 127.0.0.1 - - [04/Dec/2025 16:22:09] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865332.068725 - DEBUG - Received request with id <cd642f0a-64e0-4f68-9195-65d7a8a051ba>
+1764865332.071557 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865332.081863 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865332.083862 - INFO - 127.0.0.1 - - [04/Dec/2025 16:22:12] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865335.114488 - DEBUG - Received request with id <0ba0891a-1f8f-4474-92f8-a6236784f187>
+1764865335.117403 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865335.126959 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865335.128391 - INFO - 127.0.0.1 - - [04/Dec/2025 16:22:15] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865338.158291 - DEBUG - Received request with id <c90ea153-1c83-4615-8a46-3b8aaff64e49>
+1764865338.161114 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865338.171333 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865338.172606 - INFO - 127.0.0.1 - - [04/Dec/2025 16:22:18] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865341.203103 - DEBUG - Received request with id <5491ca9f-f609-4105-8f13-c5ffd858e972>
+1764865341.205856 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865341.216508 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865341.217855 - INFO - 127.0.0.1 - - [04/Dec/2025 16:22:21] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865344.248537 - DEBUG - Received request with id <e9a082b8-0a5e-48e4-be22-1d14c66932b2>
+1764865344.251729 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865344.265250 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865344.266747 - INFO - 127.0.0.1 - - [04/Dec/2025 16:22:24] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865347.297111 - DEBUG - Received request with id <dd93e9e7-4a87-4c79-a6d5-f7e7f9885374>
+1764865347.299983 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865347.310110 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865347.311419 - INFO - 127.0.0.1 - - [04/Dec/2025 16:22:27] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865350.341982 - DEBUG - Received request with id <5c1d57be-2539-40b2-8e61-157b953e3a80>
+1764865350.345066 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865350.355622 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865350.356939 - INFO - 127.0.0.1 - - [04/Dec/2025 16:22:30] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865353.387967 - DEBUG - Received request with id <da837502-c435-4f21-9897-081acc9bd0ec>
+1764865353.391167 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865353.402830 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865353.404404 - INFO - 127.0.0.1 - - [04/Dec/2025 16:22:33] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865356.439413 - DEBUG - Received request with id <12e10f0b-872f-4743-bb3b-60dfa8fbd6ed>
+1764865356.442284 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865356.453250 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865356.454551 - INFO - 127.0.0.1 - - [04/Dec/2025 16:22:36] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865359.484940 - DEBUG - Received request with id <adc3bf48-e02e-4ac2-b8e8-ef9c729d6526>
+1764865359.487940 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865359.498207 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865359.499616 - INFO - 127.0.0.1 - - [04/Dec/2025 16:22:39] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865362.529226 - DEBUG - Received request with id <74717419-e88e-4685-8bb5-7faa64ddb482>
+1764865362.532255 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865362.542332 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865362.543644 - INFO - 127.0.0.1 - - [04/Dec/2025 16:22:42] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865365.573893 - DEBUG - Received request with id <116aebe8-36db-442b-934d-f067846037e4>
+1764865365.576687 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865365.586238 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865365.587731 - INFO - 127.0.0.1 - - [04/Dec/2025 16:22:45] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865368.618659 - DEBUG - Received request with id <ec3404f0-d3a2-46f0-a8a4-87dddb8ebf70>
+1764865368.621851 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865368.633927 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865368.635402 - INFO - 127.0.0.1 - - [04/Dec/2025 16:22:48] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865371.666662 - DEBUG - Received request with id <712187cc-7518-483e-a9be-1f0167a786ac>
+1764865371.669452 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865371.679164 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865371.680498 - INFO - 127.0.0.1 - - [04/Dec/2025 16:22:51] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865374.710310 - DEBUG - Received request with id <65c10102-3ef5-4be6-be92-51008ebf48c8>
+1764865374.713475 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865374.724921 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865374.726409 - INFO - 127.0.0.1 - - [04/Dec/2025 16:22:54] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865377.759125 - DEBUG - Received request with id <aab6cdb1-440b-4a2c-b16d-31b44911f158>
+1764865377.762010 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865377.771132 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865377.772685 - INFO - 127.0.0.1 - - [04/Dec/2025 16:22:57] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865380.803221 - DEBUG - Received request with id <bc7d05cf-8a2e-438e-a09f-ae02714bd17a>
+1764865380.806129 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865380.815980 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865380.817551 - INFO - 127.0.0.1 - - [04/Dec/2025 16:23:00] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865383.849466 - DEBUG - Received request with id <db36790c-6173-4e24-b1dd-47a48b17dcc7>
+1764865383.852410 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865383.862508 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865383.864222 - INFO - 127.0.0.1 - - [04/Dec/2025 16:23:03] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865386.895353 - DEBUG - Received request with id <e38caacd-6300-467c-aed2-6eba90eca60e>
+1764865386.898273 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865386.908583 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865386.909930 - INFO - 127.0.0.1 - - [04/Dec/2025 16:23:06] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865389.940069 - DEBUG - Received request with id <85e63f75-7797-4d89-9a74-e24f355ec15d>
+1764865389.942808 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865389.952091 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865389.953382 - INFO - 127.0.0.1 - - [04/Dec/2025 16:23:09] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865392.983021 - DEBUG - Received request with id <2cc18308-e1ae-4074-a35d-002eeaece1d3>
+1764865392.985836 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865392.996588 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865392.997902 - INFO - 127.0.0.1 - - [04/Dec/2025 16:23:12] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865396.028322 - DEBUG - Received request with id <9525109d-4211-49f9-8c3d-985bcda5d989>
+1764865396.031234 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865396.040288 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865396.041745 - INFO - 127.0.0.1 - - [04/Dec/2025 16:23:16] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865399.072746 - DEBUG - Received request with id <4f30c9e4-a599-4eb3-85ee-b23136538a5f>
+1764865399.075823 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865399.085092 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865399.086487 - INFO - 127.0.0.1 - - [04/Dec/2025 16:23:19] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865402.116486 - DEBUG - Received request with id <4c7a182e-04fb-4a3b-a853-2a5959783d4f>
+1764865402.119293 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865402.128250 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865402.129580 - INFO - 127.0.0.1 - - [04/Dec/2025 16:23:22] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865405.159583 - DEBUG - Received request with id <557930f3-d243-438a-8b7d-2bfcb00e0b8e>
+1764865405.162782 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865405.172773 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865405.174248 - INFO - 127.0.0.1 - - [04/Dec/2025 16:23:25] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865408.204298 - DEBUG - Received request with id <69cbb5ff-3586-4c2b-ae65-d1f1f7e25ae6>
+1764865408.207064 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865408.218147 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865408.219427 - INFO - 127.0.0.1 - - [04/Dec/2025 16:23:28] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865411.249244 - DEBUG - Received request with id <cf6fa14a-dee4-4692-8f7f-6a8f6743c0b1>
+1764865411.252524 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865411.261591 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865411.262784 - INFO - 127.0.0.1 - - [04/Dec/2025 16:23:31] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865414.293286 - DEBUG - Received request with id <cb04bac5-b7e8-4817-aa8e-e567124e2eb6>
+1764865414.296211 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865414.305974 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865414.307301 - INFO - 127.0.0.1 - - [04/Dec/2025 16:23:34] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865417.336859 - DEBUG - Received request with id <3cf386a6-5779-4b5d-a022-185f7a72b8cd>
+1764865417.339649 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865417.348918 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865417.350240 - INFO - 127.0.0.1 - - [04/Dec/2025 16:23:37] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865420.380688 - DEBUG - Received request with id <3871ae94-bcc8-4d54-818a-a8be14b78e0a>
+1764865420.382592 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865420.393439 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865420.394327 - INFO - 127.0.0.1 - - [04/Dec/2025 16:23:40] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865423.425143 - DEBUG - Received request with id <ab53089a-1cf9-4437-b2b5-0335ba8fc63f>
+1764865423.428003 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865423.438615 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865423.440004 - INFO - 127.0.0.1 - - [04/Dec/2025 16:23:43] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865426.489221 - DEBUG - Received request with id <957908f3-c4c3-4c9e-a472-ce6985ab6cd7>
+1764865426.494394 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865426.510190 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865426.511978 - INFO - 127.0.0.1 - - [04/Dec/2025 16:23:46] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865429.545991 - DEBUG - Received request with id <52c0a253-dd90-4aee-9bc8-57a8a4cc1d28>
+1764865429.548769 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865429.559705 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865429.561163 - INFO - 127.0.0.1 - - [04/Dec/2025 16:23:49] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865432.591734 - DEBUG - Received request with id <373e8d90-031b-4ce9-9fb1-1748c2184f96>
+1764865432.594502 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865432.604652 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865432.605955 - INFO - 127.0.0.1 - - [04/Dec/2025 16:23:52] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865435.636849 - DEBUG - Received request with id <86934e77-37cd-4936-8cbb-6090333a0625>
+1764865435.639790 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865435.649222 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865435.651285 - INFO - 127.0.0.1 - - [04/Dec/2025 16:23:55] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865438.676642 - DEBUG - Received request with id <0ece965c-e797-4deb-9d7c-088647038858>
+1764865438.679410 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865438.688496 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865438.689783 - INFO - 127.0.0.1 - - [04/Dec/2025 16:23:58] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865441.719429 - DEBUG - Received request with id <821b73f4-cdf1-4b34-88a7-57de2ba56db1>
+1764865441.722672 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865441.732362 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865441.733904 - INFO - 127.0.0.1 - - [04/Dec/2025 16:24:01] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865444.763567 - DEBUG - Received request with id <aee90fb0-b5ad-463b-bff3-6be790900f68>
+1764865444.766424 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865444.776081 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865444.777374 - INFO - 127.0.0.1 - - [04/Dec/2025 16:24:04] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865447.807792 - DEBUG - Received request with id <7362a241-f88b-499a-83f5-6ee06b453f05>
+1764865447.810536 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865447.819571 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865447.820905 - INFO - 127.0.0.1 - - [04/Dec/2025 16:24:07] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865450.851292 - DEBUG - Received request with id <3b5d8a6b-44dd-4d97-8c3a-5d5065c06120>
+1764865450.854419 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865450.863779 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865450.865191 - INFO - 127.0.0.1 - - [04/Dec/2025 16:24:10] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865453.895137 - DEBUG - Received request with id <f5a89a7a-0dc7-4fa1-92d3-5603da357191>
+1764865453.897931 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865453.907192 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865453.908716 - INFO - 127.0.0.1 - - [04/Dec/2025 16:24:13] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865456.938452 - DEBUG - Received request with id <8a66f48e-3170-4c93-a1ec-adb8d673da7a>
+1764865456.941391 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865456.950255 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865456.951652 - INFO - 127.0.0.1 - - [04/Dec/2025 16:24:16] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865459.982105 - DEBUG - Received request with id <922b086a-be2f-4185-93cc-f08a021ff30a>
+1764865459.985346 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865459.994751 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865459.996256 - INFO - 127.0.0.1 - - [04/Dec/2025 16:24:19] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865463.026128 - DEBUG - Received request with id <bbfe73b9-1d7e-498c-8ef9-f9ec55cba214>
+1764865463.029394 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865463.038958 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865463.040409 - INFO - 127.0.0.1 - - [04/Dec/2025 16:24:23] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865466.069911 - DEBUG - Received request with id <70e5123c-c6d6-4487-b397-f6b19d7aeb01>
+1764865466.072299 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865466.081658 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865466.082739 - INFO - 127.0.0.1 - - [04/Dec/2025 16:24:26] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865469.112976 - DEBUG - Received request with id <077d6f4f-0410-43c0-8db9-6aa33e610a72>
+1764865469.116073 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865469.125367 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865469.126693 - INFO - 127.0.0.1 - - [04/Dec/2025 16:24:29] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865472.156832 - DEBUG - Received request with id <34402c28-a915-4b85-8f8d-5f99a53ea696>
+1764865472.159753 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865472.169734 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865472.171016 - INFO - 127.0.0.1 - - [04/Dec/2025 16:24:32] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865475.201414 - DEBUG - Received request with id <58bf3a5e-cc83-43e7-b453-6754a32f537b>
+1764865475.204308 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865475.213925 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865475.215505 - INFO - 127.0.0.1 - - [04/Dec/2025 16:24:35] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865478.245420 - DEBUG - Received request with id <b8d3a2a6-f2a1-42e3-91ee-a9cc0e5d28ff>
+1764865478.248466 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865478.259004 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865478.261132 - INFO - 127.0.0.1 - - [04/Dec/2025 16:24:38] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865481.293747 - DEBUG - Received request with id <6ca1b120-6faa-4462-9c1b-5d18bf57d4c4>
+1764865481.296742 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865481.306411 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865481.308532 - INFO - 127.0.0.1 - - [04/Dec/2025 16:24:41] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865484.339813 - DEBUG - Received request with id <c28851df-ef61-4251-b815-601bc295b847>
+1764865484.342581 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865484.353015 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865484.354316 - INFO - 127.0.0.1 - - [04/Dec/2025 16:24:44] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865487.384213 - DEBUG - Received request with id <8f48c740-08d0-4f1c-ab33-239d961ab061>
+1764865487.387333 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865487.396402 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865487.397740 - INFO - 127.0.0.1 - - [04/Dec/2025 16:24:47] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865490.427751 - DEBUG - Received request with id <4b7776de-a119-4b3f-9aef-fa7f5941c2e1>
+1764865490.430735 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865490.441007 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865490.442421 - INFO - 127.0.0.1 - - [04/Dec/2025 16:24:50] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865493.472649 - DEBUG - Received request with id <a1d64773-c1da-4ab7-85a8-8bc29bf35f6c>
+1764865493.475456 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865493.483954 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865493.485332 - INFO - 127.0.0.1 - - [04/Dec/2025 16:24:53] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865496.509714 - DEBUG - Received request with id <cbcff355-a743-4264-b192-1f71386a4dcf>
+1764865496.512521 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865496.523183 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865496.524633 - INFO - 127.0.0.1 - - [04/Dec/2025 16:24:56] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865499.547904 - DEBUG - Received request with id <c872fe28-8c0c-40bb-af54-e4190b1ffdd0>
+1764865499.550816 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865499.559499 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865499.560920 - INFO - 127.0.0.1 - - [04/Dec/2025 16:24:59] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865502.589771 - DEBUG - Received request with id <644b4b94-525b-4dc5-88e3-e52b93a5cf95>
+1764865502.592546 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865502.601936 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865502.603258 - INFO - 127.0.0.1 - - [04/Dec/2025 16:25:02] "[35m[1mPOST / HTTP/1.1[0m" 202 -
+1764865505.633887 - DEBUG - Received request with id <661452f1-d141-4201-8db5-f3d3a26b3696>
+1764865505.636693 - DEBUG - Starting new HTTP connection (1): kafka-broker-ingress.knative-eventing.svc.cluster.local:80
+1764865505.646768 - DEBUG - http://kafka-broker-ingress.knative-eventing.svc.cluster.local:80 "POST /refund/broker HTTP/1.1" 202 0
+1764865505.648115 - INFO - 127.0.0.1 - - [04/Dec/2025 16:25:05] "[35m[1mPOST / HTTP/1.1[0m" 202 -

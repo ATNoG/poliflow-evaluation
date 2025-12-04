@@ -1,0 +1,74 @@
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  annotations:
+    app.quarkus.io/quarkus-version: 3.20.1
+    app.quarkus.io/commit-id: 214abb116b80978479a0106d78a90d5ce3212565
+    app.quarkus.io/vcs-uri: https://github.com/ATNoG/knative-argo-workflows-apps-kit.git
+    app.quarkus.io/build-timestamp: 2025-09-22 - 16:27:58 +0000
+  labels:
+    app.kubernetes.io/name: workflow
+    app.kubernetes.io/version: 1.0.0-SNAPSHOT
+  name: workflow
+  namespace: refund
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: workflow-view
+  namespace: refund
+roleRef:
+  kind: ClusterRole
+  apiGroup: rbac.authorization.k8s.io
+  name: view
+subjects:
+  - kind: ServiceAccount
+    name: workflow
+    namespace: refund
+---
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  annotations:
+    app.quarkus.io/quarkus-version: 3.20.1
+    app.quarkus.io/commit-id: 214abb116b80978479a0106d78a90d5ce3212565
+    app.quarkus.io/vcs-uri: https://github.com/ATNoG/knative-argo-workflows-apps-kit.git
+    app.quarkus.io/build-timestamp: 2025-09-22 - 16:27:58 +0000
+  labels:
+    app.kubernetes.io/name: workflow
+    app.kubernetes.io/version: 1.0.0-SNAPSHOT
+  name: workflow
+  namespace: refund
+spec:
+  template:
+    spec:
+      containers:
+        - image: ghcr.io/atnog/knative-workflow-apps-kit/refund/workflow:latest
+          imagePullPolicy: Always
+          # livenessProbe:
+          #   failureThreshold: 3
+          #   httpGet:
+          #     path: /q/health/live
+          #     port: null
+          #     scheme: HTTP
+          #   initialDelaySeconds: 5
+          #   periodSeconds: 10
+          #   successThreshold: 1
+          #   timeoutSeconds: 10
+          name: workflow
+          ports:
+            - containerPort: 8080
+              name: http1
+              protocol: TCP
+          # readinessProbe:
+          #   failureThreshold: 3
+          #   httpGet:
+          #     path: /q/health/ready
+          #     port: null
+          #     scheme: HTTP
+          #   initialDelaySeconds: 5
+          #   periodSeconds: 10
+          #   successThreshold: 1
+          #   timeoutSeconds: 10
+      serviceAccountName: workflow

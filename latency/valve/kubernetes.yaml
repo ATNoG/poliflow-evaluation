@@ -1,0 +1,471 @@
+# apiVersion: v1
+# kind: Namespace
+# metadata:
+#   name: valve
+# ---
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  annotations:
+    app.quarkus.io/quarkus-version: 3.20.1
+    app.quarkus.io/commit-id: 214abb116b80978479a0106d78a90d5ce3212565
+    app.quarkus.io/vcs-uri: https://github.com/ATNoG/knative-argo-workflows-apps-kit.git
+    app.quarkus.io/build-timestamp: 2025-09-22 - 16:27:58 +0000
+  labels:
+    app.kubernetes.io/name: workflow
+    app.kubernetes.io/version: 1.0.0-SNAPSHOT
+  name: workflow
+  namespace: valve
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: workflow-view
+  namespace: valve
+roleRef:
+  kind: ClusterRole
+  apiGroup: rbac.authorization.k8s.io
+  name: view
+subjects:
+  - kind: ServiceAccount
+    name: workflow
+    namespace: valve
+---
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  annotations:
+    app.quarkus.io/quarkus-version: 3.20.1
+    app.quarkus.io/commit-id: 214abb116b80978479a0106d78a90d5ce3212565
+    app.quarkus.io/vcs-uri: https://github.com/ATNoG/knative-argo-workflows-apps-kit.git
+    app.quarkus.io/build-timestamp: 2025-09-22 - 16:27:58 +0000
+  labels:
+    app.kubernetes.io/name: workflow
+    app.kubernetes.io/version: 1.0.0-SNAPSHOT
+  name: workflow
+  namespace: valve
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/min-scale: "1"
+        autoscaling.knative.dev/max-scale: "1"
+    spec:
+      containers:
+        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/workflow:latest
+          imagePullPolicy: Always
+          name: workflow
+          ports:
+            - containerPort: 8080
+              name: http1
+              protocol: TCP
+      serviceAccountName: workflow
+---
+apiVersion: eventing.knative.dev/v1
+kind: Trigger
+metadata:
+  name: photo-database-new-trigger-workflow
+  namespace: valve
+spec:
+  broker: broker
+  filters:
+    - any:
+        - exact:
+            type: photo.database.new
+        - exact:
+            type: info.database.new
+        - exact:
+            type: info.database.result
+        - exact:
+            type: info.database.resultClient
+  subscriber:
+    ref:
+      apiVersion: serving.knative.dev/v1
+      kind: Service
+      name: workflow
+---
+apiVersion: eventing.knative.dev/v1
+kind: Trigger
+metadata:
+  name: http-request-received-trigger-workflow
+  namespace: valve
+spec:
+  broker: broker
+  filter:
+    attributes:
+      type: http.request.received
+  subscriber:
+    ref:
+      apiVersion: serving.knative.dev/v1
+      kind: Service
+      name: workflow
+---
+apiVersion: sources.knative.dev/v1
+kind: SinkBinding
+metadata:
+  name: sb-workflow
+  namespace: valve
+spec:
+  sink:
+    ref:
+      apiVersion: eventing.knative.dev/v1
+      kind: Broker
+      name: broker
+      namespace: valve
+  subject:
+    apiVersion: serving.knative.dev/v1
+    kind: Service
+    name: workflow
+---
+apiVersion: eventing.knative.dev/v1
+kind: Broker
+metadata:
+  annotations:
+    eventing.knative.dev/broker.class: Kafka
+  name: broker
+  namespace: valve
+spec:
+  config:
+    apiVersion: v1
+    kind: ConfigMap
+    name: kafka-broker-config
+    namespace: knative-eventing
+---
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: entry-point
+  namespace: valve
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/min-scale: "1"
+        autoscaling.knative.dev/max-scale: "1"
+    spec:
+      containers:
+        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/entry-point
+---
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: f1
+  namespace: valve
+  labels:
+    networking.knative.dev/visibility: cluster-local
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/min-scale: "1"
+        autoscaling.knative.dev/max-scale: "1"
+        qpoption.knative.dev/flow-config-allowed_json_flows: | 
+          [{"type": "sequence", "value": [{"type": "event", "value": {"name": "triggerEvent", "source": "entry-point", "type": "http.request.received", "kind": "consumed"}}, {"type": "function:expression", "value": null}, {"type": "data_based_switch_state", "value": {"name": "entry-decision", "type": "switch", "dataConditions": [{"condition": "${ .\"postListing\" == true }", "transition": "f1-upload-listing"}, {"condition": "${ .\"submitDoc\" == true }", "transition": "f2-upload-verification"}, {"condition": "${ .\"submitClientInfo\" == true }", "transition": "f3-upload-client"}], "defaultCondition": {"end": true}}}]}]
+        qpoption.knative.dev/flow-activate: enable
+    spec:
+      containers:
+        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/sample-function
+---
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: f2
+  namespace: valve
+  labels:
+    networking.knative.dev/visibility: cluster-local
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/min-scale: "1"
+        autoscaling.knative.dev/max-scale: "1"
+        qpoption.knative.dev/flow-config-allowed_json_flows: | 
+          [{"type": "sequence", "value": [{"type": "event", "value": {"name": "triggerEvent", "source": "entry-point", "type": "http.request.received", "kind": "consumed"}}, {"type": "function:expression", "value": null}, {"type": "data_based_switch_state", "value": {"name": "entry-decision", "type": "switch", "dataConditions": [{"condition": "${ .\"postListing\" == true }", "transition": "f1-upload-listing"}, {"condition": "${ .\"submitDoc\" == true }", "transition": "f2-upload-verification"}, {"condition": "${ .\"submitClientInfo\" == true }", "transition": "f3-upload-client"}], "defaultCondition": {"end": true}}}]}]
+        qpoption.knative.dev/flow-activate: enable
+    spec:
+      containers:
+        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/sample-function
+---
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: f3
+  namespace: valve
+  labels:
+    networking.knative.dev/visibility: cluster-local
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/min-scale: "1"
+        autoscaling.knative.dev/max-scale: "1"
+        qpoption.knative.dev/flow-config-allowed_json_flows: | 
+          [{"type": "sequence", "value": [{"type": "event", "value": {"name": "triggerEvent", "source": "entry-point", "type": "http.request.received", "kind": "consumed"}}, {"type": "function:expression", "value": null}, {"type": "data_based_switch_state", "value": {"name": "entry-decision", "type": "switch", "dataConditions": [{"condition": "${ .\"postListing\" == true }", "transition": "f1-upload-listing"}, {"condition": "${ .\"submitDoc\" == true }", "transition": "f2-upload-verification"}, {"condition": "${ .\"submitClientInfo\" == true }", "transition": "f3-upload-client"}], "defaultCondition": {"end": true}}}]}]
+        qpoption.knative.dev/flow-activate: enable
+    spec:
+      containers:
+        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/sample-function
+---
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: f4
+  namespace: valve
+  labels:
+    networking.knative.dev/visibility: cluster-local
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/min-scale: "1"
+        autoscaling.knative.dev/max-scale: "1"
+        qpoption.knative.dev/flow-config-allowed_json_flows: | 
+          [{"type": "sequence", "value": [{"type": "event", "value": {"name": "triggerEvent", "source": "entry-point", "type": "http.request.received", "kind": "consumed"}}, {"type": "function:expression", "value": null}, {"type": "data_based_switch_state", "value": {"name": "entry-decision", "type": "switch", "dataConditions": [{"condition": "${ .\"postListing\" == true }", "transition": "f1-upload-listing"}, {"condition": "${ .\"submitDoc\" == true }", "transition": "f2-upload-verification"}, {"condition": "${ .\"submitClientInfo\" == true }", "transition": "f3-upload-client"}], "defaultCondition": {"end": true}}}, {"type": "function:knative", "value": {"operation": "f1"}}, {"type": "event", "value": {"trigger": {"name": "uploadPhoto", "type": "photo.database.upload", "kind": "produced"}, "result": {"name": "newPhoto", "source": "database-dummy", "type": "photo.database.new", "kind": "consumed"}}}]}]
+        qpoption.knative.dev/flow-activate: enable
+    spec:
+      containers:
+        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/sample-function
+---
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: f5
+  namespace: valve
+  labels:
+    networking.knative.dev/visibility: cluster-local
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/min-scale: "1"
+        autoscaling.knative.dev/max-scale: "1"
+        qpoption.knative.dev/flow-config-allowed_json_flows: | 
+          [{"type": "sequence", "value": [{"type": "event", "value": {"name": "triggerEvent", "source": "entry-point", "type": "http.request.received", "kind": "consumed"}}, {"type": "function:expression", "value": null}, {"type": "data_based_switch_state", "value": {"name": "entry-decision", "type": "switch", "dataConditions": [{"condition": "${ .\"postListing\" == true }", "transition": "f1-upload-listing"}, {"condition": "${ .\"submitDoc\" == true }", "transition": "f2-upload-verification"}, {"condition": "${ .\"submitClientInfo\" == true }", "transition": "f3-upload-client"}], "defaultCondition": {"end": true}}}, {"type": "function:knative", "value": {"operation": "f1"}}, {"type": "event", "value": {"trigger": {"name": "uploadPhoto", "type": "photo.database.upload", "kind": "produced"}, "result": {"name": "newPhoto", "source": "database-dummy", "type": "photo.database.new", "kind": "consumed"}}}, {"type": "function:knative", "value": {"operation": "f4"}}]}]
+        qpoption.knative.dev/flow-activate: enable
+    spec:
+      containers:
+        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/sample-function
+---
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: f6
+  namespace: valve
+  labels:
+    networking.knative.dev/visibility: cluster-local
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/min-scale: "1"
+        autoscaling.knative.dev/max-scale: "1"
+        qpoption.knative.dev/flow-config-allowed_json_flows: | 
+          [{"type": "sequence", "value": [{"type": "event", "value": {"name": "triggerEvent", "source": "entry-point", "type": "http.request.received", "kind": "consumed"}}, {"type": "function:expression", "value": null}, {"type": "data_based_switch_state", "value": {"name": "entry-decision", "type": "switch", "dataConditions": [{"condition": "${ .\"postListing\" == true }", "transition": "f1-upload-listing"}, {"condition": "${ .\"submitDoc\" == true }", "transition": "f2-upload-verification"}, {"condition": "${ .\"submitClientInfo\" == true }", "transition": "f3-upload-client"}], "defaultCondition": {"end": true}}}, {"type": "function:knative", "value": {"operation": "f1"}}, {"type": "event", "value": {"trigger": {"name": "uploadPhoto", "type": "photo.database.upload", "kind": "produced"}, "result": {"name": "newPhoto", "source": "database-dummy", "type": "photo.database.new", "kind": "consumed"}}}, {"type": "function:knative", "value": {"operation": "f4"}}, {"type": "function:knative", "value": {"operation": "f5"}}, {"type": "event", "value": {"trigger": {"name": "verification", "type": "info.database.verification", "kind": "produced"}, "result": {"name": "resultVerification", "source": "database-dummy", "type": "info.database.result", "kind": "consumed"}}}, {"type": "function:knative", "value": {"operation": "f7"}}]}]
+        qpoption.knative.dev/flow-activate: enable
+    spec:
+      containers:
+        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/sample-function
+---
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: f7
+  namespace: valve
+  labels:
+    networking.knative.dev/visibility: cluster-local
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/min-scale: "1"
+        autoscaling.knative.dev/max-scale: "1"
+        qpoption.knative.dev/flow-config-allowed_json_flows: | 
+          [{"type": "sequence", "value": [{"type": "event", "value": {"name": "triggerEvent", "source": "entry-point", "type": "http.request.received", "kind": "consumed"}}, {"type": "function:expression", "value": null}, {"type": "data_based_switch_state", "value": {"name": "entry-decision", "type": "switch", "dataConditions": [{"condition": "${ .\"postListing\" == true }", "transition": "f1-upload-listing"}, {"condition": "${ .\"submitDoc\" == true }", "transition": "f2-upload-verification"}, {"condition": "${ .\"submitClientInfo\" == true }", "transition": "f3-upload-client"}], "defaultCondition": {"end": true}}}, {"type": "function:knative", "value": {"operation": "f1"}}, {"type": "event", "value": {"trigger": {"name": "uploadPhoto", "type": "photo.database.upload", "kind": "produced"}, "result": {"name": "newPhoto", "source": "database-dummy", "type": "photo.database.new", "kind": "consumed"}}}, {"type": "function:knative", "value": {"operation": "f4"}}, {"type": "function:knative", "value": {"operation": "f5"}}, {"type": "event", "value": {"trigger": {"name": "verification", "type": "info.database.verification", "kind": "produced"}, "result": {"name": "resultVerification", "source": "database-dummy", "type": "info.database.result", "kind": "consumed"}}}]}]
+        qpoption.knative.dev/flow-activate: enable
+    spec:
+      containers:
+        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/sample-function
+---
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: f8
+  namespace: valve
+  labels:
+    networking.knative.dev/visibility: cluster-local
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/min-scale: "1"
+        autoscaling.knative.dev/max-scale: "1"
+        qpoption.knative.dev/flow-config-allowed_json_flows: | 
+          [{"type": "sequence", "value": [{"type": "event", "value": {"name": "triggerEvent", "source": "entry-point", "type": "http.request.received", "kind": "consumed"}}, {"type": "function:expression", "value": null}, {"type": "data_based_switch_state", "value": {"name": "entry-decision", "type": "switch", "dataConditions": [{"condition": "${ .\"postListing\" == true }", "transition": "f1-upload-listing"}, {"condition": "${ .\"submitDoc\" == true }", "transition": "f2-upload-verification"}, {"condition": "${ .\"submitClientInfo\" == true }", "transition": "f3-upload-client"}], "defaultCondition": {"end": true}}}, {"type": "function:knative", "value": {"operation": "f1"}}, {"type": "event", "value": {"trigger": {"name": "uploadPhoto", "type": "photo.database.upload", "kind": "produced"}, "result": {"name": "newPhoto", "source": "database-dummy", "type": "photo.database.new", "kind": "consumed"}}}, {"type": "function:knative", "value": {"operation": "f4"}}, {"type": "function:knative", "value": {"operation": "f5"}}, {"type": "event", "value": {"trigger": {"name": "verification", "type": "info.database.verification", "kind": "produced"}, "result": {"name": "resultVerification", "source": "database-dummy", "type": "info.database.result", "kind": "consumed"}}}, {"type": "function:knative", "value": {"operation": "f7"}}, {"type": "function:knative", "value": {"operation": "f6"}}]}]
+        qpoption.knative.dev/flow-activate: enable
+    spec:
+      containers:
+        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/sample-function
+---
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: f9
+  namespace: valve
+  labels:
+    networking.knative.dev/visibility: cluster-local
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/min-scale: "1"
+        autoscaling.knative.dev/max-scale: "1"
+        qpoption.knative.dev/flow-config-allowed_json_flows: | 
+          [{"type": "sequence", "value": [{"type": "event", "value": {"name": "triggerEvent", "source": "entry-point", "type": "http.request.received", "kind": "consumed"}}, {"type": "function:expression", "value": null}, {"type": "data_based_switch_state", "value": {"name": "entry-decision", "type": "switch", "dataConditions": [{"condition": "${ .\"postListing\" == true }", "transition": "f1-upload-listing"}, {"condition": "${ .\"submitDoc\" == true }", "transition": "f2-upload-verification"}, {"condition": "${ .\"submitClientInfo\" == true }", "transition": "f3-upload-client"}], "defaultCondition": {"end": true}}}, {"type": "function:knative", "value": {"operation": "f1"}}, {"type": "event", "value": {"trigger": {"name": "uploadPhoto", "type": "photo.database.upload", "kind": "produced"}, "result": {"name": "newPhoto", "source": "database-dummy", "type": "photo.database.new", "kind": "consumed"}}}, {"type": "function:knative", "value": {"operation": "f4"}}, {"type": "function:knative", "value": {"operation": "f5"}}, {"type": "event", "value": {"trigger": {"name": "verification", "type": "info.database.verification", "kind": "produced"}, "result": {"name": "resultVerification", "source": "database-dummy", "type": "info.database.result", "kind": "consumed"}}}, {"type": "function:knative", "value": {"operation": "f7"}}, {"type": "function:knative", "value": {"operation": "f6"}}, {"type": "function:knative", "value": {"operation": "f8"}}, {"type": "event", "value": {"trigger": {"name": "client", "type": "info.database.client", "kind": "produced"}, "result": {"name": "resultClient", "source": "database-dummy", "type": "info.database.resultClient", "kind": "consumed"}}}]}]
+        qpoption.knative.dev/flow-activate: enable
+    spec:
+      containers:
+        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/sample-function
+---
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: f10
+  namespace: valve
+  labels:
+    networking.knative.dev/visibility: cluster-local
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/min-scale: "1"
+        autoscaling.knative.dev/max-scale: "1"
+        qpoption.knative.dev/flow-config-allowed_json_flows: | 
+          [{"type": "sequence", "value": [{"type": "event", "value": {"name": "triggerEvent", "source": "entry-point", "type": "http.request.received", "kind": "consumed"}}, {"type": "function:expression", "value": null}, {"type": "data_based_switch_state", "value": {"name": "entry-decision", "type": "switch", "dataConditions": [{"condition": "${ .\"postListing\" == true }", "transition": "f1-upload-listing"}, {"condition": "${ .\"submitDoc\" == true }", "transition": "f2-upload-verification"}, {"condition": "${ .\"submitClientInfo\" == true }", "transition": "f3-upload-client"}], "defaultCondition": {"end": true}}}, {"type": "function:knative", "value": {"operation": "f1"}}, {"type": "event", "value": {"trigger": {"name": "uploadPhoto", "type": "photo.database.upload", "kind": "produced"}, "result": {"name": "newPhoto", "source": "database-dummy", "type": "photo.database.new", "kind": "consumed"}}}, {"type": "function:knative", "value": {"operation": "f4"}}, {"type": "function:knative", "value": {"operation": "f5"}}, {"type": "event", "value": {"trigger": {"name": "verification", "type": "info.database.verification", "kind": "produced"}, "result": {"name": "resultVerification", "source": "database-dummy", "type": "info.database.result", "kind": "consumed"}}}, {"type": "function:knative", "value": {"operation": "f7"}}, {"type": "function:knative", "value": {"operation": "f6"}}, {"type": "function:knative", "value": {"operation": "f8"}}, {"type": "event", "value": {"trigger": {"name": "client", "type": "info.database.client", "kind": "produced"}, "result": {"name": "resultClient", "source": "database-dummy", "type": "info.database.resultClient", "kind": "consumed"}}}]}]
+        qpoption.knative.dev/flow-activate: enable
+    spec:
+      containers:
+        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/sample-function
+---
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: f11
+  namespace: valve
+  labels:
+    networking.knative.dev/visibility: cluster-local
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/min-scale: "1"
+        autoscaling.knative.dev/max-scale: "1"
+        qpoption.knative.dev/flow-config-allowed_json_flows: | 
+          [{"type": "sequence", "value": [{"type": "event", "value": {"name": "triggerEvent", "source": "entry-point", "type": "http.request.received", "kind": "consumed"}}, {"type": "function:expression", "value": null}, {"type": "data_based_switch_state", "value": {"name": "entry-decision", "type": "switch", "dataConditions": [{"condition": "${ .\"postListing\" == true }", "transition": "f1-upload-listing"}, {"condition": "${ .\"submitDoc\" == true }", "transition": "f2-upload-verification"}, {"condition": "${ .\"submitClientInfo\" == true }", "transition": "f3-upload-client"}], "defaultCondition": {"end": true}}}, {"type": "function:knative", "value": {"operation": "f1"}}, {"type": "event", "value": {"trigger": {"name": "uploadPhoto", "type": "photo.database.upload", "kind": "produced"}, "result": {"name": "newPhoto", "source": "database-dummy", "type": "photo.database.new", "kind": "consumed"}}}, {"type": "function:knative", "value": {"operation": "f4"}}, {"type": "function:knative", "value": {"operation": "f5"}}, {"type": "event", "value": {"trigger": {"name": "verification", "type": "info.database.verification", "kind": "produced"}, "result": {"name": "resultVerification", "source": "database-dummy", "type": "info.database.result", "kind": "consumed"}}}, {"type": "function:knative", "value": {"operation": "f7"}}, {"type": "function:knative", "value": {"operation": "f6"}}, {"type": "function:knative", "value": {"operation": "f8"}}, {"type": "event", "value": {"trigger": {"name": "client", "type": "info.database.client", "kind": "produced"}, "result": {"name": "resultClient", "source": "database-dummy", "type": "info.database.resultClient", "kind": "consumed"}}}]}]
+        qpoption.knative.dev/flow-activate: enable
+    spec:
+      containers:
+        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/sample-function
+---
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: database-dummy
+  namespace: valve
+  labels:
+    networking.knative.dev/visibility: cluster-local
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/min-scale: "1"
+        autoscaling.knative.dev/max-scale: "1"
+        qpoption.knative.dev/flow-config-type: event
+        qpoption.knative.dev/flow-config-allowed_json_flows: | 
+          [{"type": "sequence", "value": [{"type": "event", "value": {"name": "triggerEvent", "source": "entry-point", "type": "http.request.received", "kind": "consumed"}}, {"type": "function:expression", "value": null}, {"type": "data_based_switch_state", "value": {"name": "entry-decision", "type": "switch", "dataConditions": [{"condition": "${ .\"postListing\" == true }", "transition": "f1-upload-listing"}, {"condition": "${ .\"submitDoc\" == true }", "transition": "f2-upload-verification"}, {"condition": "${ .\"submitClientInfo\" == true }", "transition": "f3-upload-client"}], "defaultCondition": {"end": true}}}, {"type": "function:knative", "value": {"operation": "f1"}}]}, {"type": "sequence", "value": [{"type": "event", "value": {"name": "triggerEvent", "source": "entry-point", "type": "http.request.received", "kind": "consumed"}}, {"type": "function:expression", "value": null}, {"type": "data_based_switch_state", "value": {"name": "entry-decision", "type": "switch", "dataConditions": [{"condition": "${ .\"postListing\" == true }", "transition": "f1-upload-listing"}, {"condition": "${ .\"submitDoc\" == true }", "transition": "f2-upload-verification"}, {"condition": "${ .\"submitClientInfo\" == true }", "transition": "f3-upload-client"}], "defaultCondition": {"end": true}}}, {"type": "function:knative", "value": {"operation": "f1"}}, {"type": "event", "value": {"trigger": {"name": "uploadPhoto", "type": "photo.database.upload", "kind": "produced"}, "result": {"name": "newPhoto", "source": "database-dummy", "type": "photo.database.new", "kind": "consumed"}}}, {"type": "function:knative", "value": {"operation": "f4"}}, {"type": "function:knative", "value": {"operation": "f5"}}]}, {"type": "sequence", "value": [{"type": "event", "value": {"name": "triggerEvent", "source": "entry-point", "type": "http.request.received", "kind": "consumed"}}, {"type": "function:expression", "value": null}, {"type": "data_based_switch_state", "value": {"name": "entry-decision", "type": "switch", "dataConditions": [{"condition": "${ .\"postListing\" == true }", "transition": "f1-upload-listing"}, {"condition": "${ .\"submitDoc\" == true }", "transition": "f2-upload-verification"}, {"condition": "${ .\"submitClientInfo\" == true }", "transition": "f3-upload-client"}], "defaultCondition": {"end": true}}}, {"type": "function:knative", "value": {"operation": "f1"}}, {"type": "event", "value": {"trigger": {"name": "uploadPhoto", "type": "photo.database.upload", "kind": "produced"}, "result": {"name": "newPhoto", "source": "database-dummy", "type": "photo.database.new", "kind": "consumed"}}}, {"type": "function:knative", "value": {"operation": "f4"}}, {"type": "function:knative", "value": {"operation": "f5"}}, {"type": "event", "value": {"trigger": {"name": "verification", "type": "info.database.verification", "kind": "produced"}, "result": {"name": "resultVerification", "source": "database-dummy", "type": "info.database.result", "kind": "consumed"}}}, {"type": "function:knative", "value": {"operation": "f7"}}, {"type": "function:knative", "value": {"operation": "f6"}}, {"type": "function:knative", "value": {"operation": "f8"}}]}, {"type": "sequence", "value": [{"type": "event", "value": {"name": "triggerEvent", "source": "entry-point", "type": "http.request.received", "kind": "consumed"}}, {"type": "function:expression", "value": null}, {"type": "data_based_switch_state", "value": {"name": "entry-decision", "type": "switch", "dataConditions": [{"condition": "${ .\"postListing\" == true }", "transition": "f1-upload-listing"}, {"condition": "${ .\"submitDoc\" == true }", "transition": "f2-upload-verification"}, {"condition": "${ .\"submitClientInfo\" == true }", "transition": "f3-upload-client"}], "defaultCondition": {"end": true}}}, {"type": "function:knative", "value": {"operation": "f2"}}]}, {"type": "sequence", "value": [{"type": "event", "value": {"name": "triggerEvent", "source": "entry-point", "type": "http.request.received", "kind": "consumed"}}, {"type": "function:expression", "value": null}, {"type": "data_based_switch_state", "value": {"name": "entry-decision", "type": "switch", "dataConditions": [{"condition": "${ .\"postListing\" == true }", "transition": "f1-upload-listing"}, {"condition": "${ .\"submitDoc\" == true }", "transition": "f2-upload-verification"}, {"condition": "${ .\"submitClientInfo\" == true }", "transition": "f3-upload-client"}], "defaultCondition": {"end": true}}}, {"type": "function:knative", "value": {"operation": "f3"}}]}]
+        qpoption.knative.dev/flow-activate: enable
+    spec:
+      containers:
+        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/database-dummy
+---
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: result
+  namespace: valve
+  labels:
+    networking.knative.dev/visibility: cluster-local
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/min-scale: "1"
+        autoscaling.knative.dev/max-scale: "1"
+        qpoption.knative.dev/flow-config-allowed_json_flows: | 
+          [{"type": "sequence", "value": [{"type": "event", "value": {"name": "triggerEvent", "source": "entry-point", "type": "http.request.received", "kind": "consumed"}}, {"type": "function:expression", "value": null}, {"type": "function:knative", "value": {"operation": "f1"}}, {"type": "event", "value": {"trigger": {"name": "uploadPhoto", "type": "photo.database.upload", "kind": "produced"}, "result": {"name": "newPhoto", "source": "database-dummy", "type": "photo.database.new", "kind": "consumed"}}}, {"type": "function:knative", "value": {"operation": "f4"}}, {"type": "function:knative", "value": {"operation": "f5"}}, {"type": "event", "value": {"trigger": {"name": "verification", "type": "info.database.verification", "kind": "produced"}, "result": {"name": "resultVerification", "source": "database-dummy", "type": "info.database.result", "kind": "consumed"}}}, {"type": "function:knative", "value": {"operation": "f7"}}, {"type": "function:knative", "value": {"operation": "f6"}}, {"type": "function:knative", "value": {"operation": "f8"}}, {"type": "event", "value": {"trigger": {"name": "client", "type": "info.database.client", "kind": "produced"}, "result": {"name": "resultClient", "source": "database-dummy", "type": "info.database.resultClient", "kind": "consumed"}}}, {"type": "parallel", "value": [{"type": "sequence", "value": [{"type": "function:knative", "value": {"operation": "f9"}}]}, {"type": "sequence", "value": [{"type": "function:knative", "value": {"operation": "f10"}}]}, {"type": "sequence", "value": [{"type": "function:knative", "value": {"operation": "f11"}}]}]}, {"type": "function:expression", "value": null}]}]
+        qpoption.knative.dev/flow-activate: enable
+    spec:
+      containers:
+        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/result
+---
+apiVersion: sources.knative.dev/v1
+kind: SinkBinding
+metadata:
+  generation: 1
+  name: bind-entry-point
+  namespace: valve
+spec:
+  sink: 
+    ref:
+      apiVersion: eventing.knative.dev/v1
+      kind: Broker
+      name: broker
+      namespace: valve
+  subject:
+    apiVersion: serving.knative.dev/v1
+    kind: Service
+    name: entry-point
+    namespace: valve
+---
+apiVersion: eventing.knative.dev/v1
+kind: Trigger
+metadata:
+  name: database-dummy-trigger
+  namespace: valve
+spec:
+  broker: broker
+  # filter:
+  #   attributes:
+  #     type: photo.database.upload
+  filters:
+    - any:
+        - exact:
+            type: photo.database.upload
+        - exact:
+            type: info.database.upload
+        - exact:
+            type: info.database.verification
+        - exact:
+            type: info.database.client
+  subscriber:
+    ref:
+      apiVersion: serving.knative.dev/v1
+      kind: Service
+      name: database-dummy
+---
+apiVersion: eventing.knative.dev/v1
+kind: Trigger
+metadata:
+  name: result-trigger
+  namespace: valve
+spec:
+  broker: broker
+  filters:
+    - any:
+        - exact:
+            type: valve.workflow.finish
+  subscriber:
+    ref:
+      apiVersion: serving.knative.dev/v1
+      kind: Service
+      name: result

@@ -1,0 +1,66 @@
+---
+apiVersion: eventing.knative.dev/v1
+kind: Trigger
+metadata:
+  name: database-trigger-workflow
+  namespace: refund
+spec:
+  broker: broker
+  filters:
+    - any:
+        - exact:
+            type: order.database.result
+        - exact:
+            type: info.database.result
+  subscriber:
+    ref:
+      apiVersion: serving.knative.dev/v1
+      kind: Service
+      name: workflow
+---
+apiVersion: eventing.knative.dev/v1
+kind: Trigger
+metadata:
+  name: http-request-received-trigger-workflow
+  namespace: refund
+spec:
+  broker: broker
+  filter:
+    attributes:
+      type: http.request.received
+  subscriber:
+    ref:
+      apiVersion: serving.knative.dev/v1
+      kind: Service
+      name: workflow
+---
+apiVersion: sources.knative.dev/v1
+kind: SinkBinding
+metadata:
+  name: sb-workflow
+  namespace: refund
+spec:
+  sink:
+    ref:
+      apiVersion: eventing.knative.dev/v1
+      kind: Broker
+      name: broker
+      namespace: refund
+  subject:
+    apiVersion: serving.knative.dev/v1
+    kind: Service
+    name: workflow
+---
+apiVersion: eventing.knative.dev/v1
+kind: Broker
+metadata:
+  annotations:
+    eventing.knative.dev/broker.class: Kafka
+  name: broker
+  namespace: refund
+spec:
+  config:
+    apiVersion: v1
+    kind: ConfigMap
+    name: kafka-broker-config
+    namespace: knative-eventing
