@@ -1,0 +1,25 @@
+2025-12-04T17:28:26.994Z	DEBUG	flow-tagging/plug.go:201	Key type not found in config
+2025-12-04T17:28:27.013Z	DEBUG	flow-tagging/plug.go:260	Flow: map[type:sequence value:[map[type:event value:map[kind:consumed name:triggerevent source:entry-point type:http.request.received]] map[type:function:expression value:<nil>] map[type:data_based_switch_state value:map[dataconditions:[map[condition:${ ."postlisting" == true } transition:f1-upload-listing] map[condition:${ ."submitdoc" == true } transition:f2-upload-verification] map[condition:${ ."submitclientinfo" == true } transition:f3-upload-client]] defaultcondition:map[end:true] name:entry-decision type:switch]]]]
+2025-12-04T17:28:27.017Z	DEBUG	flow-tagging/plug.go:271	Allowed path structure for function 'f2':
+[
+  {
+    "Seq": [
+      {
+        "Seq": null,
+        "Parallel": null,
+        "Loop": false,
+        "ProtectedName": "entry-point",
+        "ProtectedType": "event"
+      }
+    ],
+    "Parallel": null,
+    "Loop": false,
+    "ProtectedName": "",
+    "ProtectedType": ""
+  }
+]
+{"severity":"INFO","timestamp":"2025-12-04T17:28:27.038241049Z","logger":"queueproxy","caller":"flow-tagging/plug.go:130","message":"Plug flow: Never use in production","commit":"c6de642-dirty","knative.dev/key":"valve/f2-00001","knative.dev/pod":"f2-00001-deployment-58945c9494-z8cz2"}
+{"severity":"INFO","timestamp":"2025-12-04T17:28:27.038873475Z","logger":"queueproxy","caller":"sharedmain/main.go:272","message":"Starting queue-proxy","commit":"c6de642-dirty","knative.dev/key":"valve/f2-00001","knative.dev/pod":"f2-00001-deployment-58945c9494-z8cz2"}
+{"severity":"INFO","timestamp":"2025-12-04T17:28:27.038990344Z","logger":"queueproxy","caller":"sharedmain/main.go:278","message":"Starting http server metrics:9090","commit":"c6de642-dirty","knative.dev/key":"valve/f2-00001","knative.dev/pod":"f2-00001-deployment-58945c9494-z8cz2"}
+{"severity":"INFO","timestamp":"2025-12-04T17:28:27.039494691Z","logger":"queueproxy","caller":"sharedmain/main.go:278","message":"Starting http server main:8012","commit":"c6de642-dirty","knative.dev/key":"valve/f2-00001","knative.dev/pod":"f2-00001-deployment-58945c9494-z8cz2"}
+{"severity":"INFO","timestamp":"2025-12-04T17:28:27.039616829Z","logger":"queueproxy","caller":"sharedmain/main.go:278","message":"Starting http server admin:8022","commit":"c6de642-dirty","knative.dev/key":"valve/f2-00001","knative.dev/pod":"f2-00001-deployment-58945c9494-z8cz2"}
