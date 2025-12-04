@@ -1,0 +1,164 @@
+# apiVersion: v1
+# kind: Namespace
+# metadata:
+#   name: long-sequence
+# ---
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  annotations:
+    app.quarkus.io/quarkus-version: 3.20.1
+    app.quarkus.io/commit-id: 214abb116b80978479a0106d78a90d5ce3212565
+    app.quarkus.io/vcs-uri: https://github.com/ATNoG/knative-argo-workflows-apps-kit.git
+    app.quarkus.io/build-timestamp: 2025-09-22 - 16:27:58 +0000
+  labels:
+    app.kubernetes.io/name: workflow
+    app.kubernetes.io/version: 1.0.0-SNAPSHOT
+  name: workflow
+  namespace: long-sequence
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: workflow-view
+  namespace: long-sequence
+roleRef:
+  kind: ClusterRole
+  apiGroup: rbac.authorization.k8s.io
+  name: view
+subjects:
+  - kind: ServiceAccount
+    name: workflow
+    namespace: long-sequence
+---
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  annotations:
+    app.quarkus.io/quarkus-version: 3.20.1
+    app.quarkus.io/commit-id: 214abb116b80978479a0106d78a90d5ce3212565
+    app.quarkus.io/vcs-uri: https://github.com/ATNoG/knative-argo-workflows-apps-kit.git
+    app.quarkus.io/build-timestamp: 2025-09-22 - 16:27:58 +0000
+  labels:
+    app.kubernetes.io/name: workflow
+    app.kubernetes.io/version: 1.0.0-SNAPSHOT
+  name: workflow
+  namespace: long-sequence
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/min-scale: "1"
+        autoscaling.knative.dev/max-scale: "1"
+    spec:
+      containers:
+        - image: ghcr.io/atnog/knative-workflow-apps-kit/long-sequence/workflow:latest
+          imagePullPolicy: Always
+          name: workflow
+          ports:
+            - containerPort: 8080
+              name: http1
+              protocol: TCP
+      serviceAccountName: workflow
+---
+apiVersion: eventing.knative.dev/v1
+kind: Trigger
+metadata:
+  name: http-request-received-trigger-workflow
+  namespace: long-sequence
+spec:
+  broker: broker
+  filter:
+    attributes:
+      type: http.request.received
+  subscriber:
+    ref:
+      apiVersion: serving.knative.dev/v1
+      kind: Service
+      name: workflow
+---
+apiVersion: sources.knative.dev/v1
+kind: SinkBinding
+metadata:
+  name: sb-workflow
+  namespace: long-sequence
+spec:
+  sink:
+    ref:
+      apiVersion: eventing.knative.dev/v1
+      kind: Broker
+      name: broker
+      namespace: long-sequence
+  subject:
+    apiVersion: serving.knative.dev/v1
+    kind: Service
+    name: workflow
+---
+apiVersion: eventing.knative.dev/v1
+kind: Broker
+metadata:
+  annotations:
+    eventing.knative.dev/broker.class: Kafka
+  name: broker
+  namespace: long-sequence
+spec:
+  config:
+    apiVersion: v1
+    kind: ConfigMap
+    name: kafka-broker-config
+    namespace: knative-eventing
+---
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: entry-point
+  namespace: long-sequence
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/min-scale: "1"
+        autoscaling.knative.dev/max-scale: "1"
+    spec:
+      containers:
+        - image: ghcr.io/atnog/knative-workflow-apps-kit/long-sequence/entry-point
+---
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: result
+  namespace: long-sequence
+  labels:
+    networking.knative.dev/visibility: cluster-local
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/min-scale: "1"
+        autoscaling.knative.dev/max-scale: "1"
+        qpoption.knative.dev/flow-config-allowed_json_flows: | 
+          [{"type": "sequence", "value": [{"type": "event", "value": {"name": "triggerEvent", "source": "entry-point", "type": "http.request.received", "kind": "consumed"}}, {"type": "function:expression", "value": null}, {"type": "function:knative", "value": {"operation": "f1"}}, {"type": "event", "value": {"trigger": {"name": "getOrder", "type": "order.database.get", "kind": "produced"}, "result": {"name": "resultOrder", "source": "database-dummy", "type": "order.database.result", "kind": "consumed"}}}, {"type": "function:knative", "value": {"operation": "f2"}}, {"type": "function:knative", "value": {"operation": "f3"}}, {"type": "event", "value": {"trigger": {"name": "emitlong-sequence", "type": "info.database.emitlong-sequence", "kind": "produced"}, "result": {"name": "resultlong-sequence", "source": "database-dummy", "type": "info.database.result", "kind": "consumed"}}}, {"type": "function:knative", "value": {"operation": "f4"}}]}]
+        qpoption.knative.dev/flow-activate: enable
+    spec:
+      containers:
+        - image: ghcr.io/atnog/knative-workflow-apps-kit/long-sequence/result
+---
+apiVersion: sources.knative.dev/v1
+kind: SinkBinding
+metadata:
+  generation: 1
+  name: bind-entry-point
+  namespace: long-sequence
+spec:
+  sink: 
+    ref:
+      apiVersion: eventing.knative.dev/v1
+      kind: Broker
+      name: broker
+      namespace: long-sequence
+  subject:
+    apiVersion: serving.knative.dev/v1
+    kind: Service
+    name: entry-point
+    namespace: long-sequence
