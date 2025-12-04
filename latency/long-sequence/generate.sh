@@ -41,6 +41,6 @@ spec:
     spec:
       containers:
         - image: ghcr.io/atnog/knative-workflow-apps-kit/$namespace/sample-function
-
+---
 EOF
 done

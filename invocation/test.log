@@ -7386,3 +7386,8 @@ service.serving.knative.dev/function condition met
 service.serving.knative.dev "function" deleted from invocation namespace
 pod/function-00001-deployment-94cbff498-stwql condition met
 namespace "invocation" deleted
+[main 4ed0ce4] new invocation results for enforcer-complex
+ 3 files changed, 2813 insertions(+), 1 deletion(-)
+To https://github.com/ATNoG/poliflow-evaluation.git
+   4d690eb..4ed0ce4  main -> main
+All tests completed.
