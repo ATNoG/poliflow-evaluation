@@ -36906,3 +36906,63 @@ Saving logs for pod result-00001-deployment-6d88ffff-kgft9 and container user-co
 Saving logs for pod workflow-00002-deployment-64cf7c5fff-4h6lj and container queue-proxy to ./results/test-enforce_namespace-valve_20251204172822/pod_workflow-00002-deployment-64cf7c5fff-4h6lj_queue_proxy_logs.txt
 Saving logs for pod workflow-00002-deployment-64cf7c5fff-4h6lj and container user-container to ./results/test-enforce_namespace-valve_20251204172822/pod_workflow-00002-deployment-64cf7c5fff-4h6lj_user_container_logs.txt
 error: container user-container is not valid for pod workflow-00002-deployment-64cf7c5fff-4h6lj
+[main 1a102e4] new latency results for enforce
+ 31 files changed, 42909 insertions(+)
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_database-dummy-00001-deployment-569d9b9846-pzktx_queue_proxy_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_database-dummy-00001-deployment-569d9b9846-pzktx_user_container_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_entry-point-00002-deployment-76b6d69664-b2svz_queue_proxy_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_entry-point-00002-deployment-76b6d69664-b2svz_user_container_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_f1-00001-deployment-55f465ccc4-x282p_queue_proxy_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_f1-00001-deployment-55f465ccc4-x282p_user_container_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_f10-00001-deployment-6c4b669756-p6krq_queue_proxy_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_f10-00001-deployment-6c4b669756-p6krq_user_container_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_f11-00001-deployment-7544688689-sld5x_queue_proxy_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_f11-00001-deployment-7544688689-sld5x_user_container_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_f2-00001-deployment-58945c9494-z8cz2_queue_proxy_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_f2-00001-deployment-58945c9494-z8cz2_user_container_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_f3-00001-deployment-6849bd547f-lgkkp_queue_proxy_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_f3-00001-deployment-6849bd547f-lgkkp_user_container_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_f4-00001-deployment-78ccd9bfff-2z965_queue_proxy_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_f4-00001-deployment-78ccd9bfff-2z965_user_container_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_f5-00001-deployment-9c4686d8d-rwl56_queue_proxy_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_f5-00001-deployment-9c4686d8d-rwl56_user_container_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_f6-00001-deployment-684df6c668-fwqpz_queue_proxy_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_f6-00001-deployment-684df6c668-fwqpz_user_container_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_f7-00001-deployment-c598bd5-cv2zs_queue_proxy_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_f7-00001-deployment-c598bd5-cv2zs_user_container_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_f8-00001-deployment-687bc598d-8kl98_queue_proxy_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_f8-00001-deployment-687bc598d-8kl98_user_container_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_f9-00001-deployment-7d846869cb-q9p6t_queue_proxy_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_f9-00001-deployment-7d846869cb-q9p6t_user_container_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_result-00001-deployment-6d88ffff-kgft9_queue_proxy_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_result-00001-deployment-6d88ffff-kgft9_user_container_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_workflow-00002-deployment-64cf7c5fff-4h6lj_queue_proxy_logs.txt
+ create mode 100644 latency/results/test-enforce_namespace-valve_20251204172822/pod_workflow-00002-deployment-64cf7c5fff-4h6lj_user_container_logs.txt
+To https://github.com/ATNoG/poliflow-evaluation.git
+   ccdfd71..1a102e4  main -> main
+serviceaccount "workflow" deleted from valve namespace
+rolebinding.rbac.authorization.k8s.io "workflow-view" deleted from valve namespace
+service.serving.knative.dev "workflow" deleted from valve namespace
+trigger.eventing.knative.dev "photo-database-new-trigger-workflow" deleted from valve namespace
+trigger.eventing.knative.dev "http-request-received-trigger-workflow" deleted from valve namespace
+sinkbinding.sources.knative.dev "sb-workflow" deleted from valve namespace
+broker.eventing.knative.dev "broker" deleted from valve namespace
+service.serving.knative.dev "entry-point" deleted from valve namespace
+service.serving.knative.dev "f1" deleted from valve namespace
+service.serving.knative.dev "f2" deleted from valve namespace
+service.serving.knative.dev "f3" deleted from valve namespace
+service.serving.knative.dev "f4" deleted from valve namespace
+service.serving.knative.dev "f5" deleted from valve namespace
+service.serving.knative.dev "f6" deleted from valve namespace
+service.serving.knative.dev "f7" deleted from valve namespace
+service.serving.knative.dev "f8" deleted from valve namespace
+service.serving.knative.dev "f9" deleted from valve namespace
+service.serving.knative.dev "f10" deleted from valve namespace
+service.serving.knative.dev "f11" deleted from valve namespace
+service.serving.knative.dev "database-dummy" deleted from valve namespace
+service.serving.knative.dev "result" deleted from valve namespace
+sinkbinding.sources.knative.dev "bind-entry-point" deleted from valve namespace
+trigger.eventing.knative.dev "database-dummy-trigger" deleted from valve namespace
+trigger.eventing.knative.dev "result-trigger" deleted from valve namespace
+namespace "valve" deleted
+All tests completed.
