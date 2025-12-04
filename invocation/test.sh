@@ -57,16 +57,6 @@ for test in ${TESTS[@]}; do
     reboot_machines
     wait_for_cluster
 
-    while true; do
-        kubectl create namespace $NAMESPACE
-        if [ "$?" -eq 0 ]; then
-            break
-        else
-            echo "Namespace not created with success; trying again..."
-            sleep 60
-        fi
-    done
-
     if [[ $test == "enforcer-simple" ]]; then
         kubectl patch configmap config-deployment \
             -n knative-serving \
@@ -91,6 +81,16 @@ for test in ${TESTS[@]}; do
     fi
 
     for (( i=1; i<=NUMBER_TESTS; i++ )); do
+        while true; do
+            kubectl create namespace $NAMESPACE
+            if [ "$?" -eq 0 ]; then
+                break
+            else
+                echo "Namespace not created with success; trying again..."
+                sleep 60
+            fi
+        done
+
         cd application/
 
         start_invocation=$(date +%s%3N)
@@ -112,10 +112,10 @@ for test in ${TESTS[@]}; do
         sleep "$WAIT_PERIOD"
 
         # REMOVE EVERYTHING BEFORE NEXT ITERATION
-        kubectl delete $NAMESPACE &
-        sleep 3
-        kubectl get namespace "$NAMESPACE" -o json | jq 'del(.spec.finalizers) | .spec.finalizers=[] | del(.status)' > /tmp/ns.json
-        kubectl replace --raw "/api/v1/namespaces/$NAMESPACE/finalize" -f /tmp/ns.json
+        kubectl delete namespace $NAMESPACE
+        # sleep 3
+        # kubectl get namespace "$NAMESPACE" -o json | jq 'del(.spec.finalizers) | .spec.finalizers=[] | del(.status)' > /tmp/ns.json
+        # kubectl replace --raw "/api/v1/namespaces/$NAMESPACE/finalize" -f /tmp/ns.json
     done
 
     git add .
