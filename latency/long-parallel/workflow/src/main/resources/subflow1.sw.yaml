@@ -1,0 +1,694 @@
+id: subflow1
+name: subflow1
+version: '0.1.0'
+specVersion: '0.8'
+start: parallel-21
+
+functions:
+  - name: merge-results
+    type: expression
+    operation: |
+      def deepmerge($a; $b):
+        if $a == null then $b
+        elif $b == null then $a
+        elif $b | type == "object" then
+          reduce ($b | to_entries[]) as $kv ($a;
+            .[$kv.key] = deepmerge(.[$kv.key]; $kv.value)
+          )
+        elif $b | type == "array" then
+          if $a | type == "array" then
+            ($a | length) as $la |
+            ($b | length) as $lb |
+            (if $la < $lb then $la else $lb end) as $minlen |
+            reduce range(0; $minlen) as $i (
+              { ok: true, prefix: [] };
+              if .ok and ($a[$i] == $b[$i]) then
+                { ok: true, prefix: (.prefix + [$a[$i]]) }
+              else
+                { ok: false, prefix: .prefix }
+              end
+            ) as $res |
+            ($res.prefix) as $prefix |
+            ($prefix | length) as $pLen |
+            ([ range($pLen; $la) | $a[.] ]) as $tailA |
+            ([ range($pLen; $lb) | $b[.] ]) as $tailB |
+            ($prefix + $tailA + $tailB)
+          else
+            $b
+          end
+        else
+          $b
+        end;
+
+      { _result: reduce (to_entries[] | select(.key | startswith("branch-"))) as $item ({};
+          deepmerge(.; $item.value)
+        )
+      }
+  - name: f41
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f41?method=POST
+  - name: f42
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f42?method=POST
+  - name: f43
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f43?method=POST
+  - name: f44
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f44?method=POST
+  - name: f45
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f45?method=POST
+  - name: f46
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f46?method=POST
+  - name: f47
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f47?method=POST
+  - name: f48
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f48?method=POST
+  - name: f49
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f49?method=POST
+  - name: f50
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f50?method=POST
+  - name: f51
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f51?method=POST
+  - name: f52
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f52?method=POST
+  - name: f53
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f53?method=POST
+  - name: f54
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f54?method=POST
+  - name: f55
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f55?method=POST
+  - name: f56
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f56?method=POST
+  - name: f57
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f57?method=POST
+  - name: f58
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f58?method=POST
+  - name: f59
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f59?method=POST
+  - name: f60
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f60?method=POST
+  - name: f61
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f61?method=POST
+  - name: f62
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f62?method=POST
+  - name: f63
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f63?method=POST
+  - name: f64
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f64?method=POST
+  - name: f65
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f65?method=POST
+  - name: f66
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f66?method=POST
+  - name: f67
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f67?method=POST
+  - name: f68
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f68?method=POST
+  - name: f69
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f69?method=POST
+  - name: f70
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f70?method=POST
+  - name: f71
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f71?method=POST
+  - name: f72
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f72?method=POST
+  - name: f73
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f73?method=POST
+  - name: f74
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f74?method=POST
+  - name: f75
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f75?method=POST
+  - name: f76
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f76?method=POST
+  - name: f77
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f77?method=POST
+  - name: f78
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f78?method=POST
+  - name: f79
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f79?method=POST
+  - name: f80
+    type: custom
+    operation: knative:services.v1.serving.knative.dev/f80?method=POST
+
+states:
+  - name: parallel-21
+    type: parallel
+    branches:
+      - name: f41
+        actions:
+          - functionRef: f41
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f41\": .} }"
+      - name: f42
+        actions:
+          - functionRef: f42
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f42\": .} }"
+    stateDataFilter:
+      input: "${ { _original: . } }"
+    transition: merge-results-21
+
+  - name: merge-results-21
+    type: operation
+    actions:
+      - functionRef: merge-results
+    stateDataFilter:
+      output: "${ ._result }"
+    transition: parallel-22
+  - name: parallel-22
+    type: parallel
+    branches:
+      - name: f43
+        actions:
+          - functionRef: f43
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f43\": .} }"
+      - name: f44
+        actions:
+          - functionRef: f44
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f44\": .} }"
+    stateDataFilter:
+      input: "${ { _original: . } }"
+    transition: merge-results-22
+
+  - name: merge-results-22
+    type: operation
+    actions:
+      - functionRef: merge-results
+    stateDataFilter:
+      output: "${ ._result }"
+    transition: parallel-23
+  - name: parallel-23
+    type: parallel
+    branches:
+      - name: f45
+        actions:
+          - functionRef: f45
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f45\": .} }"
+      - name: f46
+        actions:
+          - functionRef: f46
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f46\": .} }"
+    stateDataFilter:
+      input: "${ { _original: . } }"
+    transition: merge-results-23
+
+  - name: merge-results-23
+    type: operation
+    actions:
+      - functionRef: merge-results
+    stateDataFilter:
+      output: "${ ._result }"
+    transition: parallel-24
+  - name: parallel-24
+    type: parallel
+    branches:
+      - name: f47
+        actions:
+          - functionRef: f47
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f47\": .} }"
+      - name: f48
+        actions:
+          - functionRef: f48
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f48\": .} }"
+    stateDataFilter:
+      input: "${ { _original: . } }"
+    transition: merge-results-24
+
+  - name: merge-results-24
+    type: operation
+    actions:
+      - functionRef: merge-results
+    stateDataFilter:
+      output: "${ ._result }"
+    transition: parallel-25
+  - name: parallel-25
+    type: parallel
+    branches:
+      - name: f49
+        actions:
+          - functionRef: f49
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f49\": .} }"
+      - name: f50
+        actions:
+          - functionRef: f50
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f50\": .} }"
+    stateDataFilter:
+      input: "${ { _original: . } }"
+    transition: merge-results-25
+
+  - name: merge-results-25
+    type: operation
+    actions:
+      - functionRef: merge-results
+    stateDataFilter:
+      output: "${ ._result }"
+    transition: parallel-26
+  - name: parallel-26
+    type: parallel
+    branches:
+      - name: f51
+        actions:
+          - functionRef: f51
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f51\": .} }"
+      - name: f52
+        actions:
+          - functionRef: f52
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f52\": .} }"
+    stateDataFilter:
+      input: "${ { _original: . } }"
+    transition: merge-results-26
+
+  - name: merge-results-26
+    type: operation
+    actions:
+      - functionRef: merge-results
+    stateDataFilter:
+      output: "${ ._result }"
+    transition: parallel-27
+  - name: parallel-27
+    type: parallel
+    branches:
+      - name: f53
+        actions:
+          - functionRef: f53
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f53\": .} }"
+      - name: f54
+        actions:
+          - functionRef: f54
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f54\": .} }"
+    stateDataFilter:
+      input: "${ { _original: . } }"
+    transition: merge-results-27
+
+  - name: merge-results-27
+    type: operation
+    actions:
+      - functionRef: merge-results
+    stateDataFilter:
+      output: "${ ._result }"
+    transition: parallel-28
+  - name: parallel-28
+    type: parallel
+    branches:
+      - name: f55
+        actions:
+          - functionRef: f55
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f55\": .} }"
+      - name: f56
+        actions:
+          - functionRef: f56
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f56\": .} }"
+    stateDataFilter:
+      input: "${ { _original: . } }"
+    transition: merge-results-28
+
+  - name: merge-results-28
+    type: operation
+    actions:
+      - functionRef: merge-results
+    stateDataFilter:
+      output: "${ ._result }"
+    transition: parallel-29
+  - name: parallel-29
+    type: parallel
+    branches:
+      - name: f57
+        actions:
+          - functionRef: f57
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f57\": .} }"
+      - name: f58
+        actions:
+          - functionRef: f58
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f58\": .} }"
+    stateDataFilter:
+      input: "${ { _original: . } }"
+    transition: merge-results-29
+
+  - name: merge-results-29
+    type: operation
+    actions:
+      - functionRef: merge-results
+    stateDataFilter:
+      output: "${ ._result }"
+    transition: parallel-30
+  - name: parallel-30
+    type: parallel
+    branches:
+      - name: f59
+        actions:
+          - functionRef: f59
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f59\": .} }"
+      - name: f60
+        actions:
+          - functionRef: f60
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f60\": .} }"
+    stateDataFilter:
+      input: "${ { _original: . } }"
+    transition: merge-results-30
+
+  - name: merge-results-30
+    type: operation
+    actions:
+      - functionRef: merge-results
+    stateDataFilter:
+      output: "${ ._result }"
+    transition: parallel-31
+  - name: parallel-31
+    type: parallel
+    branches:
+      - name: f61
+        actions:
+          - functionRef: f61
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f61\": .} }"
+      - name: f62
+        actions:
+          - functionRef: f62
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f62\": .} }"
+    stateDataFilter:
+      input: "${ { _original: . } }"
+    transition: merge-results-31
+
+  - name: merge-results-31
+    type: operation
+    actions:
+      - functionRef: merge-results
+    stateDataFilter:
+      output: "${ ._result }"
+    transition: parallel-32
+  - name: parallel-32
+    type: parallel
+    branches:
+      - name: f63
+        actions:
+          - functionRef: f63
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f63\": .} }"
+      - name: f64
+        actions:
+          - functionRef: f64
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f64\": .} }"
+    stateDataFilter:
+      input: "${ { _original: . } }"
+    transition: merge-results-32
+
+  - name: merge-results-32
+    type: operation
+    actions:
+      - functionRef: merge-results
+    stateDataFilter:
+      output: "${ ._result }"
+    transition: parallel-33
+  - name: parallel-33
+    type: parallel
+    branches:
+      - name: f65
+        actions:
+          - functionRef: f65
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f65\": .} }"
+      - name: f66
+        actions:
+          - functionRef: f66
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f66\": .} }"
+    stateDataFilter:
+      input: "${ { _original: . } }"
+    transition: merge-results-33
+
+  - name: merge-results-33
+    type: operation
+    actions:
+      - functionRef: merge-results
+    stateDataFilter:
+      output: "${ ._result }"
+    transition: parallel-34
+  - name: parallel-34
+    type: parallel
+    branches:
+      - name: f67
+        actions:
+          - functionRef: f67
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f67\": .} }"
+      - name: f68
+        actions:
+          - functionRef: f68
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f68\": .} }"
+    stateDataFilter:
+      input: "${ { _original: . } }"
+    transition: merge-results-34
+
+  - name: merge-results-34
+    type: operation
+    actions:
+      - functionRef: merge-results
+    stateDataFilter:
+      output: "${ ._result }"
+    transition: parallel-35
+  - name: parallel-35
+    type: parallel
+    branches:
+      - name: f69
+        actions:
+          - functionRef: f69
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f69\": .} }"
+      - name: f70
+        actions:
+          - functionRef: f70
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f70\": .} }"
+    stateDataFilter:
+      input: "${ { _original: . } }"
+    transition: merge-results-35
+
+  - name: merge-results-35
+    type: operation
+    actions:
+      - functionRef: merge-results
+    stateDataFilter:
+      output: "${ ._result }"
+    transition: parallel-36
+  - name: parallel-36
+    type: parallel
+    branches:
+      - name: f71
+        actions:
+          - functionRef: f71
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f71\": .} }"
+      - name: f72
+        actions:
+          - functionRef: f72
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f72\": .} }"
+    stateDataFilter:
+      input: "${ { _original: . } }"
+    transition: merge-results-36
+
+  - name: merge-results-36
+    type: operation
+    actions:
+      - functionRef: merge-results
+    stateDataFilter:
+      output: "${ ._result }"
+    transition: parallel-37
+  - name: parallel-37
+    type: parallel
+    branches:
+      - name: f73
+        actions:
+          - functionRef: f73
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f73\": .} }"
+      - name: f74
+        actions:
+          - functionRef: f74
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f74\": .} }"
+    stateDataFilter:
+      input: "${ { _original: . } }"
+    transition: merge-results-37
+
+  - name: merge-results-37
+    type: operation
+    actions:
+      - functionRef: merge-results
+    stateDataFilter:
+      output: "${ ._result }"
+    transition: parallel-38
+  - name: parallel-38
+    type: parallel
+    branches:
+      - name: f75
+        actions:
+          - functionRef: f75
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f75\": .} }"
+      - name: f76
+        actions:
+          - functionRef: f76
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f76\": .} }"
+    stateDataFilter:
+      input: "${ { _original: . } }"
+    transition: merge-results-38
+
+  - name: merge-results-38
+    type: operation
+    actions:
+      - functionRef: merge-results
+    stateDataFilter:
+      output: "${ ._result }"
+    transition: parallel-39
+  - name: parallel-39
+    type: parallel
+    branches:
+      - name: f77
+        actions:
+          - functionRef: f77
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f77\": .} }"
+      - name: f78
+        actions:
+          - functionRef: f78
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f78\": .} }"
+    stateDataFilter:
+      input: "${ { _original: . } }"
+    transition: merge-results-39
+
+  - name: merge-results-39
+    type: operation
+    actions:
+      - functionRef: merge-results
+    stateDataFilter:
+      output: "${ ._result }"
+    transition: parallel-40
+  - name: parallel-40
+    type: parallel
+    branches:
+      - name: f79
+        actions:
+          - functionRef: f79
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f79\": .} }"
+      - name: f80
+        actions:
+          - functionRef: f80
+            actionDataFilter:
+              fromStateData: "${ ._original }"
+              results: "${ {\"branch-f80\": .} }"
+    stateDataFilter:
+      input: "${ { _original: . } }"
+    transition: merge-results-40
+
+  - name: merge-results-40
+    type: operation
+    actions:
+      - functionRef: merge-results
+    stateDataFilter:
+      output: "${ ._result }"
+    transition: next-workflow
+
+  - name: next-workflow
+    type: operation
+    actions:
+      - subFlowRef: subflow2
+    end: true

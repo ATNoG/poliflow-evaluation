@@ -942,8 +942,4 @@ states:
     type: operation
     actions: 
       - functionRef: f70
-        actionDataFilter:
-          toStateData: ._result
-    stateDataFilter:
-      output: ._result
     end: true

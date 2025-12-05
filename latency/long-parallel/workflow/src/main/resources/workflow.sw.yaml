@@ -25,7 +25,6 @@ functions:
           ) + .data
         )
       }
-
   - name: merge-results
     type: expression
     operation: |
@@ -736,4 +735,10 @@ states:
       - functionRef: merge-results
     stateDataFilter:
       output: "${ ._result }"
+    transition: next-workflow
+
+  - name: next-workflow
+    type: operation
+    actions:
+      - subFlowRef: subflow1
     end: true
