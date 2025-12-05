@@ -1,6 +1,5 @@
 import os
 import re
-from turtle import title
 from typing import Literal
 import numpy as np
 import pandas as pd
@@ -8,7 +7,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 COMPARISON = 6.5
-SIZE: tuple[Literal[5], Literal[1]] = (10, 5)
+SIZE: tuple[Literal[5], Literal[1]] = (10, 4.1)
 SIZE_RATION = SIZE[0] / COMPARISON
 
 BASE_DIR = "results"
@@ -143,7 +142,7 @@ for app in ["refund", "valve"]:
         color=sns.color_palette("colorblind")
         # title=f"Latency Comparison for {app.capitalize()} Application",
     )
-    ax.set_ylabel("Average Latency (ms)")
+    ax.set_ylabel("Average Latency\n(ms)")
     ax.set_xlabel("Function")
 
     ax.yaxis.label.set_fontsize(15 * SIZE_RATION)
@@ -153,9 +152,10 @@ for app in ["refund", "valve"]:
         title_fontsize=12 * SIZE_RATION,
         title="Mode",
         loc="lower right",)
+    ax.yaxis.set_label_coords(-.05, 0.43)
 
     plt.tight_layout()
-    plt.savefig(f"{app}.pdf")
+    plt.savefig(f"{app}.pdf", bbox_inches='tight', pad_inches=0)
     plt.show()
 
 ###############################################
@@ -255,15 +255,16 @@ for app in ["long-sequence", "long-parallel"]:
 
     plt.xticks(rotation=45)
     plt.xlabel("Function")
-    plt.ylabel("Latency Difference (ms)")
+    plt.ylabel("Latency Difference\n(ms)")
 
     ax.yaxis.label.set_fontsize(15 * SIZE_RATION)
     ax.xaxis.label.set_fontsize(15 * SIZE_RATION)
     ax.tick_params(labelsize=12 * SIZE_RATION)
+    ax.yaxis.set_label_coords(-.05, 0.43)
 
     plt.tight_layout()
     plt.legend(fontsize=12 * SIZE_RATION)
-    plt.savefig(f"{app}.pdf")
+    plt.savefig(f"{app}.pdf", bbox_inches='tight', pad_inches=0)
     plt.show()
 
     print(f"\n=== difference Summary (difference) for {app} ===\n")
