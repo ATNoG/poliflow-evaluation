@@ -1,0 +1,707 @@
+ * Serving Flask app 'main'
+ * Debug mode: off
+1764907487.450994 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.42.1.142:8080
+1764907487.451213 - INFO - [33mPress CTRL+C to quit[0m
+1764907884.682684 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907884.684661 - INFO - 127.0.0.1 - - [05/Dec/2025 04:11:24] "POST / HTTP/1.1" 200 -
+1764907888.974088 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907888.974851 - INFO - 127.0.0.1 - - [05/Dec/2025 04:11:28] "POST / HTTP/1.1" 200 -
+1764907890.115973 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907890.116526 - INFO - 127.0.0.1 - - [05/Dec/2025 04:11:30] "POST / HTTP/1.1" 200 -
+1764907891.036304 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907891.037114 - INFO - 127.0.0.1 - - [05/Dec/2025 04:11:31] "POST / HTTP/1.1" 200 -
+1764907893.161813 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907893.162550 - INFO - 127.0.0.1 - - [05/Dec/2025 04:11:33] "POST / HTTP/1.1" 200 -
+1764907896.208663 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907896.209297 - INFO - 127.0.0.1 - - [05/Dec/2025 04:11:36] "POST / HTTP/1.1" 200 -
+1764907899.266752 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907899.267277 - INFO - 127.0.0.1 - - [05/Dec/2025 04:11:39] "POST / HTTP/1.1" 200 -
+1764907902.320706 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907902.321324 - INFO - 127.0.0.1 - - [05/Dec/2025 04:11:42] "POST / HTTP/1.1" 200 -
+1764907905.378107 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907905.378780 - INFO - 127.0.0.1 - - [05/Dec/2025 04:11:45] "POST / HTTP/1.1" 200 -
+1764907908.430670 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907908.431321 - INFO - 127.0.0.1 - - [05/Dec/2025 04:11:48] "POST / HTTP/1.1" 200 -
+1764907911.488312 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907911.489099 - INFO - 127.0.0.1 - - [05/Dec/2025 04:11:51] "POST / HTTP/1.1" 200 -
+1764907914.540203 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907914.540900 - INFO - 127.0.0.1 - - [05/Dec/2025 04:11:54] "POST / HTTP/1.1" 200 -
+1764907917.592670 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907917.593364 - INFO - 127.0.0.1 - - [05/Dec/2025 04:11:57] "POST / HTTP/1.1" 200 -
+1764907920.648618 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907920.649243 - INFO - 127.0.0.1 - - [05/Dec/2025 04:12:00] "POST / HTTP/1.1" 200 -
+1764907923.707427 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907923.708242 - INFO - 127.0.0.1 - - [05/Dec/2025 04:12:03] "POST / HTTP/1.1" 200 -
+1764907926.763967 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907926.764625 - INFO - 127.0.0.1 - - [05/Dec/2025 04:12:06] "POST / HTTP/1.1" 200 -
+1764907929.807349 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907929.807999 - INFO - 127.0.0.1 - - [05/Dec/2025 04:12:09] "POST / HTTP/1.1" 200 -
+1764907932.857652 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907932.858618 - INFO - 127.0.0.1 - - [05/Dec/2025 04:12:12] "POST / HTTP/1.1" 200 -
+1764907935.904775 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907935.905522 - INFO - 127.0.0.1 - - [05/Dec/2025 04:12:15] "POST / HTTP/1.1" 200 -
+1764907938.948805 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907938.949807 - INFO - 127.0.0.1 - - [05/Dec/2025 04:12:18] "POST / HTTP/1.1" 200 -
+1764907941.994168 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907941.994920 - INFO - 127.0.0.1 - - [05/Dec/2025 04:12:21] "POST / HTTP/1.1" 200 -
+1764907945.043913 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907945.044750 - INFO - 127.0.0.1 - - [05/Dec/2025 04:12:25] "POST / HTTP/1.1" 200 -
+1764907948.093022 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907948.093802 - INFO - 127.0.0.1 - - [05/Dec/2025 04:12:28] "POST / HTTP/1.1" 200 -
+1764907951.151802 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907951.152538 - INFO - 127.0.0.1 - - [05/Dec/2025 04:12:31] "POST / HTTP/1.1" 200 -
+1764907954.200300 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907954.200990 - INFO - 127.0.0.1 - - [05/Dec/2025 04:12:34] "POST / HTTP/1.1" 200 -
+1764907957.249662 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907957.250504 - INFO - 127.0.0.1 - - [05/Dec/2025 04:12:37] "POST / HTTP/1.1" 200 -
+1764907960.306820 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907960.307578 - INFO - 127.0.0.1 - - [05/Dec/2025 04:12:40] "POST / HTTP/1.1" 200 -
+1764907963.382054 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907963.383373 - INFO - 127.0.0.1 - - [05/Dec/2025 04:12:43] "POST / HTTP/1.1" 200 -
+1764907966.414588 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907966.415255 - INFO - 127.0.0.1 - - [05/Dec/2025 04:12:46] "POST / HTTP/1.1" 200 -
+1764907969.482032 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907969.482696 - INFO - 127.0.0.1 - - [05/Dec/2025 04:12:49] "POST / HTTP/1.1" 200 -
+1764907972.530911 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907972.531617 - INFO - 127.0.0.1 - - [05/Dec/2025 04:12:52] "POST / HTTP/1.1" 200 -
+1764907975.587822 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907975.588478 - INFO - 127.0.0.1 - - [05/Dec/2025 04:12:55] "POST / HTTP/1.1" 200 -
+1764907978.646206 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907978.646911 - INFO - 127.0.0.1 - - [05/Dec/2025 04:12:58] "POST / HTTP/1.1" 200 -
+1764907981.697095 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907981.697899 - INFO - 127.0.0.1 - - [05/Dec/2025 04:13:01] "POST / HTTP/1.1" 200 -
+1764907984.743023 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907984.743750 - INFO - 127.0.0.1 - - [05/Dec/2025 04:13:04] "POST / HTTP/1.1" 200 -
+1764907987.783096 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907987.783787 - INFO - 127.0.0.1 - - [05/Dec/2025 04:13:07] "POST / HTTP/1.1" 200 -
+1764907990.835116 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907990.835945 - INFO - 127.0.0.1 - - [05/Dec/2025 04:13:10] "POST / HTTP/1.1" 200 -
+1764907993.879045 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907993.879813 - INFO - 127.0.0.1 - - [05/Dec/2025 04:13:13] "POST / HTTP/1.1" 200 -
+1764907996.926385 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907996.927049 - INFO - 127.0.0.1 - - [05/Dec/2025 04:13:16] "POST / HTTP/1.1" 200 -
+1764907999.971473 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764907999.972251 - INFO - 127.0.0.1 - - [05/Dec/2025 04:13:19] "POST / HTTP/1.1" 200 -
+1764908003.019626 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908003.020339 - INFO - 127.0.0.1 - - [05/Dec/2025 04:13:23] "POST / HTTP/1.1" 200 -
+1764908006.067991 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908006.068645 - INFO - 127.0.0.1 - - [05/Dec/2025 04:13:26] "POST / HTTP/1.1" 200 -
+1764908009.117499 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908009.118135 - INFO - 127.0.0.1 - - [05/Dec/2025 04:13:29] "POST / HTTP/1.1" 200 -
+1764908012.168981 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908012.169705 - INFO - 127.0.0.1 - - [05/Dec/2025 04:13:32] "POST / HTTP/1.1" 200 -
+1764908015.213962 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908015.214657 - INFO - 127.0.0.1 - - [05/Dec/2025 04:13:35] "POST / HTTP/1.1" 200 -
+1764908018.260657 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908018.261276 - INFO - 127.0.0.1 - - [05/Dec/2025 04:13:38] "POST / HTTP/1.1" 200 -
+1764908021.307080 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908021.307972 - INFO - 127.0.0.1 - - [05/Dec/2025 04:13:41] "POST / HTTP/1.1" 200 -
+1764908024.358419 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908024.359215 - INFO - 127.0.0.1 - - [05/Dec/2025 04:13:44] "POST / HTTP/1.1" 200 -
+1764908027.408347 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908027.409229 - INFO - 127.0.0.1 - - [05/Dec/2025 04:13:47] "POST / HTTP/1.1" 200 -
+1764908030.455063 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908030.455781 - INFO - 127.0.0.1 - - [05/Dec/2025 04:13:50] "POST / HTTP/1.1" 200 -
+1764908033.504101 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908033.504750 - INFO - 127.0.0.1 - - [05/Dec/2025 04:13:53] "POST / HTTP/1.1" 200 -
+1764908036.551192 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908036.552136 - INFO - 127.0.0.1 - - [05/Dec/2025 04:13:56] "POST / HTTP/1.1" 200 -
+1764908039.600110 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908039.600826 - INFO - 127.0.0.1 - - [05/Dec/2025 04:13:59] "POST / HTTP/1.1" 200 -
+1764908042.645809 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908042.646521 - INFO - 127.0.0.1 - - [05/Dec/2025 04:14:02] "POST / HTTP/1.1" 200 -
+1764908045.705113 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908045.706366 - INFO - 127.0.0.1 - - [05/Dec/2025 04:14:05] "POST / HTTP/1.1" 200 -
+1764908048.742956 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908048.743656 - INFO - 127.0.0.1 - - [05/Dec/2025 04:14:08] "POST / HTTP/1.1" 200 -
+1764908051.790313 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908051.791122 - INFO - 127.0.0.1 - - [05/Dec/2025 04:14:11] "POST / HTTP/1.1" 200 -
+1764908054.836260 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908054.836941 - INFO - 127.0.0.1 - - [05/Dec/2025 04:14:14] "POST / HTTP/1.1" 200 -
+1764908057.873141 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908057.873788 - INFO - 127.0.0.1 - - [05/Dec/2025 04:14:17] "POST / HTTP/1.1" 200 -
+1764908060.957322 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908060.957991 - INFO - 127.0.0.1 - - [05/Dec/2025 04:14:20] "POST / HTTP/1.1" 200 -
+1764908063.978420 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908063.978959 - INFO - 127.0.0.1 - - [05/Dec/2025 04:14:23] "POST / HTTP/1.1" 200 -
+1764908067.045320 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908067.046942 - INFO - 127.0.0.1 - - [05/Dec/2025 04:14:27] "POST / HTTP/1.1" 200 -
+1764908070.073340 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908070.074353 - INFO - 127.0.0.1 - - [05/Dec/2025 04:14:30] "POST / HTTP/1.1" 200 -
+1764908073.135374 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908073.136276 - INFO - 127.0.0.1 - - [05/Dec/2025 04:14:33] "POST / HTTP/1.1" 200 -
+1764908076.186820 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908076.187603 - INFO - 127.0.0.1 - - [05/Dec/2025 04:14:36] "POST / HTTP/1.1" 200 -
+1764908079.240556 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908079.241059 - INFO - 127.0.0.1 - - [05/Dec/2025 04:14:39] "POST / HTTP/1.1" 200 -
+1764908082.279296 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908082.280000 - INFO - 127.0.0.1 - - [05/Dec/2025 04:14:42] "POST / HTTP/1.1" 200 -
+1764908085.331653 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908085.332284 - INFO - 127.0.0.1 - - [05/Dec/2025 04:14:45] "POST / HTTP/1.1" 200 -
+1764908088.383115 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908088.383765 - INFO - 127.0.0.1 - - [05/Dec/2025 04:14:48] "POST / HTTP/1.1" 200 -
+1764908091.432097 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908091.432766 - INFO - 127.0.0.1 - - [05/Dec/2025 04:14:51] "POST / HTTP/1.1" 200 -
+1764908094.480962 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908094.481503 - INFO - 127.0.0.1 - - [05/Dec/2025 04:14:54] "POST / HTTP/1.1" 200 -
+1764908097.529091 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908097.529820 - INFO - 127.0.0.1 - - [05/Dec/2025 04:14:57] "POST / HTTP/1.1" 200 -
+1764908100.592631 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908100.593235 - INFO - 127.0.0.1 - - [05/Dec/2025 04:15:00] "POST / HTTP/1.1" 200 -
+1764908103.632428 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908103.633072 - INFO - 127.0.0.1 - - [05/Dec/2025 04:15:03] "POST / HTTP/1.1" 200 -
+1764908106.682701 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908106.683337 - INFO - 127.0.0.1 - - [05/Dec/2025 04:15:06] "POST / HTTP/1.1" 200 -
+1764908109.731225 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908109.731851 - INFO - 127.0.0.1 - - [05/Dec/2025 04:15:09] "POST / HTTP/1.1" 200 -
+1764908112.786752 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908112.787350 - INFO - 127.0.0.1 - - [05/Dec/2025 04:15:12] "POST / HTTP/1.1" 200 -
+1764908115.820133 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908115.820906 - INFO - 127.0.0.1 - - [05/Dec/2025 04:15:15] "POST / HTTP/1.1" 200 -
+1764908118.868630 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908118.869351 - INFO - 127.0.0.1 - - [05/Dec/2025 04:15:18] "POST / HTTP/1.1" 200 -
+1764908121.914504 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908121.915234 - INFO - 127.0.0.1 - - [05/Dec/2025 04:15:21] "POST / HTTP/1.1" 200 -
+1764908124.967061 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908124.967801 - INFO - 127.0.0.1 - - [05/Dec/2025 04:15:24] "POST / HTTP/1.1" 200 -
+1764908128.013165 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908128.013877 - INFO - 127.0.0.1 - - [05/Dec/2025 04:15:28] "POST / HTTP/1.1" 200 -
+1764908131.076908 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908131.077545 - INFO - 127.0.0.1 - - [05/Dec/2025 04:15:31] "POST / HTTP/1.1" 200 -
+1764908134.109509 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908134.110183 - INFO - 127.0.0.1 - - [05/Dec/2025 04:15:34] "POST / HTTP/1.1" 200 -
+1764908137.161339 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908137.162087 - INFO - 127.0.0.1 - - [05/Dec/2025 04:15:37] "POST / HTTP/1.1" 200 -
+1764908140.205044 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908140.205721 - INFO - 127.0.0.1 - - [05/Dec/2025 04:15:40] "POST / HTTP/1.1" 200 -
+1764908143.255463 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908143.256186 - INFO - 127.0.0.1 - - [05/Dec/2025 04:15:43] "POST / HTTP/1.1" 200 -
+1764908146.352604 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908146.353389 - INFO - 127.0.0.1 - - [05/Dec/2025 04:15:46] "POST / HTTP/1.1" 200 -
+1764908149.358591 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908149.359197 - INFO - 127.0.0.1 - - [05/Dec/2025 04:15:49] "POST / HTTP/1.1" 200 -
+1764908152.408504 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908152.409247 - INFO - 127.0.0.1 - - [05/Dec/2025 04:15:52] "POST / HTTP/1.1" 200 -
+1764908155.455142 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908155.455797 - INFO - 127.0.0.1 - - [05/Dec/2025 04:15:55] "POST / HTTP/1.1" 200 -
+1764908158.504113 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908158.504850 - INFO - 127.0.0.1 - - [05/Dec/2025 04:15:58] "POST / HTTP/1.1" 200 -
+1764908161.551240 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908161.551931 - INFO - 127.0.0.1 - - [05/Dec/2025 04:16:01] "POST / HTTP/1.1" 200 -
+1764908164.598539 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908164.599231 - INFO - 127.0.0.1 - - [05/Dec/2025 04:16:04] "POST / HTTP/1.1" 200 -
+1764908167.650388 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908167.651027 - INFO - 127.0.0.1 - - [05/Dec/2025 04:16:07] "POST / HTTP/1.1" 200 -
+1764908170.714963 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908170.715719 - INFO - 127.0.0.1 - - [05/Dec/2025 04:16:10] "POST / HTTP/1.1" 200 -
+1764908173.771264 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908173.772556 - INFO - 127.0.0.1 - - [05/Dec/2025 04:16:13] "POST / HTTP/1.1" 200 -
+1764908176.797851 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908176.798596 - INFO - 127.0.0.1 - - [05/Dec/2025 04:16:16] "POST / HTTP/1.1" 200 -
+1764908179.847790 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908179.848393 - INFO - 127.0.0.1 - - [05/Dec/2025 04:16:19] "POST / HTTP/1.1" 200 -
+1764908182.897233 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908182.897914 - INFO - 127.0.0.1 - - [05/Dec/2025 04:16:22] "POST / HTTP/1.1" 200 -
+1764908185.947177 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908185.947891 - INFO - 127.0.0.1 - - [05/Dec/2025 04:16:25] "POST / HTTP/1.1" 200 -
+1764908188.995427 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908188.995961 - INFO - 127.0.0.1 - - [05/Dec/2025 04:16:28] "POST / HTTP/1.1" 200 -
+1764908192.045947 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908192.046659 - INFO - 127.0.0.1 - - [05/Dec/2025 04:16:32] "POST / HTTP/1.1" 200 -
+1764908195.091139 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908195.091817 - INFO - 127.0.0.1 - - [05/Dec/2025 04:16:35] "POST / HTTP/1.1" 200 -
+1764908198.145116 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908198.145821 - INFO - 127.0.0.1 - - [05/Dec/2025 04:16:38] "POST / HTTP/1.1" 200 -
+1764908201.194591 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908201.195210 - INFO - 127.0.0.1 - - [05/Dec/2025 04:16:41] "POST / HTTP/1.1" 200 -
+1764908204.242737 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908204.243707 - INFO - 127.0.0.1 - - [05/Dec/2025 04:16:44] "POST / HTTP/1.1" 200 -
+1764908207.293488 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908207.294101 - INFO - 127.0.0.1 - - [05/Dec/2025 04:16:47] "POST / HTTP/1.1" 200 -
+1764908210.337204 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908210.337946 - INFO - 127.0.0.1 - - [05/Dec/2025 04:16:50] "POST / HTTP/1.1" 200 -
+1764908213.386085 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908213.386768 - INFO - 127.0.0.1 - - [05/Dec/2025 04:16:53] "POST / HTTP/1.1" 200 -
+1764908216.439046 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908216.439768 - INFO - 127.0.0.1 - - [05/Dec/2025 04:16:56] "POST / HTTP/1.1" 200 -
+1764908219.492719 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908219.493479 - INFO - 127.0.0.1 - - [05/Dec/2025 04:16:59] "POST / HTTP/1.1" 200 -
+1764908222.547426 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908222.548126 - INFO - 127.0.0.1 - - [05/Dec/2025 04:17:02] "POST / HTTP/1.1" 200 -
+1764908225.603264 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908225.603918 - INFO - 127.0.0.1 - - [05/Dec/2025 04:17:05] "POST / HTTP/1.1" 200 -
+1764908228.658515 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908228.659135 - INFO - 127.0.0.1 - - [05/Dec/2025 04:17:08] "POST / HTTP/1.1" 200 -
+1764908231.702733 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908231.703281 - INFO - 127.0.0.1 - - [05/Dec/2025 04:17:11] "POST / HTTP/1.1" 200 -
+1764908234.750858 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908234.751519 - INFO - 127.0.0.1 - - [05/Dec/2025 04:17:14] "POST / HTTP/1.1" 200 -
+1764908237.817875 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908237.818516 - INFO - 127.0.0.1 - - [05/Dec/2025 04:17:17] "POST / HTTP/1.1" 200 -
+1764908240.852982 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908240.853538 - INFO - 127.0.0.1 - - [05/Dec/2025 04:17:20] "POST / HTTP/1.1" 200 -
+1764908243.907425 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908243.908117 - INFO - 127.0.0.1 - - [05/Dec/2025 04:17:23] "POST / HTTP/1.1" 200 -
+1764908246.943683 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908246.944178 - INFO - 127.0.0.1 - - [05/Dec/2025 04:17:26] "POST / HTTP/1.1" 200 -
+1764908249.999018 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908249.999454 - INFO - 127.0.0.1 - - [05/Dec/2025 04:17:29] "POST / HTTP/1.1" 200 -
+1764908253.053967 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908253.054607 - INFO - 127.0.0.1 - - [05/Dec/2025 04:17:33] "POST / HTTP/1.1" 200 -
+1764908256.113992 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908256.114635 - INFO - 127.0.0.1 - - [05/Dec/2025 04:17:36] "POST / HTTP/1.1" 200 -
+1764908259.152370 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908259.153069 - INFO - 127.0.0.1 - - [05/Dec/2025 04:17:39] "POST / HTTP/1.1" 200 -
+1764908262.204317 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908262.204976 - INFO - 127.0.0.1 - - [05/Dec/2025 04:17:42] "POST / HTTP/1.1" 200 -
+1764908265.253254 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908265.253799 - INFO - 127.0.0.1 - - [05/Dec/2025 04:17:45] "POST / HTTP/1.1" 200 -
+1764908268.316173 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908268.316821 - INFO - 127.0.0.1 - - [05/Dec/2025 04:17:48] "POST / HTTP/1.1" 200 -
+1764908271.356560 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908271.357176 - INFO - 127.0.0.1 - - [05/Dec/2025 04:17:51] "POST / HTTP/1.1" 200 -
+1764908274.403066 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908274.403977 - INFO - 127.0.0.1 - - [05/Dec/2025 04:17:54] "POST / HTTP/1.1" 200 -
+1764908277.447917 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908277.448606 - INFO - 127.0.0.1 - - [05/Dec/2025 04:17:57] "POST / HTTP/1.1" 200 -
+1764908280.503160 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908280.503983 - INFO - 127.0.0.1 - - [05/Dec/2025 04:18:00] "POST / HTTP/1.1" 200 -
+1764908283.626668 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908283.627511 - INFO - 127.0.0.1 - - [05/Dec/2025 04:18:03] "POST / HTTP/1.1" 200 -
+1764908286.589374 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908286.590075 - INFO - 127.0.0.1 - - [05/Dec/2025 04:18:06] "POST / HTTP/1.1" 200 -
+1764908289.643366 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908289.644114 - INFO - 127.0.0.1 - - [05/Dec/2025 04:18:09] "POST / HTTP/1.1" 200 -
+1764908292.685256 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908292.686064 - INFO - 127.0.0.1 - - [05/Dec/2025 04:18:12] "POST / HTTP/1.1" 200 -
+1764908295.754233 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908295.755335 - INFO - 127.0.0.1 - - [05/Dec/2025 04:18:15] "POST / HTTP/1.1" 200 -
+1764908298.806330 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908298.809476 - INFO - 127.0.0.1 - - [05/Dec/2025 04:18:18] "POST / HTTP/1.1" 200 -
+1764908301.826375 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908301.827050 - INFO - 127.0.0.1 - - [05/Dec/2025 04:18:21] "POST / HTTP/1.1" 200 -
+1764908304.878839 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908304.879564 - INFO - 127.0.0.1 - - [05/Dec/2025 04:18:24] "POST / HTTP/1.1" 200 -
+1764908307.927539 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908307.927993 - INFO - 127.0.0.1 - - [05/Dec/2025 04:18:27] "POST / HTTP/1.1" 200 -
+1764908310.971399 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908310.971901 - INFO - 127.0.0.1 - - [05/Dec/2025 04:18:30] "POST / HTTP/1.1" 200 -
+1764908314.021346 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908314.022125 - INFO - 127.0.0.1 - - [05/Dec/2025 04:18:34] "POST / HTTP/1.1" 200 -
+1764908317.075984 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908317.076663 - INFO - 127.0.0.1 - - [05/Dec/2025 04:18:37] "POST / HTTP/1.1" 200 -
+1764908320.125607 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908320.126496 - INFO - 127.0.0.1 - - [05/Dec/2025 04:18:40] "POST / HTTP/1.1" 200 -
+1764908323.167742 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908323.168411 - INFO - 127.0.0.1 - - [05/Dec/2025 04:18:43] "POST / HTTP/1.1" 200 -
+1764908326.223876 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908326.224565 - INFO - 127.0.0.1 - - [05/Dec/2025 04:18:46] "POST / HTTP/1.1" 200 -
+1764908329.267520 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908329.268230 - INFO - 127.0.0.1 - - [05/Dec/2025 04:18:49] "POST / HTTP/1.1" 200 -
+1764908332.321260 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908332.321949 - INFO - 127.0.0.1 - - [05/Dec/2025 04:18:52] "POST / HTTP/1.1" 200 -
+1764908335.371827 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908335.372607 - INFO - 127.0.0.1 - - [05/Dec/2025 04:18:55] "POST / HTTP/1.1" 200 -
+1764908338.425511 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908338.426123 - INFO - 127.0.0.1 - - [05/Dec/2025 04:18:58] "POST / HTTP/1.1" 200 -
+1764908341.486960 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908341.487709 - INFO - 127.0.0.1 - - [05/Dec/2025 04:19:01] "POST / HTTP/1.1" 200 -
+1764908344.537181 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908344.537850 - INFO - 127.0.0.1 - - [05/Dec/2025 04:19:04] "POST / HTTP/1.1" 200 -
+1764908347.652763 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908347.653664 - INFO - 127.0.0.1 - - [05/Dec/2025 04:19:07] "POST / HTTP/1.1" 200 -
+1764908350.634408 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908350.635204 - INFO - 127.0.0.1 - - [05/Dec/2025 04:19:10] "POST / HTTP/1.1" 200 -
+1764908353.681881 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908353.682584 - INFO - 127.0.0.1 - - [05/Dec/2025 04:19:13] "POST / HTTP/1.1" 200 -
+1764908356.724386 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908356.725054 - INFO - 127.0.0.1 - - [05/Dec/2025 04:19:16] "POST / HTTP/1.1" 200 -
+1764908359.773130 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908359.773780 - INFO - 127.0.0.1 - - [05/Dec/2025 04:19:19] "POST / HTTP/1.1" 200 -
+1764908362.821321 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908362.822385 - INFO - 127.0.0.1 - - [05/Dec/2025 04:19:22] "POST / HTTP/1.1" 200 -
+1764908365.872957 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908365.873738 - INFO - 127.0.0.1 - - [05/Dec/2025 04:19:25] "POST / HTTP/1.1" 200 -
+1764908368.899246 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908368.899787 - INFO - 127.0.0.1 - - [05/Dec/2025 04:19:28] "POST / HTTP/1.1" 200 -
+1764908371.946048 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908371.946499 - INFO - 127.0.0.1 - - [05/Dec/2025 04:19:31] "POST / HTTP/1.1" 200 -
+1764908374.997289 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908374.997949 - INFO - 127.0.0.1 - - [05/Dec/2025 04:19:34] "POST / HTTP/1.1" 200 -
+1764908378.042511 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908378.043186 - INFO - 127.0.0.1 - - [05/Dec/2025 04:19:38] "POST / HTTP/1.1" 200 -
+1764908381.089997 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908381.090756 - INFO - 127.0.0.1 - - [05/Dec/2025 04:19:41] "POST / HTTP/1.1" 200 -
+1764908384.133276 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908384.134020 - INFO - 127.0.0.1 - - [05/Dec/2025 04:19:44] "POST / HTTP/1.1" 200 -
+1764908387.181719 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908387.182373 - INFO - 127.0.0.1 - - [05/Dec/2025 04:19:47] "POST / HTTP/1.1" 200 -
+1764908390.228022 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908390.228722 - INFO - 127.0.0.1 - - [05/Dec/2025 04:19:50] "POST / HTTP/1.1" 200 -
+1764908393.276536 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908393.277153 - INFO - 127.0.0.1 - - [05/Dec/2025 04:19:53] "POST / HTTP/1.1" 200 -
+1764908396.324808 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908396.325408 - INFO - 127.0.0.1 - - [05/Dec/2025 04:19:56] "POST / HTTP/1.1" 200 -
+1764908399.376690 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908399.377377 - INFO - 127.0.0.1 - - [05/Dec/2025 04:19:59] "POST / HTTP/1.1" 200 -
+1764908402.426101 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908402.426738 - INFO - 127.0.0.1 - - [05/Dec/2025 04:20:02] "POST / HTTP/1.1" 200 -
+1764908405.475517 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908405.476159 - INFO - 127.0.0.1 - - [05/Dec/2025 04:20:05] "POST / HTTP/1.1" 200 -
+1764908408.521039 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908408.521692 - INFO - 127.0.0.1 - - [05/Dec/2025 04:20:08] "POST / HTTP/1.1" 200 -
+1764908411.645582 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908411.646251 - INFO - 127.0.0.1 - - [05/Dec/2025 04:20:11] "POST / HTTP/1.1" 200 -
+1764908414.650813 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908414.651535 - INFO - 127.0.0.1 - - [05/Dec/2025 04:20:14] "POST / HTTP/1.1" 200 -
+1764908417.704690 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908417.706526 - INFO - 127.0.0.1 - - [05/Dec/2025 04:20:17] "POST / HTTP/1.1" 200 -
+1764908420.735596 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908420.736380 - INFO - 127.0.0.1 - - [05/Dec/2025 04:20:20] "POST / HTTP/1.1" 200 -
+1764908423.786973 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908423.787653 - INFO - 127.0.0.1 - - [05/Dec/2025 04:20:23] "POST / HTTP/1.1" 200 -
+1764908426.833654 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908426.834258 - INFO - 127.0.0.1 - - [05/Dec/2025 04:20:26] "POST / HTTP/1.1" 200 -
+1764908429.882388 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908429.883098 - INFO - 127.0.0.1 - - [05/Dec/2025 04:20:29] "POST / HTTP/1.1" 200 -
+1764908432.930421 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908432.931391 - INFO - 127.0.0.1 - - [05/Dec/2025 04:20:32] "POST / HTTP/1.1" 200 -
+1764908435.992840 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908435.993929 - INFO - 127.0.0.1 - - [05/Dec/2025 04:20:35] "POST / HTTP/1.1" 200 -
+1764908439.044158 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908439.044868 - INFO - 127.0.0.1 - - [05/Dec/2025 04:20:39] "POST / HTTP/1.1" 200 -
+1764908442.086289 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908442.086948 - INFO - 127.0.0.1 - - [05/Dec/2025 04:20:42] "POST / HTTP/1.1" 200 -
+1764908445.137609 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908445.138266 - INFO - 127.0.0.1 - - [05/Dec/2025 04:20:45] "POST / HTTP/1.1" 200 -
+1764908448.189233 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908448.189875 - INFO - 127.0.0.1 - - [05/Dec/2025 04:20:48] "POST / HTTP/1.1" 200 -
+1764908451.233834 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908451.234632 - INFO - 127.0.0.1 - - [05/Dec/2025 04:20:51] "POST / HTTP/1.1" 200 -
+1764908454.282256 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908454.282938 - INFO - 127.0.0.1 - - [05/Dec/2025 04:20:54] "POST / HTTP/1.1" 200 -
+1764908457.334013 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908457.334717 - INFO - 127.0.0.1 - - [05/Dec/2025 04:20:57] "POST / HTTP/1.1" 200 -
+1764908460.387864 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908460.388657 - INFO - 127.0.0.1 - - [05/Dec/2025 04:21:00] "POST / HTTP/1.1" 200 -
+1764908463.444615 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908463.445220 - INFO - 127.0.0.1 - - [05/Dec/2025 04:21:03] "POST / HTTP/1.1" 200 -
+1764908466.497624 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908466.498233 - INFO - 127.0.0.1 - - [05/Dec/2025 04:21:06] "POST / HTTP/1.1" 200 -
+1764908469.544990 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908469.545707 - INFO - 127.0.0.1 - - [05/Dec/2025 04:21:09] "POST / HTTP/1.1" 200 -
+1764908472.602532 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908472.603198 - INFO - 127.0.0.1 - - [05/Dec/2025 04:21:12] "POST / HTTP/1.1" 200 -
+1764908475.728766 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908475.729520 - INFO - 127.0.0.1 - - [05/Dec/2025 04:21:15] "POST / HTTP/1.1" 200 -
+1764908478.711200 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908478.712012 - INFO - 127.0.0.1 - - [05/Dec/2025 04:21:18] "POST / HTTP/1.1" 200 -
+1764908481.748142 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908481.748645 - INFO - 127.0.0.1 - - [05/Dec/2025 04:21:21] "POST / HTTP/1.1" 200 -
+1764908484.788550 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908484.789331 - INFO - 127.0.0.1 - - [05/Dec/2025 04:21:24] "POST / HTTP/1.1" 200 -
+1764908487.830760 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908487.831384 - INFO - 127.0.0.1 - - [05/Dec/2025 04:21:27] "POST / HTTP/1.1" 200 -
+1764908490.877032 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908490.877757 - INFO - 127.0.0.1 - - [05/Dec/2025 04:21:30] "POST / HTTP/1.1" 200 -
+1764908493.915062 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908493.915478 - INFO - 127.0.0.1 - - [05/Dec/2025 04:21:33] "POST / HTTP/1.1" 200 -
+1764908496.970849 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908496.971545 - INFO - 127.0.0.1 - - [05/Dec/2025 04:21:36] "POST / HTTP/1.1" 200 -
+1764908500.023774 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908500.024434 - INFO - 127.0.0.1 - - [05/Dec/2025 04:21:40] "POST / HTTP/1.1" 200 -
+1764908503.072376 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908503.073068 - INFO - 127.0.0.1 - - [05/Dec/2025 04:21:43] "POST / HTTP/1.1" 200 -
+1764908506.127594 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908506.128203 - INFO - 127.0.0.1 - - [05/Dec/2025 04:21:46] "POST / HTTP/1.1" 200 -
+1764908509.170585 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908509.171188 - INFO - 127.0.0.1 - - [05/Dec/2025 04:21:49] "POST / HTTP/1.1" 200 -
+1764908512.215347 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908512.215986 - INFO - 127.0.0.1 - - [05/Dec/2025 04:21:52] "POST / HTTP/1.1" 200 -
+1764908515.261600 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908515.262221 - INFO - 127.0.0.1 - - [05/Dec/2025 04:21:55] "POST / HTTP/1.1" 200 -
+1764908518.308766 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908518.309429 - INFO - 127.0.0.1 - - [05/Dec/2025 04:21:58] "POST / HTTP/1.1" 200 -
+1764908521.358173 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908521.359043 - INFO - 127.0.0.1 - - [05/Dec/2025 04:22:01] "POST / HTTP/1.1" 200 -
+1764908524.406181 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908524.406882 - INFO - 127.0.0.1 - - [05/Dec/2025 04:22:04] "POST / HTTP/1.1" 200 -
+1764908527.465960 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908527.466605 - INFO - 127.0.0.1 - - [05/Dec/2025 04:22:07] "POST / HTTP/1.1" 200 -
+1764908530.515929 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908530.516675 - INFO - 127.0.0.1 - - [05/Dec/2025 04:22:10] "POST / HTTP/1.1" 200 -
+1764908533.638306 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908533.639043 - INFO - 127.0.0.1 - - [05/Dec/2025 04:22:13] "POST / HTTP/1.1" 200 -
+1764908536.646536 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908536.653565 - INFO - 127.0.0.1 - - [05/Dec/2025 04:22:16] "POST / HTTP/1.1" 200 -
+1764908539.682899 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908539.683559 - INFO - 127.0.0.1 - - [05/Dec/2025 04:22:19] "POST / HTTP/1.1" 200 -
+1764908542.707746 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908542.708346 - INFO - 127.0.0.1 - - [05/Dec/2025 04:22:22] "POST / HTTP/1.1" 200 -
+1764908545.777594 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908545.779614 - INFO - 127.0.0.1 - - [05/Dec/2025 04:22:25] "POST / HTTP/1.1" 200 -
+1764908548.796739 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908548.797513 - INFO - 127.0.0.1 - - [05/Dec/2025 04:22:28] "POST / HTTP/1.1" 200 -
+1764908551.842813 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908551.843298 - INFO - 127.0.0.1 - - [05/Dec/2025 04:22:31] "POST / HTTP/1.1" 200 -
+1764908554.884831 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908554.885321 - INFO - 127.0.0.1 - - [05/Dec/2025 04:22:34] "POST / HTTP/1.1" 200 -
+1764908557.935536 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908557.936139 - INFO - 127.0.0.1 - - [05/Dec/2025 04:22:37] "POST / HTTP/1.1" 200 -
+1764908560.987952 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908560.988783 - INFO - 127.0.0.1 - - [05/Dec/2025 04:22:40] "POST / HTTP/1.1" 200 -
+1764908564.036594 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908564.037350 - INFO - 127.0.0.1 - - [05/Dec/2025 04:22:44] "POST / HTTP/1.1" 200 -
+1764908567.079800 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908567.080407 - INFO - 127.0.0.1 - - [05/Dec/2025 04:22:47] "POST / HTTP/1.1" 200 -
+1764908570.135498 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908570.136144 - INFO - 127.0.0.1 - - [05/Dec/2025 04:22:50] "POST / HTTP/1.1" 200 -
+1764908573.181488 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908573.182178 - INFO - 127.0.0.1 - - [05/Dec/2025 04:22:53] "POST / HTTP/1.1" 200 -
+1764908576.228647 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908576.229260 - INFO - 127.0.0.1 - - [05/Dec/2025 04:22:56] "POST / HTTP/1.1" 200 -
+1764908579.275075 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908579.275899 - INFO - 127.0.0.1 - - [05/Dec/2025 04:22:59] "POST / HTTP/1.1" 200 -
+1764908582.325561 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908582.326174 - INFO - 127.0.0.1 - - [05/Dec/2025 04:23:02] "POST / HTTP/1.1" 200 -
+1764908585.370298 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908585.371006 - INFO - 127.0.0.1 - - [05/Dec/2025 04:23:05] "POST / HTTP/1.1" 200 -
+1764908588.422816 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908588.423420 - INFO - 127.0.0.1 - - [05/Dec/2025 04:23:08] "POST / HTTP/1.1" 200 -
+1764908591.478495 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908591.479271 - INFO - 127.0.0.1 - - [05/Dec/2025 04:23:11] "POST / HTTP/1.1" 200 -
+1764908594.518517 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908594.519127 - INFO - 127.0.0.1 - - [05/Dec/2025 04:23:14] "POST / HTTP/1.1" 200 -
+1764908597.564919 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908597.565728 - INFO - 127.0.0.1 - - [05/Dec/2025 04:23:17] "POST / HTTP/1.1" 200 -
+1764908600.617807 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908600.618413 - INFO - 127.0.0.1 - - [05/Dec/2025 04:23:20] "POST / HTTP/1.1" 200 -
+1764908603.736633 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908603.737333 - INFO - 127.0.0.1 - - [05/Dec/2025 04:23:23] "POST / HTTP/1.1" 200 -
+1764908606.702038 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908606.702692 - INFO - 127.0.0.1 - - [05/Dec/2025 04:23:26] "POST / HTTP/1.1" 200 -
+1764908609.751154 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908609.751855 - INFO - 127.0.0.1 - - [05/Dec/2025 04:23:29] "POST / HTTP/1.1" 200 -
+1764908612.803811 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908612.804513 - INFO - 127.0.0.1 - - [05/Dec/2025 04:23:32] "POST / HTTP/1.1" 200 -
+1764908615.857229 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908615.857924 - INFO - 127.0.0.1 - - [05/Dec/2025 04:23:35] "POST / HTTP/1.1" 200 -
+1764908618.900988 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908618.901747 - INFO - 127.0.0.1 - - [05/Dec/2025 04:23:38] "POST / HTTP/1.1" 200 -
+1764908621.944340 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908621.945176 - INFO - 127.0.0.1 - - [05/Dec/2025 04:23:41] "POST / HTTP/1.1" 200 -
+1764908624.995481 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908624.996087 - INFO - 127.0.0.1 - - [05/Dec/2025 04:23:44] "POST / HTTP/1.1" 200 -
+1764908628.039035 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908628.039740 - INFO - 127.0.0.1 - - [05/Dec/2025 04:23:48] "POST / HTTP/1.1" 200 -
+1764908631.107316 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908631.108035 - INFO - 127.0.0.1 - - [05/Dec/2025 04:23:51] "POST / HTTP/1.1" 200 -
+1764908634.158619 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908634.160619 - INFO - 127.0.0.1 - - [05/Dec/2025 04:23:54] "POST / HTTP/1.1" 200 -
+1764908637.181875 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908637.182678 - INFO - 127.0.0.1 - - [05/Dec/2025 04:23:57] "POST / HTTP/1.1" 200 -
+1764908640.224203 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908640.225045 - INFO - 127.0.0.1 - - [05/Dec/2025 04:24:00] "POST / HTTP/1.1" 200 -
+1764908643.268014 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908643.268496 - INFO - 127.0.0.1 - - [05/Dec/2025 04:24:03] "POST / HTTP/1.1" 200 -
+1764908646.319253 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908646.319924 - INFO - 127.0.0.1 - - [05/Dec/2025 04:24:06] "POST / HTTP/1.1" 200 -
+1764908649.370191 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908649.370927 - INFO - 127.0.0.1 - - [05/Dec/2025 04:24:09] "POST / HTTP/1.1" 200 -
+1764908652.412250 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908652.412950 - INFO - 127.0.0.1 - - [05/Dec/2025 04:24:12] "POST / HTTP/1.1" 200 -
+1764908655.457300 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908655.458163 - INFO - 127.0.0.1 - - [05/Dec/2025 04:24:15] "POST / HTTP/1.1" 200 -
+1764908658.513293 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908658.514138 - INFO - 127.0.0.1 - - [05/Dec/2025 04:24:18] "POST / HTTP/1.1" 200 -
+1764908661.558898 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908661.559596 - INFO - 127.0.0.1 - - [05/Dec/2025 04:24:21] "POST / HTTP/1.1" 200 -
+1764908664.603338 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908664.604004 - INFO - 127.0.0.1 - - [05/Dec/2025 04:24:24] "POST / HTTP/1.1" 200 -
+1764908667.703746 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908667.704350 - INFO - 127.0.0.1 - - [05/Dec/2025 04:24:27] "POST / HTTP/1.1" 200 -
+1764908670.695426 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908670.696089 - INFO - 127.0.0.1 - - [05/Dec/2025 04:24:30] "POST / HTTP/1.1" 200 -
+1764908673.747703 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908673.748507 - INFO - 127.0.0.1 - - [05/Dec/2025 04:24:33] "POST / HTTP/1.1" 200 -
+1764908676.790806 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908676.791607 - INFO - 127.0.0.1 - - [05/Dec/2025 04:24:36] "POST / HTTP/1.1" 200 -
+1764908679.845098 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908679.845773 - INFO - 127.0.0.1 - - [05/Dec/2025 04:24:39] "POST / HTTP/1.1" 200 -
+1764908682.891758 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908682.892372 - INFO - 127.0.0.1 - - [05/Dec/2025 04:24:42] "POST / HTTP/1.1" 200 -
+1764908685.939742 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908685.940362 - INFO - 127.0.0.1 - - [05/Dec/2025 04:24:45] "POST / HTTP/1.1" 200 -
+1764908688.994798 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908688.995655 - INFO - 127.0.0.1 - - [05/Dec/2025 04:24:48] "POST / HTTP/1.1" 200 -
+1764908692.036912 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908692.037605 - INFO - 127.0.0.1 - - [05/Dec/2025 04:24:52] "POST / HTTP/1.1" 200 -
+1764908695.084365 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908695.085078 - INFO - 127.0.0.1 - - [05/Dec/2025 04:24:55] "POST / HTTP/1.1" 200 -
+1764908698.143973 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908698.144723 - INFO - 127.0.0.1 - - [05/Dec/2025 04:24:58] "POST / HTTP/1.1" 200 -
+1764908701.187322 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908701.187977 - INFO - 127.0.0.1 - - [05/Dec/2025 04:25:01] "POST / HTTP/1.1" 200 -
+1764908704.231807 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908704.232400 - INFO - 127.0.0.1 - - [05/Dec/2025 04:25:04] "POST / HTTP/1.1" 200 -
+1764908707.287033 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908707.287913 - INFO - 127.0.0.1 - - [05/Dec/2025 04:25:07] "POST / HTTP/1.1" 200 -
+1764908710.335495 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908710.336136 - INFO - 127.0.0.1 - - [05/Dec/2025 04:25:10] "POST / HTTP/1.1" 200 -
+1764908713.375973 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908713.377007 - INFO - 127.0.0.1 - - [05/Dec/2025 04:25:13] "POST / HTTP/1.1" 200 -
+1764908716.426876 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908716.427812 - INFO - 127.0.0.1 - - [05/Dec/2025 04:25:16] "POST / HTTP/1.1" 200 -
+1764908719.470898 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908719.471760 - INFO - 127.0.0.1 - - [05/Dec/2025 04:25:19] "POST / HTTP/1.1" 200 -
+1764908722.516883 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908722.517567 - INFO - 127.0.0.1 - - [05/Dec/2025 04:25:22] "POST / HTTP/1.1" 200 -
+1764908725.569264 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908725.569978 - INFO - 127.0.0.1 - - [05/Dec/2025 04:25:25] "POST / HTTP/1.1" 200 -
+1764908728.616258 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908728.616971 - INFO - 127.0.0.1 - - [05/Dec/2025 04:25:28] "POST / HTTP/1.1" 200 -
+1764908731.663207 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908731.663875 - INFO - 127.0.0.1 - - [05/Dec/2025 04:25:31] "POST / HTTP/1.1" 200 -
+1764908734.713629 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908734.714010 - INFO - 127.0.0.1 - - [05/Dec/2025 04:25:34] "POST / HTTP/1.1" 200 -
+1764908737.834038 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908737.834811 - INFO - 127.0.0.1 - - [05/Dec/2025 04:25:37] "POST / HTTP/1.1" 200 -
+1764908740.811004 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908740.811757 - INFO - 127.0.0.1 - - [05/Dec/2025 04:25:40] "POST / HTTP/1.1" 200 -
+1764908743.858798 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908743.859426 - INFO - 127.0.0.1 - - [05/Dec/2025 04:25:43] "POST / HTTP/1.1" 200 -
+1764908746.904824 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908746.905250 - INFO - 127.0.0.1 - - [05/Dec/2025 04:25:46] "POST / HTTP/1.1" 200 -
+1764908749.967782 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908749.968545 - INFO - 127.0.0.1 - - [05/Dec/2025 04:25:49] "POST / HTTP/1.1" 200 -
+1764908753.014574 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908753.015320 - INFO - 127.0.0.1 - - [05/Dec/2025 04:25:53] "POST / HTTP/1.1" 200 -
+1764908756.063393 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908756.064212 - INFO - 127.0.0.1 - - [05/Dec/2025 04:25:56] "POST / HTTP/1.1" 200 -
+1764908759.110764 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908759.111390 - INFO - 127.0.0.1 - - [05/Dec/2025 04:25:59] "POST / HTTP/1.1" 200 -
+1764908762.171649 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908762.172483 - INFO - 127.0.0.1 - - [05/Dec/2025 04:26:02] "POST / HTTP/1.1" 200 -
+1764908765.245860 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908765.247848 - INFO - 127.0.0.1 - - [05/Dec/2025 04:26:05] "POST / HTTP/1.1" 200 -
+1764908768.258675 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908768.259307 - INFO - 127.0.0.1 - - [05/Dec/2025 04:26:08] "POST / HTTP/1.1" 200 -
+1764908771.296856 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908771.297487 - INFO - 127.0.0.1 - - [05/Dec/2025 04:26:11] "POST / HTTP/1.1" 200 -
+1764908774.345243 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908774.346072 - INFO - 127.0.0.1 - - [05/Dec/2025 04:26:14] "POST / HTTP/1.1" 200 -
+1764908777.394071 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908777.395315 - INFO - 127.0.0.1 - - [05/Dec/2025 04:26:17] "POST / HTTP/1.1" 200 -
+1764908780.426525 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908780.426957 - INFO - 127.0.0.1 - - [05/Dec/2025 04:26:20] "POST / HTTP/1.1" 200 -
+1764908783.484632 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908783.485388 - INFO - 127.0.0.1 - - [05/Dec/2025 04:26:23] "POST / HTTP/1.1" 200 -
+1764908786.531512 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908786.532115 - INFO - 127.0.0.1 - - [05/Dec/2025 04:26:26] "POST / HTTP/1.1" 200 -
+1764908789.576888 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908789.577906 - INFO - 127.0.0.1 - - [05/Dec/2025 04:26:29] "POST / HTTP/1.1" 200 -
+1764908792.616418 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908792.617089 - INFO - 127.0.0.1 - - [05/Dec/2025 04:26:32] "POST / HTTP/1.1" 200 -
+1764908795.680605 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908795.681057 - INFO - 127.0.0.1 - - [05/Dec/2025 04:26:35] "POST / HTTP/1.1" 200 -
+1764908798.715876 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908798.716622 - INFO - 127.0.0.1 - - [05/Dec/2025 04:26:38] "POST / HTTP/1.1" 200 -
+1764908801.840068 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908801.840721 - INFO - 127.0.0.1 - - [05/Dec/2025 04:26:41] "POST / HTTP/1.1" 200 -
+1764908804.816703 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908804.817315 - INFO - 127.0.0.1 - - [05/Dec/2025 04:26:44] "POST / HTTP/1.1" 200 -
+1764908807.861902 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908807.862597 - INFO - 127.0.0.1 - - [05/Dec/2025 04:26:47] "POST / HTTP/1.1" 200 -
+1764908810.915174 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908810.915823 - INFO - 127.0.0.1 - - [05/Dec/2025 04:26:50] "POST / HTTP/1.1" 200 -
+1764908813.963959 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908813.964677 - INFO - 127.0.0.1 - - [05/Dec/2025 04:26:53] "POST / HTTP/1.1" 200 -
+1764908817.009103 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908817.009746 - INFO - 127.0.0.1 - - [05/Dec/2025 04:26:57] "POST / HTTP/1.1" 200 -
+1764908820.052903 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908820.053577 - INFO - 127.0.0.1 - - [05/Dec/2025 04:27:00] "POST / HTTP/1.1" 200 -
+1764908823.100953 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908823.101612 - INFO - 127.0.0.1 - - [05/Dec/2025 04:27:03] "POST / HTTP/1.1" 200 -
+1764908826.160733 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908826.161355 - INFO - 127.0.0.1 - - [05/Dec/2025 04:27:06] "POST / HTTP/1.1" 200 -
+1764908829.190352 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908829.191358 - INFO - 127.0.0.1 - - [05/Dec/2025 04:27:09] "POST / HTTP/1.1" 200 -
+1764908832.235422 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908832.236178 - INFO - 127.0.0.1 - - [05/Dec/2025 04:27:12] "POST / HTTP/1.1" 200 -
+1764908835.280230 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908835.280864 - INFO - 127.0.0.1 - - [05/Dec/2025 04:27:15] "POST / HTTP/1.1" 200 -
+1764908838.335645 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908838.336251 - INFO - 127.0.0.1 - - [05/Dec/2025 04:27:18] "POST / HTTP/1.1" 200 -
+1764908841.376193 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908841.376600 - INFO - 127.0.0.1 - - [05/Dec/2025 04:27:21] "POST / HTTP/1.1" 200 -
+1764908844.428299 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908844.429197 - INFO - 127.0.0.1 - - [05/Dec/2025 04:27:24] "POST / HTTP/1.1" 200 -
+1764908847.477879 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908847.478635 - INFO - 127.0.0.1 - - [05/Dec/2025 04:27:27] "POST / HTTP/1.1" 200 -
+1764908850.518399 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908850.519204 - INFO - 127.0.0.1 - - [05/Dec/2025 04:27:30] "POST / HTTP/1.1" 200 -
+1764908853.563068 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908853.563755 - INFO - 127.0.0.1 - - [05/Dec/2025 04:27:33] "POST / HTTP/1.1" 200 -
+1764908856.606008 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908856.606504 - INFO - 127.0.0.1 - - [05/Dec/2025 04:27:36] "POST / HTTP/1.1" 200 -
+1764908859.648620 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908859.649024 - INFO - 127.0.0.1 - - [05/Dec/2025 04:27:39] "POST / HTTP/1.1" 200 -
+1764908862.706803 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908862.707565 - INFO - 127.0.0.1 - - [05/Dec/2025 04:27:42] "POST / HTTP/1.1" 200 -
+1764908865.820230 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908865.821111 - INFO - 127.0.0.1 - - [05/Dec/2025 04:27:45] "POST / HTTP/1.1" 200 -
+1764908868.797119 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908868.798029 - INFO - 127.0.0.1 - - [05/Dec/2025 04:27:48] "POST / HTTP/1.1" 200 -
+1764908871.864485 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908871.865148 - INFO - 127.0.0.1 - - [05/Dec/2025 04:27:51] "POST / HTTP/1.1" 200 -
+1764908874.887903 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908874.888852 - INFO - 127.0.0.1 - - [05/Dec/2025 04:27:54] "POST / HTTP/1.1" 200 -
+1764908877.971534 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908877.973336 - INFO - 127.0.0.1 - - [05/Dec/2025 04:27:57] "POST / HTTP/1.1" 200 -
+1764908880.978708 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908880.979475 - INFO - 127.0.0.1 - - [05/Dec/2025 04:28:00] "POST / HTTP/1.1" 200 -
+1764908884.027976 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908884.028685 - INFO - 127.0.0.1 - - [05/Dec/2025 04:28:04] "POST / HTTP/1.1" 200 -
+1764908887.076420 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908887.077061 - INFO - 127.0.0.1 - - [05/Dec/2025 04:28:07] "POST / HTTP/1.1" 200 -
+1764908890.119780 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908890.120461 - INFO - 127.0.0.1 - - [05/Dec/2025 04:28:10] "POST / HTTP/1.1" 200 -
+1764908893.163718 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908893.164331 - INFO - 127.0.0.1 - - [05/Dec/2025 04:28:13] "POST / HTTP/1.1" 200 -
+1764908896.213043 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908896.213735 - INFO - 127.0.0.1 - - [05/Dec/2025 04:28:16] "POST / HTTP/1.1" 200 -
+1764908899.276944 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908899.277731 - INFO - 127.0.0.1 - - [05/Dec/2025 04:28:19] "POST / HTTP/1.1" 200 -
+1764908902.312394 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908902.313065 - INFO - 127.0.0.1 - - [05/Dec/2025 04:28:22] "POST / HTTP/1.1" 200 -
+1764908905.360203 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908905.361249 - INFO - 127.0.0.1 - - [05/Dec/2025 04:28:25] "POST / HTTP/1.1" 200 -
+1764908908.404755 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908908.405365 - INFO - 127.0.0.1 - - [05/Dec/2025 04:28:28] "POST / HTTP/1.1" 200 -
+1764908911.453130 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908911.453840 - INFO - 127.0.0.1 - - [05/Dec/2025 04:28:31] "POST / HTTP/1.1" 200 -
+1764908914.501648 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908914.502361 - INFO - 127.0.0.1 - - [05/Dec/2025 04:28:34] "POST / HTTP/1.1" 200 -
+1764908917.554226 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908917.554907 - INFO - 127.0.0.1 - - [05/Dec/2025 04:28:37] "POST / HTTP/1.1" 200 -
+1764908920.625278 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908920.626026 - INFO - 127.0.0.1 - - [05/Dec/2025 04:28:40] "POST / HTTP/1.1" 200 -
+1764908923.656809 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908923.657409 - INFO - 127.0.0.1 - - [05/Dec/2025 04:28:43] "POST / HTTP/1.1" 200 -
+1764908926.709285 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908926.710229 - INFO - 127.0.0.1 - - [05/Dec/2025 04:28:46] "POST / HTTP/1.1" 200 -
+1764908929.758354 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908929.759326 - INFO - 127.0.0.1 - - [05/Dec/2025 04:28:49] "POST / HTTP/1.1" 200 -
+1764908932.797603 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908932.798226 - INFO - 127.0.0.1 - - [05/Dec/2025 04:28:52] "POST / HTTP/1.1" 200 -
+1764908935.916950 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908935.917725 - INFO - 127.0.0.1 - - [05/Dec/2025 04:28:55] "POST / HTTP/1.1" 200 -
+1764908938.903875 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908938.904685 - INFO - 127.0.0.1 - - [05/Dec/2025 04:28:58] "POST / HTTP/1.1" 200 -
+1764908941.939186 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908941.939818 - INFO - 127.0.0.1 - - [05/Dec/2025 04:29:01] "POST / HTTP/1.1" 200 -
+1764908945.000121 - DEBUG - Current hostnames <['f1-00001-deployment-86596dcd9d-jkz5f', 'f2-00001-deployment-6cbb8b8785-t2p67', 'f3-00001-deployment-9c98bc674-xb8bk', 'f4-00001-deployment-55466dc48b-2gztz', 'f5-00001-deployment-7869c8446d-bg8ms']>
+1764908945.000768 - INFO - 127.0.0.1 - - [05/Dec/2025 04:29:05] "POST / HTTP/1.1" 200 -

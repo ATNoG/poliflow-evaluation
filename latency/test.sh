@@ -12,7 +12,7 @@ WAIT_PERIOD=3                                    # Seconds to wait between each 
 NAMESPACES=("long-sequence" "long-parallel")      # "refund" "valve" "long-sequence" "long-parallel"
 WAIT_REBOOT=280                                  # Seconds to wait after rebooting the cluster machines
 TESTS=("baseline" "enforce")
-NUMBER_TESTS=10
+NUMBER_TESTS=350
 ENFORCER_QUEUE="ghcr.io/atnog/knative-flow-tagging/queue:latest"
 BASELINE_QUEUE="gcr.io/knative-releases/knative.dev/serving/cmd/queue:v1.19.5"
 
