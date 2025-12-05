@@ -3,7 +3,7 @@
 REGISTRY=ghcr.io/atnog/knative-workflow-apps-kit/long-parallel
 
 kubectl delete ksvc workflow -n long-parallel
-export MAVEN_OPTS="-Xmx16G -Xms4G -XX:MaxMetaspaceSize=4G"
+export MAVEN_OPTS="-Xss16m"
 kn workflow quarkus build --image=workflow --jib
 docker image tag workflow $REGISTRY/workflow
 docker push $REGISTRY/workflow

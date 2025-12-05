@@ -65,11 +65,6 @@
             <version>mine</version>
         </dependency>
         <dependency>
-            <groupId>org.kie</groupId>
-            <artifactId>kogito-addons-quarkus-data-index-inmemory</artifactId>
-            <version>mine</version>
-        </dependency>
-        <dependency>
             <groupId>org.apache.kie.sonataflow</groupId>
             <artifactId>sonataflow-quarkus</artifactId>
             <version>mine</version>
@@ -89,10 +84,6 @@
             <groupId>org.kie</groupId>
             <artifactId>kogito-addons-quarkus-fabric8-kubernetes-service-catalog</artifactId>
             <version>mine</version>
-        </dependency>
-        <dependency>
-            <groupId>org.kie</groupId>
-            <artifactId>kogito-addons-quarkus-data-index-common-runtime</artifactId>
         </dependency>
     </dependencies>
     <build>
@@ -150,6 +141,19 @@
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
+        <plugin>
+            <groupId>com.google.cloud.tools</groupId>
+            <artifactId>jib-maven-plugin</artifactId>
+            <version>3.5.1</version>
+            <configuration>
+                <container>
+                    <jvmFlags>
+                        <jvmFlag>-Xss16m</jvmFlag>
+                    </jvmFlags>
+                </container>
+            </configuration>
+        </plugin>
+
         </plugins>
     </build>
     <profiles>

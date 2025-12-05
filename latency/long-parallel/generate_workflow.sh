@@ -4,7 +4,7 @@
 n=$1
 max_per_flow=20
 output_dir="workflow/src/main/resources"
-rm $output_dir/subflow*
+rm $output_dir/subflow-*
 
 mkdir -p "$output_dir"
 
