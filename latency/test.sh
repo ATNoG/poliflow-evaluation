@@ -9,10 +9,10 @@ MACHINE_USER="ubuntu"                     # SSH user (assumed to have sudo privi
 EXTERNAL_IP="10.255.30.152"
 MACHINES=("10.255.30.152" "10.255.30.196" "10.255.30.244")  # IPs of the 3 Kubernetes machines and the code-gen
 WAIT_PERIOD=3                                    # Seconds to wait between each request
-NAMESPACES=("refund" valve)                       # Kubernetes namespace for helm chart deployment
+NAMESPACES=("long-sequence" "long-parallel")      # "refund" "valve" "long-sequence" "long-parallel"
 WAIT_REBOOT=280                                  # Seconds to wait after rebooting the cluster machines
 TESTS=("baseline" "enforce")
-NUMBER_TESTS=350
+NUMBER_TESTS=10
 ENFORCER_QUEUE="ghcr.io/atnog/knative-flow-tagging/queue:latest"
 BASELINE_QUEUE="gcr.io/knative-releases/knative.dev/serving/cmd/queue:v1.19.5"
 
@@ -86,13 +86,20 @@ for test in ${TESTS[@]}; do
 
         cd $namespace/
         kubectl apply -f kubernetes.yaml
+        if [[ $namespace == "long-sequence" || $namespace == "long-parallel" ]]; then
+            kubectl apply -f functions.yaml
+        fi
         cd ..
 
         echo "Waiting for application to be ready (only one pod starting with 'result')..."
         if [[ $namespace == "refund" ]]; then
             needed_pods=8
-        else
+        elif [[ $namespace == "valve" ]]; then
             needed_pods=15
+        elif [[ $namespace == "long-sequence" ]]; then
+            needed_pods=72
+        elif [[ $namespace == "long-parallel" ]]; then
+            needed_pods=142
         fi
         while true; do
             # Count running pods
@@ -109,19 +116,25 @@ for test in ${TESTS[@]}; do
             fi
         done
 
-        sleep 280
+        sleep $WAIT_REBOOT
 
         echo "Starting tests"
         for (( i=1; i<=NUMBER_TESTS; i++ )); do
-            if [[ $namespace == "refund" ]]; then
-                data='{}'
-            else
+            if [[ $namespace == "valve" ]]; then
                 data='{"postListing": true}'
+            else
+                data='{}'
             fi
             curl http://entry-point.$namespace.$EXTERNAL_IP.sslip.io --data "$data" -H 'Content-Type: application/json' -v
 
             sleep "$WAIT_PERIOD"
+
+            if [[ $test == "enforce" && $namespace == "long-parallel" ]]; then
+                sleep 10
+            fi
         done
+
+        sleep $WAIT_REBOOT
 
         echo "Saving logs from pods"
         pods_to_log=$(kubectl get pods -n "$namespace" --no-headers -o custom-columns=NAME:.metadata.name || true)
@@ -146,6 +159,9 @@ for test in ${TESTS[@]}; do
         # REMOVE EVERYTHING BEFORE NEXT ITERATION
         cd $namespace/
         kubectl delete -f kubernetes.yaml
+        if [[ $namespace == "long-sequence" || $namespace == "long-parallel" ]]; then
+            kubectl delete -f functions.yaml
+        fi
         cd ..
         kubectl delete namespace $namespace
     done

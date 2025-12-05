@@ -1,0 +1,27 @@
+ * Serving Flask app 'main'
+ * Debug mode: off
+1764906045.355661 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.42.0.29:8080
+1764906045.355799 - INFO - [33mPress CTRL+C to quit[0m
+1764906435.261644 - DEBUG - Current hostnames <['f1-00001-deployment-8ddd9c558-dkhtn', 'f2-00001-deployment-cc766999-xmnfv', 'f3-00001-deployment-5b55d6fdff-hprkx', 'f4-00001-deployment-7dbddf875d-fj9lq', 'f5-00001-deployment-fbbf4b9d4-bg88p', 'f6-00001-deployment-f4b499b86-l4qwl', 'f7-00001-deployment-677c9bf984-9cllr']>
+1764906435.266673 - INFO - 127.0.0.1 - - [05/Dec/2025 03:47:15] "POST / HTTP/1.1" 200 -
+1764906439.324793 - DEBUG - Current hostnames <['f1-00001-deployment-8ddd9c558-dkhtn', 'f2-00001-deployment-cc766999-xmnfv', 'f3-00001-deployment-5b55d6fdff-hprkx', 'f4-00001-deployment-7dbddf875d-fj9lq', 'f5-00001-deployment-fbbf4b9d4-bg88p', 'f6-00001-deployment-f4b499b86-l4qwl', 'f7-00001-deployment-677c9bf984-9cllr']>
+1764906439.325490 - INFO - 127.0.0.1 - - [05/Dec/2025 03:47:19] "POST / HTTP/1.1" 200 -
+1764906440.412309 - DEBUG - Current hostnames <['f1-00001-deployment-8ddd9c558-dkhtn', 'f2-00001-deployment-cc766999-xmnfv', 'f3-00001-deployment-5b55d6fdff-hprkx', 'f4-00001-deployment-7dbddf875d-fj9lq', 'f5-00001-deployment-fbbf4b9d4-bg88p', 'f6-00001-deployment-f4b499b86-l4qwl', 'f7-00001-deployment-677c9bf984-9cllr']>
+1764906440.412969 - INFO - 127.0.0.1 - - [05/Dec/2025 03:47:20] "POST / HTTP/1.1" 200 -
+1764906441.304761 - DEBUG - Current hostnames <['f1-00001-deployment-8ddd9c558-dkhtn', 'f2-00001-deployment-cc766999-xmnfv', 'f3-00001-deployment-5b55d6fdff-hprkx', 'f4-00001-deployment-7dbddf875d-fj9lq', 'f5-00001-deployment-fbbf4b9d4-bg88p', 'f6-00001-deployment-f4b499b86-l4qwl', 'f7-00001-deployment-677c9bf984-9cllr']>
+1764906441.305482 - INFO - 127.0.0.1 - - [05/Dec/2025 03:47:21] "POST / HTTP/1.1" 200 -
+1764906443.632460 - DEBUG - Current hostnames <['f1-00001-deployment-8ddd9c558-dkhtn', 'f2-00001-deployment-cc766999-xmnfv', 'f3-00001-deployment-5b55d6fdff-hprkx', 'f4-00001-deployment-7dbddf875d-fj9lq', 'f5-00001-deployment-fbbf4b9d4-bg88p', 'f6-00001-deployment-f4b499b86-l4qwl', 'f7-00001-deployment-677c9bf984-9cllr']>
+1764906443.633193 - INFO - 127.0.0.1 - - [05/Dec/2025 03:47:23] "POST / HTTP/1.1" 200 -
+1764906446.683807 - DEBUG - Current hostnames <['f1-00001-deployment-8ddd9c558-dkhtn', 'f2-00001-deployment-cc766999-xmnfv', 'f3-00001-deployment-5b55d6fdff-hprkx', 'f4-00001-deployment-7dbddf875d-fj9lq', 'f5-00001-deployment-fbbf4b9d4-bg88p', 'f6-00001-deployment-f4b499b86-l4qwl', 'f7-00001-deployment-677c9bf984-9cllr']>
+1764906446.684565 - INFO - 127.0.0.1 - - [05/Dec/2025 03:47:26] "POST / HTTP/1.1" 200 -
+1764906449.729162 - DEBUG - Current hostnames <['f1-00001-deployment-8ddd9c558-dkhtn', 'f2-00001-deployment-cc766999-xmnfv', 'f3-00001-deployment-5b55d6fdff-hprkx', 'f4-00001-deployment-7dbddf875d-fj9lq', 'f5-00001-deployment-fbbf4b9d4-bg88p', 'f6-00001-deployment-f4b499b86-l4qwl', 'f7-00001-deployment-677c9bf984-9cllr']>
+1764906449.729830 - INFO - 127.0.0.1 - - [05/Dec/2025 03:47:29] "POST / HTTP/1.1" 200 -
+1764906452.777617 - DEBUG - Current hostnames <['f1-00001-deployment-8ddd9c558-dkhtn', 'f2-00001-deployment-cc766999-xmnfv', 'f3-00001-deployment-5b55d6fdff-hprkx', 'f4-00001-deployment-7dbddf875d-fj9lq', 'f5-00001-deployment-fbbf4b9d4-bg88p', 'f6-00001-deployment-f4b499b86-l4qwl', 'f7-00001-deployment-677c9bf984-9cllr']>
+1764906452.778386 - INFO - 127.0.0.1 - - [05/Dec/2025 03:47:32] "POST / HTTP/1.1" 200 -
+1764906455.823632 - DEBUG - Current hostnames <['f1-00001-deployment-8ddd9c558-dkhtn', 'f2-00001-deployment-cc766999-xmnfv', 'f3-00001-deployment-5b55d6fdff-hprkx', 'f4-00001-deployment-7dbddf875d-fj9lq', 'f5-00001-deployment-fbbf4b9d4-bg88p', 'f6-00001-deployment-f4b499b86-l4qwl', 'f7-00001-deployment-677c9bf984-9cllr']>
+1764906455.824411 - INFO - 127.0.0.1 - - [05/Dec/2025 03:47:35] "POST / HTTP/1.1" 200 -
+1764906458.872992 - DEBUG - Current hostnames <['f1-00001-deployment-8ddd9c558-dkhtn', 'f2-00001-deployment-cc766999-xmnfv', 'f3-00001-deployment-5b55d6fdff-hprkx', 'f4-00001-deployment-7dbddf875d-fj9lq', 'f5-00001-deployment-fbbf4b9d4-bg88p', 'f6-00001-deployment-f4b499b86-l4qwl', 'f7-00001-deployment-677c9bf984-9cllr']>
+1764906458.873683 - INFO - 127.0.0.1 - - [05/Dec/2025 03:47:38] "POST / HTTP/1.1" 200 -
