@@ -53,7 +53,7 @@ spec:
         autoscaling.knative.dev/max-scale: "1"
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/long-parallel/workflow:latest
+        - image: ghcr.io/atnog/poliflow-evaluation/long-parallel/workflow:latest
           imagePullPolicy: Always
           name: workflow
           ports:
@@ -122,7 +122,7 @@ spec:
         autoscaling.knative.dev/max-scale: "1"
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/long-parallel/entry-point
+        - image: ghcr.io/atnog/poliflow-evaluation/long-parallel/entry-point
 ---
 apiVersion: sources.knative.dev/v1
 kind: SinkBinding

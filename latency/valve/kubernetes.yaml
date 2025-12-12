@@ -53,7 +53,7 @@ spec:
         autoscaling.knative.dev/max-scale: "1"
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/workflow:latest
+        - image: ghcr.io/atnog/poliflow-evaluation/valve/workflow:latest
           imagePullPolicy: Always
           name: workflow
           ports:
@@ -145,7 +145,7 @@ spec:
         autoscaling.knative.dev/max-scale: "1"
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/entry-point
+        - image: ghcr.io/atnog/poliflow-evaluation/valve/entry-point
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -165,7 +165,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/sample-function
+        - image: ghcr.io/atnog/poliflow-evaluation/valve/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -185,7 +185,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/sample-function
+        - image: ghcr.io/atnog/poliflow-evaluation/valve/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -205,7 +205,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/sample-function
+        - image: ghcr.io/atnog/poliflow-evaluation/valve/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -225,7 +225,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/sample-function
+        - image: ghcr.io/atnog/poliflow-evaluation/valve/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -245,7 +245,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/sample-function
+        - image: ghcr.io/atnog/poliflow-evaluation/valve/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -265,7 +265,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/sample-function
+        - image: ghcr.io/atnog/poliflow-evaluation/valve/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -285,7 +285,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/sample-function
+        - image: ghcr.io/atnog/poliflow-evaluation/valve/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -305,7 +305,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/sample-function
+        - image: ghcr.io/atnog/poliflow-evaluation/valve/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -325,7 +325,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/sample-function
+        - image: ghcr.io/atnog/poliflow-evaluation/valve/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -345,7 +345,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/sample-function
+        - image: ghcr.io/atnog/poliflow-evaluation/valve/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -365,7 +365,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/sample-function
+        - image: ghcr.io/atnog/poliflow-evaluation/valve/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -386,7 +386,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/database-dummy
+        - image: ghcr.io/atnog/poliflow-evaluation/valve/database-dummy
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -406,7 +406,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/result
+        - image: ghcr.io/atnog/poliflow-evaluation/valve/result
 ---
 apiVersion: sources.knative.dev/v1
 kind: SinkBinding

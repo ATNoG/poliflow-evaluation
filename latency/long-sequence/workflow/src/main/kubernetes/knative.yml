@@ -44,7 +44,7 @@ spec:
   template:
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/valve/workflow:latest
+        - image: ghcr.io/atnog/poliflow-evaluation/valve/workflow:latest
           imagePullPolicy: Always
           # livenessProbe:
           #   failureThreshold: 3

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REGISTRY=ghcr.io/atnog/knative-workflow-apps-kit/valve
+REGISTRY=ghcr.io/atnog/poliflow-evaluation/valve
 paths=(entry-point)          # entry-point sample-function database-dummy result
 
 for p in ${paths[@]}; do

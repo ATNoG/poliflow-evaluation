@@ -53,7 +53,7 @@ spec:
         autoscaling.knative.dev/max-scale: "1"
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/refund/workflow:latest
+        - image: ghcr.io/atnog/poliflow-evaluation/refund/workflow:latest
           imagePullPolicy: Always
           name: workflow
           ports:
@@ -141,7 +141,7 @@ spec:
         autoscaling.knative.dev/max-scale: "1"
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/refund/entry-point
+        - image: ghcr.io/atnog/poliflow-evaluation/refund/entry-point
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -161,7 +161,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/refund/sample-function
+        - image: ghcr.io/atnog/poliflow-evaluation/refund/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -181,7 +181,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/refund/sample-function
+        - image: ghcr.io/atnog/poliflow-evaluation/refund/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -201,7 +201,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/refund/sample-function
+        - image: ghcr.io/atnog/poliflow-evaluation/refund/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -221,7 +221,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/refund/sample-function
+        - image: ghcr.io/atnog/poliflow-evaluation/refund/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -242,7 +242,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/refund/database-dummy
+        - image: ghcr.io/atnog/poliflow-evaluation/refund/database-dummy
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -262,7 +262,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/knative-workflow-apps-kit/refund/result
+        - image: ghcr.io/atnog/poliflow-evaluation/refund/result
 ---
 apiVersion: sources.knative.dev/v1
 kind: SinkBinding
