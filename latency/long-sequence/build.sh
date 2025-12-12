@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REGISTRY=ghcr.io/atnog/knative-workflow-apps-kit/long-sequence
+REGISTRY=ghcr.io/atnog/poliflow-evaluation/long-sequence
 paths=(entry-point sample-function)
 
 for p in ${paths[@]}; do

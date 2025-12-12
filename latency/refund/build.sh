@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REGISTRY=ghcr.io/atnog/knative-workflow-apps-kit/refund
+REGISTRY=ghcr.io/atnog/poliflow-evaluation/refund
 paths=(entry-point sample-function database-dummy result)
 
 for p in ${paths[@]}; do
