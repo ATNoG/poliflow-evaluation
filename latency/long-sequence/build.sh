@@ -1,7 +1,7 @@
 #!/bin/bash
 
 REGISTRY=ghcr.io/atnog/knative-workflow-apps-kit/long-sequence
-paths=(entry-point sample-function result)
+paths=(entry-point sample-function)
 
 for p in ${paths[@]}; do
     cd $p

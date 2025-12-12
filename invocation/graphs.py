@@ -1,10 +1,13 @@
+from typing import Literal
+
+
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-COMPARISON = 4.5
-SIZE = (7, 5)
-SIZE_RATION = SIZE[1] / COMPARISON
+COMPARISON = 6.5
+SIZE: tuple[Literal[5], Literal[1]] = (10, 3)
+SIZE_RATION = SIZE[0] / COMPARISON
 
 # ------------ PARAMETERS ------------
 FILE = "results/requests_trace.txt"
@@ -36,6 +39,8 @@ df["experiment_label"] = df["experiment"].map(label_map)
 
 # CI-based outlier removal
 cleaned = []
+
+sns.set(style="whitegrid")
 
 for exp, group in df.groupby("experiment_label"):
 
@@ -72,7 +77,7 @@ present_labels = sorted(df_clean["experiment_label"].unique(),
 
 
 # ----- BOXPLOTS -----
-plt.figure(figsize=(10, 6))
+plt.figure(figsize=SIZE)
 ax = sns.boxplot(data=df_clean, x="experiment_label", y="startup", order=present_labels)
 ax.yaxis.label.set_fontsize(15 * SIZE_RATION)
 ax.xaxis.label.set_fontsize(15 * SIZE_RATION)
@@ -80,15 +85,16 @@ ax.tick_params(labelsize=12 * SIZE_RATION)
 plt.ylabel("Time (s)")
 plt.xlabel("")
 plt.tight_layout()
-plt.savefig(f"resources_startup.pdf")
+plt.savefig(f"invocation_startup.pdf", bbox_inches='tight', pad_inches=0)
 plt.show()
 
-plt.figure(figsize=(10, 6))
-ax = sns.boxplot(data=df_clean, x="experiment_label", y="finishing")
+plt.figure(figsize=SIZE)
+ax = sns.boxplot(data=df_clean, x="experiment_label", y="finishing", order=present_labels)
 ax.yaxis.label.set_fontsize(15 * SIZE_RATION)
 ax.xaxis.label.set_fontsize(15 * SIZE_RATION)
 ax.tick_params(labelsize=12 * SIZE_RATION)
 plt.ylabel("Time (s)")
+plt.xlabel("")
 plt.tight_layout()
-plt.savefig(f"resources_finish.pdf")
+plt.savefig(f"invocation_finish.pdf", bbox_inches='tight', pad_inches=0)
 plt.show()
