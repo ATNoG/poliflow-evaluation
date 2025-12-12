@@ -4,11 +4,11 @@
 ##########################
 # CONSTANTS – CONFIGURE THESE AS NEEDED
 ##########################
-SSH_PASSWORD="olaadeus"                     # SSH password for the Kubernetes cluster machines
+SSH_PASSWORD=""                     # SSH password for the Kubernetes cluster machines
 MACHINE_USER="ubuntu"                     # SSH user (assumed to have sudo privileges for reboot)
 MACHINES=("10.255.30.152" "10.255.30.196" "10.255.30.244")  # IPs of the 3 Kubernetes machines and the code-gen
 WAIT_PERIOD=1                                    # Seconds to wait between each request
-NAMESPACE="invocation"                       # Kubernetes namespace for helm chart deployment
+NAMESPACE="invocation"                       # Kubernetes namespace
 WAIT_REBOOT=280                                  # Seconds to wait after rebooting the cluster machines
 TESTS=("baseline" "enforcer-simple" "enforcer-complex")
 NUMBER_TESTS=350

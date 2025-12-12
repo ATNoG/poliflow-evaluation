@@ -4,7 +4,7 @@
 ##########################
 # CONSTANTS – CONFIGURE THESE AS NEEDED
 ##########################
-SSH_PASSWORD="olaadeus"                     # SSH password for the Kubernetes cluster machines
+SSH_PASSWORD=""                     # SSH password for the Kubernetes cluster machines
 MACHINE_USER="ubuntu"                     # SSH user (assumed to have sudo privileges for reboot)
 EXTERNAL_IP="10.255.30.152"
 MACHINES=("10.255.30.152" "10.255.30.196" "10.255.30.244")  # IPs of the 3 Kubernetes machines and the code-gen

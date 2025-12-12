@@ -1,7 +1,7 @@
 #!/bin/bash
 
 REGISTRY=ghcr.io/<organization>/poliflow-evaluation/valve
-paths=(entry-point)          # entry-point sample-function database-dummy result
+paths=(entry-point sample-function database-dummy result)
 
 for p in ${paths[@]}; do
     cd $p
