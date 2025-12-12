@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REGISTRY=ghcr.io/atnog/poliflow-evaluation/long-sequence
+REGISTRY=ghcr.io/<organization>/poliflow-evaluation/long-sequence
 
 kubectl delete ksvc workflow -n long-sequence
 kn workflow quarkus build --image=workflow --jib

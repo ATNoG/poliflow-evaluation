@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REGISTRY=ghcr.io/atnog/poliflow-evaluation/long-parallel
+REGISTRY=ghcr.io/<organization>/poliflow-evaluation/long-parallel
 
 kubectl delete ksvc workflow -n long-parallel
 export MAVEN_OPTS="-Xss16m"

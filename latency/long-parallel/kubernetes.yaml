@@ -10,7 +10,7 @@ metadata:
   annotations:
     app.quarkus.io/quarkus-version: 3.20.1
     app.quarkus.io/commit-id: 214abb116b80978479a0106d78a90d5ce3212565
-    app.quarkus.io/vcs-uri: https://github.com/ATNoG/knative-argo-workflows-apps-kit.git
+    app.quarkus.io/vcs-uri: https://github.com/<organization>/knative-argo-workflows-apps-kit.git
     app.quarkus.io/build-timestamp: 2025-09-22 - 16:27:58 +0000
   labels:
     app.kubernetes.io/name: workflow
@@ -38,7 +38,7 @@ metadata:
   annotations:
     app.quarkus.io/quarkus-version: 3.20.1
     app.quarkus.io/commit-id: 214abb116b80978479a0106d78a90d5ce3212565
-    app.quarkus.io/vcs-uri: https://github.com/ATNoG/knative-argo-workflows-apps-kit.git
+    app.quarkus.io/vcs-uri: https://github.com/<organization>/knative-argo-workflows-apps-kit.git
     app.quarkus.io/build-timestamp: 2025-09-22 - 16:27:58 +0000
   labels:
     app.kubernetes.io/name: workflow
@@ -53,7 +53,7 @@ spec:
         autoscaling.knative.dev/max-scale: "1"
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-parallel/workflow:latest
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-parallel/workflow:latest
           imagePullPolicy: Always
           name: workflow
           ports:
@@ -122,7 +122,7 @@ spec:
         autoscaling.knative.dev/max-scale: "1"
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-parallel/entry-point
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-parallel/entry-point
 ---
 apiVersion: sources.knative.dev/v1
 kind: SinkBinding

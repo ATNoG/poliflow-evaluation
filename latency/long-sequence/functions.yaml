@@ -16,7 +16,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -36,7 +36,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -56,7 +56,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -76,7 +76,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -96,7 +96,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -116,7 +116,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -136,7 +136,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -156,7 +156,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -176,7 +176,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -196,7 +196,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -216,7 +216,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -236,7 +236,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -256,7 +256,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -276,7 +276,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -296,7 +296,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -316,7 +316,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -336,7 +336,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -356,7 +356,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -376,7 +376,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -396,7 +396,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -416,7 +416,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -436,7 +436,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -456,7 +456,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -476,7 +476,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -496,7 +496,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -516,7 +516,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -536,7 +536,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -556,7 +556,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -576,7 +576,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -596,7 +596,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -616,7 +616,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -636,7 +636,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -656,7 +656,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -676,7 +676,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -696,7 +696,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -716,7 +716,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -736,7 +736,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -756,7 +756,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -776,7 +776,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -796,7 +796,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -816,7 +816,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -836,7 +836,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -856,7 +856,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -876,7 +876,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -896,7 +896,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -916,7 +916,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -936,7 +936,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -956,7 +956,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -976,7 +976,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -996,7 +996,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -1016,7 +1016,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -1036,7 +1036,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -1056,7 +1056,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -1076,7 +1076,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -1096,7 +1096,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -1116,7 +1116,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -1136,7 +1136,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -1156,7 +1156,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -1176,7 +1176,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -1196,7 +1196,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -1216,7 +1216,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -1236,7 +1236,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -1256,7 +1256,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -1276,7 +1276,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -1296,7 +1296,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -1316,7 +1316,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -1336,7 +1336,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -1356,7 +1356,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -1376,7 +1376,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---
 apiVersion: serving.knative.dev/v1
 kind: Service
@@ -1396,5 +1396,5 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/long-sequence/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/long-sequence/sample-function
 ---

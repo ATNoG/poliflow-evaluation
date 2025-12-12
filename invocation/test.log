@@ -2463,7 +2463,7 @@ pod/function-00001-deployment-77f76cd6d8-6fgfc condition met
 namespace "invocation" deleted
 [main 974f25e] new invocation results for baseline
  3 files changed, 1419 insertions(+), 1491 deletions(-)
-To https://github.com/ATNoG/poliflow-evaluation.git
+To https://github.com/<organization>/poliflow-evaluation.git
    038da68..974f25e  main -> main
 Rebooting cluster machines...
 Rebooting machine 10.255.30.152...
@@ -4926,7 +4926,7 @@ pod/function-00001-deployment-75456858fb-s5v5g condition met
 namespace "invocation" deleted
 [main 4d690eb] new invocation results for enforcer-simple
  3 files changed, 2814 insertions(+), 1 deletion(-)
-To https://github.com/ATNoG/poliflow-evaluation.git
+To https://github.com/<organization>/poliflow-evaluation.git
    974f25e..4d690eb  main -> main
 Rebooting cluster machines...
 Rebooting machine 10.255.30.152...
@@ -7388,6 +7388,6 @@ pod/function-00001-deployment-94cbff498-stwql condition met
 namespace "invocation" deleted
 [main 4ed0ce4] new invocation results for enforcer-complex
  3 files changed, 2813 insertions(+), 1 deletion(-)
-To https://github.com/ATNoG/poliflow-evaluation.git
+To https://github.com/<organization>/poliflow-evaluation.git
    4d690eb..4ed0ce4  main -> main
 All tests completed.

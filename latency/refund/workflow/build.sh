@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REGISTRY=ghcr.io/atnog/poliflow-evaluation/refund
+REGISTRY=ghcr.io/<organization>/poliflow-evaluation/refund
 
 kubectl delete ksvc workflow -n refund
 kn workflow quarkus build --image=workflow --jib

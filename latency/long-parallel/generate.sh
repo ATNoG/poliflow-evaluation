@@ -51,7 +51,7 @@ spec:
         qpoption.knative.dev/flow-activate: enable
     spec:
       containers:
-        - image: ghcr.io/atnog/poliflow-evaluation/$namespace/sample-function
+        - image: ghcr.io/<organization>/poliflow-evaluation/$namespace/sample-function
 ---
 EOF
 done

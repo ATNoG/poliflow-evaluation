@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REGISTRY=ghcr.io/atnog/poliflow-evaluation/invocation
+REGISTRY=ghcr.io/<organization>/poliflow-evaluation/invocation
 paths=(sample-function)
 
 for p in ${paths[@]}; do

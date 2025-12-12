@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REGISTRY=ghcr.io/atnog/poliflow-evaluation/long-parallel
+REGISTRY=ghcr.io/<organization>/poliflow-evaluation/long-parallel
 paths=(entry-point sample-function)
 
 for p in ${paths[@]}; do

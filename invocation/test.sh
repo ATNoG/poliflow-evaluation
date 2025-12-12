@@ -12,7 +12,7 @@ NAMESPACE="invocation"                       # Kubernetes namespace for helm cha
 WAIT_REBOOT=280                                  # Seconds to wait after rebooting the cluster machines
 TESTS=("baseline" "enforcer-simple" "enforcer-complex")
 NUMBER_TESTS=350
-ENFORCER_QUEUE="ghcr.io/atnog/poliflow-enforcer/queue:latest"
+ENFORCER_QUEUE="ghcr.io/<organization>/poliflow-enforcer/queue:latest"
 BASELINE_QUEUE="gcr.io/knative-releases/knative.dev/serving/cmd/queue:v1.19.5"
 
 # Base directory to store test results (trace file and pod logs)

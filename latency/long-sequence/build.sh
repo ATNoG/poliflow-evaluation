@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REGISTRY=ghcr.io/atnog/poliflow-evaluation/long-sequence
+REGISTRY=ghcr.io/<organization>/poliflow-evaluation/long-sequence
 paths=(entry-point sample-function)
 
 for p in ${paths[@]}; do

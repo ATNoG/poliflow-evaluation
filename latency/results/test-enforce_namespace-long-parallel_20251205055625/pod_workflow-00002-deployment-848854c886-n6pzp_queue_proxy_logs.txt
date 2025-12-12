@@ -1,9 +1,9 @@
 2025-12-05T05:56:35.656Z	DEBUG	flow-tagging/plug.go:201	Key type not found in config
 2025-12-05T05:56:35.656Z	ERROR	flow-tagging/plug.go:221	Key allowed_json_flows not found in config
-ATNoG/knative-flow-tagging/pkg/flow-tagging.(*plug).ProcessAnnotations
-	ATNoG/knative-flow-tagging/pkg/flow-tagging/plug.go:221
-ATNoG/knative-flow-tagging/pkg/flow-tagging.init.0
-	ATNoG/knative-flow-tagging/pkg/flow-tagging/plug.go:253
+<organization>/knative-flow-tagging/pkg/flow-tagging.(*plug).ProcessAnnotations
+	<organization>/knative-flow-tagging/pkg/flow-tagging/plug.go:221
+<organization>/knative-flow-tagging/pkg/flow-tagging.init.0
+	<organization>/knative-flow-tagging/pkg/flow-tagging/plug.go:253
 runtime.doInit1
 	runtime/proc.go:7670
 runtime.doInit
@@ -11,8 +11,8 @@ runtime.doInit
 runtime.main
 	runtime/proc.go:256
 2025-12-05T05:56:35.656Z	ERROR	flow-tagging/plug.go:254	Error reading the Pod annotations
-ATNoG/knative-flow-tagging/pkg/flow-tagging.init.0
-	ATNoG/knative-flow-tagging/pkg/flow-tagging/plug.go:254
+<organization>/knative-flow-tagging/pkg/flow-tagging.init.0
+	<organization>/knative-flow-tagging/pkg/flow-tagging/plug.go:254
 runtime.doInit1
 	runtime/proc.go:7670
 runtime.doInit
@@ -27,7 +27,7 @@ knative.dev/security-guard/pkg/qpoption.(*GateQPOption).Setup
 knative.dev/serving/pkg/queue/sharedmain.Main
 	knative.dev/serving@v0.46.6/pkg/queue/sharedmain/main.go:210
 main.main
-	ATNoG/knative-flow-tagging/cmd/queue/main.go:16
+	<organization>/knative-flow-tagging/cmd/queue/main.go:16
 runtime.main
 	runtime/proc.go:285
 {"severity":"INFO","timestamp":"2025-12-05T05:56:35.695563596Z","logger":"queueproxy","caller":"sharedmain/main.go:272","message":"Starting queue-proxy","commit":"c6de642-dirty","knative.dev/key":"long-parallel/workflow-00002","knative.dev/pod":"workflow-00002-deployment-848854c886-n6pzp"}

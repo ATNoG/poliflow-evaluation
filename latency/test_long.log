@@ -9643,7 +9643,7 @@ error: container user-container is not valid for pod workflow-00002-deployment-6
  create mode 100644 latency/results/test-baseline_namespace-long-sequence_20251205040440/pod_f9-00001-deployment-6554666c8d-bkbg8_user_container_logs.txt
  create mode 100644 latency/results/test-baseline_namespace-long-sequence_20251205040440/pod_workflow-00002-deployment-67db4fbfc9-bckdp_queue_proxy_logs.txt
  rename latency/results/{test-baseline_namespace-long-sequence_20251205034035/pod_workflow-00002-deployment-6d54bdb4cd-6m2d4_user_container_logs.txt => test-baseline_namespace-long-sequence_20251205040440/pod_workflow-00002-deployment-67db4fbfc9-bckdp_user_container_logs.txt} (100%)
-To https://github.com/ATNoG/poliflow-evaluation.git
+To https://github.com/<organization>/poliflow-evaluation.git
    f9db52d..289bd64  main -> main
 serviceaccount "workflow" deleted from long-sequence namespace
 rolebinding.rbac.authorization.k8s.io "workflow-view" deleted from long-sequence namespace
@@ -19575,7 +19575,7 @@ error: container user-container is not valid for pod workflow-00002-deployment-7
  create mode 100644 latency/results/test-baseline_namespace-long-parallel_20251205044040/pod_f99-00001-deployment-58fd98db67-x5f7g_user_container_logs.txt
  create mode 100644 latency/results/test-baseline_namespace-long-parallel_20251205044040/pod_workflow-00002-deployment-758988685b-r9575_queue_proxy_logs.txt
  create mode 100644 latency/results/test-baseline_namespace-long-parallel_20251205044040/pod_workflow-00002-deployment-758988685b-r9575_user_container_logs.txt
-To https://github.com/ATNoG/poliflow-evaluation.git
+To https://github.com/<organization>/poliflow-evaluation.git
    289bd64..f6500b5  main -> main
 serviceaccount "workflow" deleted from long-parallel namespace
 rolebinding.rbac.authorization.k8s.io "workflow-view" deleted from long-parallel namespace
@@ -29229,7 +29229,7 @@ error: container user-container is not valid for pod workflow-00002-deployment-c
  create mode 100644 latency/results/test-enforce_namespace-long-sequence_20251205052009/pod_f9-00001-deployment-58fbfdd8ff-6jfh8_user_container_logs.txt
  create mode 100644 latency/results/test-enforce_namespace-long-sequence_20251205052009/pod_workflow-00002-deployment-cfcb7444b-d77dw_queue_proxy_logs.txt
  create mode 100644 latency/results/test-enforce_namespace-long-sequence_20251205052009/pod_workflow-00002-deployment-cfcb7444b-d77dw_user_container_logs.txt
-To https://github.com/ATNoG/poliflow-evaluation.git
+To https://github.com/<organization>/poliflow-evaluation.git
    f6500b5..0432237  main -> main
 serviceaccount "workflow" deleted from long-sequence namespace
 rolebinding.rbac.authorization.k8s.io "workflow-view" deleted from long-sequence namespace
