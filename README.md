@@ -1,3 +1,8 @@
+> **ℹ️ Note**  
+> This repository is part of the **PoliFlow framework**.  
+> For more details, please refer to: [https://github.com/ATNoG/poliflow](https://github.com/ATNoG/poliflow)
+
+
 # PoliFlow Evaluation
 
 This repository holds the preliminary tests made for the PoliFlow Enforcer for the article "PoliFlow: Inferring Control-Flow Policies from Serverless Workflows."
